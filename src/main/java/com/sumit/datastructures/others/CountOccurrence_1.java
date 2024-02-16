@@ -2,7 +2,7 @@ package com.sumit.datastructures.others;
 
 import java.util.Scanner;
 
-public class CountOccurrence {
+public class CountOccurrence_1 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
