@@ -26,7 +26,7 @@ public class Calculator {
                 System.out.println(firstNum-secondNum);
             else if(operation == '*')
                 System.out.println(firstNum*secondNum);
-            else if(operation == '/')
+            else if(operation == '/' && secondNum != 0)
                 System.out.println(firstNum/secondNum);
             else if(operation == '%')
                 System.out.println(firstNum%secondNum);
