@@ -2,7 +2,7 @@ package com.sumit.datastructures.search.a_linearsearch;
 
 import java.util.Arrays;
 
-public class LinearSearch_2DArray {
+public class LinearSearch5_2DArray {
 
     public static void main(String[] args) {
         int[][] arr = {
