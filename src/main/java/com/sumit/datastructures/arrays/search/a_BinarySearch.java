@@ -1,4 +1,4 @@
-package com.sumit.datastructures.arrays;
+package com.sumit.datastructures.arrays.search;
 
 public class a_BinarySearch {
 
