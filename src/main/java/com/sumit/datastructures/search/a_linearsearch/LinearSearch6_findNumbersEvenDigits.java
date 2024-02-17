@@ -4,6 +4,8 @@ import java.util.Arrays;
 
 public class LinearSearch6_findNumbersEvenDigits {
 
+    // https://leetcode.com/problems/find-numbers-with-even-number-of-digits/
+
     public static void main(String[] args) {
         int[] arr = {121, 345, 0, 31, 7196};
         System.out.println("Input array : " + Arrays.toString(arr));
@@ -43,7 +45,23 @@ public class LinearSearch6_findNumbersEvenDigits {
     }
 
     private static int countNumberOfDigits_2(int num){
+        if(num == 0)
+            return 1;
+
+        if(num < 0)
+            num = num * -1;
+
         return String.valueOf(num).length();
+    }
+
+    private static int countNumberOfDigits_3(int num) {
+        if(num == 0)
+            return 1;
+
+        if(num < 0)
+            num = num * -1;
+
+        return (int)(Math.log10(num)) + 1;
     }
 
 }
