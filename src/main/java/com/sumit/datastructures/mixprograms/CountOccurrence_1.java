@@ -1,34 +1,32 @@
-package com.sumit.datastructures.others;
+package com.sumit.datastructures.mixprograms;
 
 import java.util.Scanner;
 
-public class CountOccurrence_2 {
+public class CountOccurrence_1 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Please enter the number and the integer to find in that number : ");
         long number = scanner.nextLong();
-        int findNum = scanner.nextInt();
+        long findNum = scanner.nextLong();
 
         while(number >= 0) {
-            System.out.println(CountDigitOccurrence(number, findNum));
+            System.out.println(CountOccurrenceInNumber(number, findNum));
             System.out.print("Please enter the number and the integer to find in that number : ");
             number = scanner.nextLong();
-            findNum = scanner.nextInt();
+            findNum = scanner.nextLong();
         }
 
         System.out.print("Algorithm finished !!");
     }
 
-    private static int CountDigitOccurrence(long number, int digit){
-        int count = 0;
-        while(number > 0) {
-            int reminder = (int) number % 10;
-            if(reminder == digit)
-                count++;
 
-            number = number / 10;
+    private static int CountOccurrenceInNumber(Long number, Long findNum) {
+        int count = 0;
+        for(String eachNum : number.toString().split("")) {
+            if(eachNum.equals(findNum.toString()))
+                count++;
         }
         return count;
     }

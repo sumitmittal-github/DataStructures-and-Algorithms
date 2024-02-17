@@ -1,4 +1,4 @@
-package com.sumit.datastructures.others;
+package com.sumit.datastructures.mixprograms;
 
 import java.util.Scanner;
 

@@ -1,7 +1,6 @@
-package com.sumit.datastructures.others;
+package com.sumit.datastructures.mixprograms;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class ArmstrongNumber {
