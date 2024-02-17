@@ -1,6 +1,6 @@
 package com.sumit.datastructures.search.a_linearsearch;
 
-public class a_LinearSearch {
+public class LinearSearch1_Array {
 
     public static void main(String[] args) {
         int[] arr = {1,4,7,1,4,9,56,1,0,56774};
