@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class LinearSearch6_findNumbersEvenDigits {
 
     public static void main(String[] args) {
-        int[] arr = {121, 345, 2, 31, 7196};
+        int[] arr = {121, 345, 0, 31, 7196};
         System.out.println("Input array : " + Arrays.toString(arr));
 
         int evenDigitElementsCount =  findNumbersCountWithEvenDigits(arr);
@@ -24,6 +24,16 @@ public class LinearSearch6_findNumbersEvenDigits {
     // Better approach because we are not using string manipulation
     // also not using any in-built method.
     private static int countNumberOfDigits_1(int num){
+        // num 0 has 1 digit.
+        // if we will not handle this condition here then this method will return count as 0,
+        // and 0%2 ==> 0. will be added in even category.
+        if(num == 0)
+            return 1;
+
+        // making number positive if it is negative
+        if(num < 0)
+            num = num * -1;
+
         int count = 0;
         while(num > 0) {
             num = num/10;
