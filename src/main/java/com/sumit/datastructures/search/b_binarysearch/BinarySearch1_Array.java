@@ -71,11 +71,16 @@ public class BinarySearch1_Array {
         if(arr[0] > arr[1])
             isAscendingArray = false;
 
-        
+
         int startIndex = 0, midIndex = 0, endIndex = arr.length-1;
 
         while(startIndex <= endIndex){
-            midIndex = (startIndex + endIndex) / 2;
+            // below code can give error after some iterations for very long array,
+            // because after few iterations, both start and end will be big numbers, so addition of can be out of range
+            // midIndex = (startIndex + endIndex) / 2;
+            // Therefore use below code -
+            midIndex = startIndex + (endIndex - startIndex)/2;
+
             if(targetElement == arr[midIndex])
                 return midIndex;
             else {
