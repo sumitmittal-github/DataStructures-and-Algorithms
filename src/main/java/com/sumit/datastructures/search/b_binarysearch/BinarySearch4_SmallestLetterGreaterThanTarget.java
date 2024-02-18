@@ -53,6 +53,10 @@ public class BinarySearch4_SmallestLetterGreaterThanTarget {
                 startIndex = midIndex+1;
         }
         return letters[startIndex];
+
+        // we can remove the 1st if condition of this method -   if(letters[letters.length-1] <= target)
+        // and then we have to change return statement as
+        // return letters[startIndex % letters.length];       -- to handle the last element condition
     }
 
 }
