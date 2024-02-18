@@ -66,35 +66,32 @@ public class BinarySearch1_Array {
                 return -1;
         }
 
-        // check if array is ascending array or descending array
-        boolean isAscendingArray = true;
-        if(arr[0] > arr[1])
-            isAscendingArray = false;
-
-
         int startIndex = 0, midIndex = 0, endIndex = arr.length-1;
 
+        // check if array is ascending array or descending array
+        // 0th index and 1st index elements can be same and so on. Therefor we are comparing 1st and last element of the array
+        boolean isAscendingArray = arr[startIndex] < arr[endIndex];
+
         while(startIndex <= endIndex){
-            // below code can give error after some iterations for very long array,
-            // because after few iterations, both start and end will be big numbers, so addition of can be out of range
             // midIndex = (startIndex + endIndex) / 2;
+            // above code can give error after some iterations for very long array,
+            // because after few iterations, both start and end will be big numbers, so addition of can be out of range
             // Therefore use below code -
             midIndex = startIndex + (endIndex - startIndex)/2;
 
             if(targetElement == arr[midIndex])
                 return midIndex;
-            else {
-                if(targetElement < arr[midIndex]){
-                    if(isAscendingArray)
-                        endIndex = midIndex-1;
-                    else
-                        startIndex = midIndex+1;
-                } else {
-                    if(isAscendingArray)
-                        startIndex = midIndex+1;
-                    else
-                        endIndex = midIndex-1;
-                }
+
+            if(isAscendingArray){
+                if(targetElement < arr[midIndex])
+                    endIndex = midIndex-1;
+                else
+                    startIndex = midIndex+1;
+            } else {
+                if(targetElement < arr[midIndex])
+                    startIndex = midIndex+1;
+                else
+                    endIndex = midIndex-1;
             }
         }
         return -1;
