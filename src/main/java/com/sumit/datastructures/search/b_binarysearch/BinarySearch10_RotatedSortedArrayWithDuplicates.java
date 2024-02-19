@@ -15,7 +15,7 @@ public class BinarySearch10_RotatedSortedArrayWithDuplicates {
 
     private static int rotatedBinarySearch(int[] arr, int target){
         int index = -1;
-        int pivot = findPivotIndex(arr);
+        int pivot = findPivotIndexWithDuplicates(arr);
         if(pivot == -1) {
             // if we did not find pivot element then it means the array was not rotated
             // then do plain binary search
