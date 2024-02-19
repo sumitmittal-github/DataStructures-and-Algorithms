@@ -22,12 +22,18 @@ public class BinarySearch5_FirstAndLastPosition {
     }
 
     private static int[] searchRange(int[] nums, int target) {
-        if(nums == null || nums.length == 0)
-            return new int[] {-1, -1};
+        int[] result = {-1, -1};
 
-        int firstOccurrenceIndex = searchPositionIndex(nums, target, true);
-        int lastOccurrenceIndex = searchPositionIndex(nums, target, false);
-        return new int[] {firstOccurrenceIndex, lastOccurrenceIndex};
+        if(nums == null || nums.length == 0)
+            return result;
+
+        result[0] = searchPositionIndex(nums, target, true);
+        // if array do not have the first occurrence then it means the target does not exist.
+        // Therefor we do not need to search for last occurrence in the array again.
+        if(result[0] != -1){
+            result[1] = searchPositionIndex(nums, target, false);
+        }
+        return result;
     }
 
     private static int searchPositionIndex(int[] nums, int target, boolean findFirstOccurrence) {
@@ -54,6 +60,5 @@ public class BinarySearch5_FirstAndLastPosition {
         }
         return answer;
     }
-
 
 }
