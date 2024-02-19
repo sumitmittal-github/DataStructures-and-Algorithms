@@ -27,11 +27,13 @@ public class BinarySearch7_PeakIndexMountainArray {
             int mid = start + (end-start)/2;
 
             if(arr[mid] > arr[mid+1])
-                end = mid;
+                end = mid;       // mid was bigger hence making end bigger
             else
-                start = mid+1;
+                start = mid+1;   // mid+1 was bigger hence making start bigger
         }
-        return start;
+
+        // in the end start == end because start and end both are trying to point to the maximum number in the array.
+        return start;    // return end;    (both are valid)
     }
 
 }
