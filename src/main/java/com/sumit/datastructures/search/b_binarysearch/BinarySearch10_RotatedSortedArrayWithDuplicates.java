@@ -1,9 +1,9 @@
 package com.sumit.datastructures.search.b_binarysearch;
 
-public class BinarySearch9_RotatedSortedArray {
+public class BinarySearch10_RotatedSortedArrayWithDuplicates {
 
     // https://leetcode.com/problems/search-in-rotated-sorted-array/description/
-    // Note : It will only work if the array do not have the duplicate elements
+    // Note : It will work even if the array has the duplicate elements
 
     public static void main(String[] args) {
         // Index :   0  1  2  3  4  5  6   7  8   9
@@ -38,7 +38,7 @@ public class BinarySearch9_RotatedSortedArray {
     // pivot we are referring the location where we rotated the array
     // Ex -    int[] arr = {4, 5, 6, 7, 8, 9, 10, 1, 2, 3};
     // here 10 is the pivot element, and it's index will be pivot index
-    private static int findPivotIndex(int[] arr){
+    private static int findPivotIndexWithDuplicates(int[] arr){
         int start=0;
         int end = arr.length-1;
 
@@ -53,10 +53,28 @@ public class BinarySearch9_RotatedSortedArray {
             if (mid > start && arr[mid-1] > arr[mid])
                 return mid-1;
 
-            if (arr[mid] <= arr[start])
-                end = mid-1;
-            else
+
+
+            // if elements at start, middle and end are equal then just skip the duplicates
+            if(arr[start] == arr[mid] && arr[mid] == arr[end]){
+                // NOTE : what if these elements at start and end are pivots
+                // check if start is pivot
+                if(arr[start] > arr[start+1])
+                    return start;
+                // check if end is pivot
+                if(arr[end-1] > arr[end])
+                    return end-1;
+
+                // skip the duplicates
+                start++;
+                end--;
+            }
+            // left side is sorted, so pivot should be in the right
+            else if( (arr[start] < arr[mid])   ||   (arr[start] == arr[mid] && arr[mid] > arr[end])){
                 start = mid+1;
+            } else {
+                end = mid-1;
+            }
         }
         return -1;
     }
