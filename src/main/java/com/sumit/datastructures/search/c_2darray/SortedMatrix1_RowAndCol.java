@@ -1,10 +1,8 @@
 package com.sumit.datastructures.search.c_2darray;
 
-import org.springframework.http.server.DelegatingServerHttpResponse;
-
 import java.util.Arrays;
 
-public class SortedMatrixRowAndCol {
+public class SortedMatrix1_RowAndCol {
 
     public static void main(String[] args) {
         int[][] matrix = {
