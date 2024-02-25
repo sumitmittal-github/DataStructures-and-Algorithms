@@ -4,7 +4,27 @@ public class CyclicSort2_MissingNumber {
 
     // Leet code : https://leetcode.com/problems/missing-number/description/
 
+    /** STEP-1 : Sort all numbers, if 0 comes then skip that number (i++) because our array should be 1 -> N
+     *   EX :   values : {1, 0, 2, 3}
+     *         indexes :  0, 1, 2, 3
+     *   As per our code -       arr[0] = 1 perfect => i++
+     *                           arr[1] = 0 => then skip this element => i++
+     *                           arr[2] = 2 => it should be 3, but we have 2, which should be value of index 1. Therefor swap with index=1 element   =>  {1, 2, 0, 3}
+     *                           arr[2] = 0 => then skip this element => i++
+     *                           arr[3] = 3 => it should be 4, but we have 3, which should be value of index 2. Therefor swap with index=2 element   =>  {1, 2, 3, 0}
+     *   At the end of sorting iteration all the valid numbers will be present at (value-1) index
+     *   and on indexes where arr[index] != index+1 OR arr[index] == 0 those index are the missing indexes and (index+1) will be missing values
+     *
+     *   STEP-2 : Array after sorting will look like -
+     *          values : {1, 2, 3, 0}
+     *         indexes :  0, 1, 2, 3
+     * => index 3 should contain value = 4, but don't have it, means answer of this question will be 4
+     */
+
     public static void main(String[] args) {
+        System.out.println(missingNumber(new int[]{1,0,2,3}));
+        System.out.println(missingNumber_mathApproach(new int[]{1,0,2,3}));
+
         System.out.println(missingNumber(new int[]{3, 0, 1}));
         System.out.println(missingNumber_mathApproach(new int[]{3, 0, 1}));
 
