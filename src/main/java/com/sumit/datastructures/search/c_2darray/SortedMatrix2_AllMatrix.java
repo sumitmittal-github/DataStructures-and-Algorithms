@@ -63,7 +63,7 @@ public class SortedMatrix2_AllMatrix {
         if(target == matrix[startRow+1][midCol])
             return new int[]{startRow+2, midCol};
 
-        
+
         // STEP-3 :
         // target was not available in the middle elements
         // means the target is present in the left or right side of the middle elements => which are 4 sorted arrays
