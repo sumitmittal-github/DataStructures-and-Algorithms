@@ -9,6 +9,8 @@ public class CyclicSort5_AllDuplicates {
 
     public static void main(String[] args) {
         System.out.println(findDuplicates(new int[]{4,3,2,2,3,1}));
+        System.out.println(findDuplicates(new int[]{1,1,2}));
+        System.out.println(findDuplicates(new int[]{1}));
     }
 
     public static List<Integer> findDuplicates(int[] nums) {
@@ -32,7 +34,7 @@ public class CyclicSort5_AllDuplicates {
             if(nums[i] == i+1)
                 i++;
             else {
-                // element is duplicate, hence add in duplicate list and skip.
+                // element is duplicate hence skip
                 if(nums[i] == nums[nums[i]-1])
                     i++;
                 else
