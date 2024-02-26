@@ -22,11 +22,28 @@ public class CyclicSort4_DuplicateNumber {
 
     public static void main(String[] args) {
         System.out.println(findDuplicate(new int[]{1, 3, 4, 2, 2}));
+        System.out.println(findDuplicateOptimized(new int[]{1, 3, 4, 2, 2}));
+        System.out.println("------------------------");
+
         System.out.println(findDuplicate(new int[]{1, 1, 3, 4, 2}));
+        System.out.println(findDuplicateOptimized(new int[]{1, 1, 3, 4, 2}));
+        System.out.println("------------------------");
+
         System.out.println(findDuplicate(new int[]{3, 1, 3, 4, 2}));
+        System.out.println(findDuplicateOptimized(new int[]{3, 1, 3, 4, 2}));
+        System.out.println("------------------------");
+
         System.out.println(findDuplicate(new int[]{1}));
+        System.out.println(findDuplicateOptimized(new int[]{1}));
+        System.out.println("------------------------");
+
         System.out.println(findDuplicate(new int[]{}));
+        System.out.println(findDuplicateOptimized(new int[]{}));
+        System.out.println("------------------------");
+
         System.out.println(findDuplicate(new int[]{5, 1, 3, 4, 2}));
+        System.out.println(findDuplicateOptimized(new int[]{5, 1, 3, 4, 2}));
+        System.out.println("------------------------");
     }
 
     public static int findDuplicate(int[] nums) {
@@ -49,6 +66,21 @@ public class CyclicSort4_DuplicateNumber {
         for(int index = 0; index <= nums.length-1; index++) {
             if(nums[index] != index+1)
                 return nums[index];
+        }
+        return -1;
+    }
+
+    public static int findDuplicateOptimized(int[] nums) {
+        int i = 0;
+        while(i <= nums.length-1) {
+            if(nums[i] != i+1) {
+                // check if on that index same element already available then that is our answer
+                if(nums[i] == nums[nums[i]-1])
+                    return nums[i];
+                else
+                    swap(nums, i, nums[i]-1);
+            } else
+                i++;
         }
         return -1;
     }
