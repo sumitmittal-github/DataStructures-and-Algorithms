@@ -10,7 +10,7 @@ public class Pattern_6 {
 5 4 3 2 1 2 3 4 5
  */
     public static void main(String[] args) {
-        pattern(5);
+        pattern(10);
         /**
         Ex: n = 5                                   part-1 count          part-2 count       part-2 string
           row=1  ________1____                   (n-row)*2 spaces    +    2*row-1           row -> 1 -> row
