@@ -34,11 +34,10 @@ public class BubbleSort1_Array {
     // we are not returning the existing array because we will sort the existing array
     // because bubble sort comes under inplace sorting technique.
     private static void bubbleSort(int[] arr) {
-        boolean isSwapped;
 
         // iterate the entire array n-1 times
         for(int i = 0; i < arr.length; i++) {
-            isSwapped = false;
+            boolean isSwapped = false;
             // after each iteration the max element will come at the last respective index
             for (int j = 1; j < arr.length-i; j++) {
                 if(arr[j] < arr[j-1]){
