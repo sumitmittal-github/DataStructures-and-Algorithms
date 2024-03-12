@@ -37,12 +37,12 @@ public class FibonacciSeries {
         return fabNum;
     }
 
-    private static int getNthFibonacciNumberWithFormula(int position){
+    private static long getNthFibonacciNumberWithFormula(int position){
         double squareRoot5 = Math.sqrt(5);
         double part1 = Math.pow( ((1+squareRoot5)/2), position);
         double part2 = Math.pow( ((1-squareRoot5)/2), position);        // we can also remove this part2 as it is less dominating term
 
-        return (int)((part1-part2)/squareRoot5);
+        return (long)((part1-part2)/squareRoot5);
     }
 
 }
