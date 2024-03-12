@@ -11,7 +11,8 @@ public class FibonacciSeries {
         int position = scanner.nextInt();
 
         while(position >= 0) {
-            System.out.println(getNthFibonacciNumber(position));
+            System.out.println("With For Loop : " + getNthFibonacciNumber(position));
+            System.out.println("With Formula  : " + getNthFibonacciNumberWithFormula(position));
             System.out.print("Please enter the position : ");
             position = scanner.nextInt();
         }
@@ -34,6 +35,14 @@ public class FibonacciSeries {
             }
         }
         return fabNum;
+    }
+
+    private static int getNthFibonacciNumberWithFormula(int position){
+        double squareRoot5 = Math.sqrt(5);
+        double part1 = Math.pow( ((1+squareRoot5)/2), position);
+        double part2 = Math.pow( ((1-squareRoot5)/2), position);
+
+        return (int)((part1-part2)/squareRoot5);
     }
 
 }
