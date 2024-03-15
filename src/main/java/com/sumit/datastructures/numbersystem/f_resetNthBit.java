@@ -9,8 +9,8 @@ public class f_resetNthBit {
      * reset 4th bit => 1   0   1   1   1   1   1   0 => 190
      * reset 5th bit => 1   0   1   0   0   1   1   0 => 166
      *
-     * Concept  : if nth bit is 0 then & nth digit with 1, to make it 1
-     *            if nth bit is 1 then & nth digit with 0, to make it 0
+     * Concept  : if nth bit is 0 ->     OR nth digit with 1, to make it 1
+     *            if nth bit is 1 ->    AND nth digit with 0, to make it 0
      */
 
     public static void main(String[] args) {
