@@ -15,18 +15,43 @@ public class f_resetNthBit {
 
     public static void main(String[] args) {
         //decimal = 182       =>        binary : 10110110
-        System.out.println("4th Bit : " + resetNthBit(182, 4));      //10111110 => 190
-        System.out.println("5th Bit : " + resetNthBit(182, 5));      //10100110 => 166
+        System.out.println("4th Bit : " + resetNthBitWithExor(182, 4));      //10111110 => 190
+        System.out.println("4th Bit : " + resetNthBitWithAndOr(182, 4));      //10111110 => 190
+
+        System.out.println("5th Bit : " + resetNthBitWithExor(182, 5));      //10100110 => 166
+        System.out.println("5th Bit : " + resetNthBitWithAndOr(182, 5));      //10100110 => 166
     }
 
-    public static int resetNthBit(int num, int n) {
+    public static int resetNthBitWithExor(int num, int n) {
+        /**
+            Logic : a^0 =  a
+                    a^1 = ~a
+
+             Ex-1 : if 4th bit is 0, and we want to complement it
+                     1   0   1   1   0   1   1   0
+                   ^ 0   0   0   0   1   0   0   0
+                    -------------------------------
+                     1   0   1   1   1   1   1   0
+
+             Ex-2 : if 5th bit is 1, and we want to complement it
+                     1   0   1   1   0   1   1   0
+                   ^ 0   0   0   1   0   0   0   0
+                    -------------------------------
+                     1   0   1   0   0   1   1   0
+        */
+
+        int mask = 1 << (n-1);
+        return num ^ mask;
+    }
+
+    public static int resetNthBitWithAndOr(int num, int n) {
         int nthBit = checkNthBit(num, n);
         if(nthBit == 0){
-            // if nth bit is 0, and we want to make it 1 then & that digit with 1
+            // if nth bit is 0, and we want to make it 1 then =>        OR that digit with 1
             int mask = 1 << (n-1);
             return num | mask;
         } else {
-            // if nth bit is 1, and we want to make it 0 then & that digit with 0
+            // if nth bit is 1, and we want to make it 0 then =>        AND that digit with 0
             int maskCompliment = ~(1 << (n-1));
             return num & maskCompliment;
         }
