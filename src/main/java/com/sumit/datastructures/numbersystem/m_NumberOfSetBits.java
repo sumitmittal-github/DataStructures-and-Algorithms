@@ -33,7 +33,7 @@ public class m_NumberOfSetBits {
     private static int numberOfSetBits2(int num) {
         int count = 0;
         while(num > 0) {
-            // STEP-1 : Calculate the Right most set bit.
+            // STEP-1 : Calculate the Right most set bit =>   (n & -n)
             // if num = 0011 0000  =>  rightmostSetBinary = 0001 0000
             int rightmostSetBinary = num & (~num+1);
             count++;

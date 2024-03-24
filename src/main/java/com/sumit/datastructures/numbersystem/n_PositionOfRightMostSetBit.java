@@ -19,9 +19,9 @@ public class n_PositionOfRightMostSetBit {
         System.out.println("Position of right most set bit for 54 : " + findPositionOfRightMostSetBit2(54));     // 0011 0110
     }
 
-    // Logic : (n&~(n-1)) always return the binary number containing the rightmost set bit as 1
+    // Logic : (n & -n) always return the binary number containing the rightmost set bit as 1
     private static int findPositionOfRightMostSetBit(int num){
-        int rightmostSetBinary = num & ~(num-1);
+        int rightmostSetBinary = num & (~num+1);
 
         int position=0;
         while(rightmostSetBinary > 0){
