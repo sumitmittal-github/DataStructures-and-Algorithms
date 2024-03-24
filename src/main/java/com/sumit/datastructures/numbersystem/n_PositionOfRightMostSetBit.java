@@ -38,7 +38,8 @@ public class n_PositionOfRightMostSetBit {
 
     private static int findPositionOfRightMostSetBit2(int num){
         // if num = 0011 0000
-        int rightmostSetBinary = num & ~(num-1);                    // rightmostSetBinary = 0001 0000
+        int numComplementary = ~num+1;
+        int rightmostSetBinary = num & numComplementary;                    // rightmostSetBinary = 0001 0000
 
         // now the number of digits in base 2 will be the answer
         int numbersOfDigits = (int)(Math.log(rightmostSetBinary) / Math.log(2)) + 1;

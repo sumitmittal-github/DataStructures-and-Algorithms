@@ -30,7 +30,6 @@ public class l_Power {
                 answer = answer * base;
             }
 
-
             base = base * base;
             power = power>>1;
         }
