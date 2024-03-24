@@ -7,6 +7,8 @@ public class Factor_1_GeneralApproach {
         factors(20);
     }
 
+    // Space Complexity - O(1)
+    // Time Complexity  - O(n)
     private static void factors(int num) {
         for (int i = 1; i <= num; i++) {
             if(num % i == 0)
