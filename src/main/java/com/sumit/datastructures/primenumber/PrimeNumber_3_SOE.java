@@ -1,9 +1,5 @@
 package com.sumit.datastructures.primenumber;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
 // Sieve Of Eratosthenes : to get all prime numbers till N
 public class PrimeNumber_3_SOE {
 
@@ -26,7 +22,7 @@ public class PrimeNumber_3_SOE {
             // but its multiple are definitely not a prime number.
             // hence straight away mark its multiple as not prime
             if(!notPrimeNumbersArr[i]) {             // skip this index if it is already marked as not prime
-                for (int j = i*2; j <= n; j=j+i) {   // for i=2 keep on adding 2, for i=3 keep on adding 3
+                for (int j = i*2; j <= n; j=j+i) {   // for i=2 keep on adding 2 => 2,4,6,8,10,..., for i=3 keep on adding 3
                     notPrimeNumbersArr[j] = true;
                 }
             }
