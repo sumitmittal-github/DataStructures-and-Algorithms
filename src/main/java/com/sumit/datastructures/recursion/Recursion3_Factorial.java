@@ -17,7 +17,7 @@ public class Recursion3_Factorial {
     }
 
     private static int factorialByRecursion(int num) {
-        if(num == 1)
+        if(num <= 1)
             return 1;
         return num * factorialByRecursion(num-1);
     }
