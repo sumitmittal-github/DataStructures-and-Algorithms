@@ -1,6 +1,6 @@
 package com.sumit.datastructures.recursion;
 
-public class Recursion5_SumOfDigits {
+public class Recursion6_SumOfDigits {
 
     public static void main(String[] args) {
         System.out.println(sumOfDigitsByGeneralApproach(3124));

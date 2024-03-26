@@ -1,6 +1,6 @@
 package com.sumit.datastructures.recursion;
 
-public class Recursion6_ReverseNumber {
+public class Recursion7_ReverseNumber {
 
     private static int reverseNum = 0;
 
