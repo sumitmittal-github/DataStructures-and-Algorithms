@@ -4,6 +4,11 @@ import java.util.Arrays;
 
 public class BubbleSort1_Array {
 
+/**
+    NOTE : We also did bubble sort using recursion
+           Please check recursion -> sorting -> bubble sort class
+*/
+
     public static void main(String[] args) {
         int[] arr1 = {10, 30, 20, 50, 40};
         bubbleSort(arr1);
