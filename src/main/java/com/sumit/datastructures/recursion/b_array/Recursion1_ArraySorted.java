@@ -6,18 +6,22 @@ public class Recursion1_ArraySorted {
         int[] arr1 = {1, 2, 4, 8, 9, 12};
         System.out.println(isArraySorted(arr1));
         System.out.println(isArraySortedWithRecursion(arr1));
+        System.out.println(isArraySortedWithRecursion2(arr1));
 
         int[] arr2 = {1, 2, 4, 8, 9, 12, -67};
         System.out.println(isArraySorted(arr2));
         System.out.println(isArraySortedWithRecursion(arr2));
+        System.out.println(isArraySortedWithRecursion2(arr2));
 
         int[] arr3 = {};
         System.out.println(isArraySorted(arr3));
         System.out.println(isArraySortedWithRecursion(arr3));
+        System.out.println(isArraySortedWithRecursion2(arr3));
 
         int[] arr4 = {3};
         System.out.println(isArraySorted(arr4));
         System.out.println(isArraySortedWithRecursion(arr4));
+        System.out.println(isArraySortedWithRecursion2(arr4));
 
     }
 
@@ -37,7 +41,7 @@ public class Recursion1_ArraySorted {
         return true;
     }
 
-    // Way-1 : with recursion
+    // Way-2 : with recursion
     private static boolean isArraySortedWithRecursion(int[] arr) {
         if(arr == null || arr.length == 0)
             return false;
@@ -56,4 +60,20 @@ public class Recursion1_ArraySorted {
         return helper(arr,currentIndex+1);
     }
 
+
+    // Way-3 : with recursion and AND operator
+    private static boolean isArraySortedWithRecursion2(int[] arr) {
+        if(arr == null || arr.length == 0)
+            return false;
+        if(arr.length == 1)
+            return true;
+        return helper2(arr, 0);
+    }
+
+    private static boolean helper2(int[] arr, int currentIndex) {
+        if(currentIndex == arr.length-1)
+            return true;
+
+        return (arr[currentIndex] <= arr[currentIndex+1]) && helper2(arr,currentIndex+1);
+    }
 }
