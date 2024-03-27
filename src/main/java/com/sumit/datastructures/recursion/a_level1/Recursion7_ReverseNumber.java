@@ -1,4 +1,4 @@
-package com.sumit.datastructures.recursion;
+package com.sumit.datastructures.recursion.a_level1;
 
 public class Recursion7_ReverseNumber {
 

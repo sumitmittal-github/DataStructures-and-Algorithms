@@ -1,4 +1,4 @@
-package com.sumit.datastructures.recursion;
+package com.sumit.datastructures.recursion.a_level1;
 
 // https://leetcode.com/problems/number-of-steps-to-reduce-a-number-to-zero/description/
 
