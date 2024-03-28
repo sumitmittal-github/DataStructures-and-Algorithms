@@ -1,4 +1,4 @@
-package com.sumit.datastructures.j_recursion;
+package com.sumit.datastructures.j_recursion.a_basics;
 
 public class Recursion3_Factorial {
 
