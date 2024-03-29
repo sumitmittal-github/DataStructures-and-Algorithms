@@ -3,6 +3,7 @@ package com.sumit.datastructures.j_recursion.f_maze;
 import java.util.LinkedList;
 import java.util.List;
 
+// Here we can move in right and down directions
 public class Maze1_Basic {
 
     //Que: write down and count all the ways we can reach till end from (4,4) to (1,1) matrix

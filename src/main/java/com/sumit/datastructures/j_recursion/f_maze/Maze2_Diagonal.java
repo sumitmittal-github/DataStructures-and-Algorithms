@@ -3,6 +3,7 @@ package com.sumit.datastructures.j_recursion.f_maze;
 import java.util.LinkedList;
 import java.util.List;
 
+// Here we can move right, down and diagonal directions
 public class Maze2_Diagonal {
 
     //Que: write down and count all the ways we can reach till end from (4,4) to (1,1) matrix
@@ -14,8 +15,6 @@ public class Maze2_Diagonal {
         System.out.println(stepsCount(4,4));
         System.out.println(stepsList(4,4, ""));
         System.out.println(stepsList2(4,4, ""));
-
-
     }
 
     public static int stepsCount(int row, int column) {
