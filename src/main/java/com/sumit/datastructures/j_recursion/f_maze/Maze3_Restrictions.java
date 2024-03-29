@@ -17,13 +17,13 @@ public class Maze3_Restrictions {
         };
 
         // Note : we are considering the length of allowedCells matrix is the maze length.
-        System.out.println(stepsCount(0, 0, allowedCells, ""));
-        System.out.println(stepsList(0, 0, allowedCells, ""));
+        System.out.println(pathsCount(0, 0, allowedCells, ""));
+        System.out.println(allPaths(0, 0, allowedCells, ""));
 
 
     }
 
-    public static int stepsCount(int row, int column, boolean[][] allowedCells, String answer){
+    public static int pathsCount(int row, int column, boolean[][] allowedCells, String answer){
         int count = 0;
 
         // base condition
@@ -40,16 +40,16 @@ public class Maze3_Restrictions {
 
         // count when moved right
         if(column < allowedCells[0].length-1)
-            count += stepsCount(row, column+1, allowedCells, answer+"R");
+            count += pathsCount(row, column+1, allowedCells, answer+"R");
 
         // count when moved down
         if(row < allowedCells.length-1)
-            count += stepsCount(row+1, column, allowedCells, answer+"D");
+            count += pathsCount(row+1, column, allowedCells, answer+"D");
 
         return count;
     }
 
-    public static List<String> stepsList(int row, int column, boolean[][] allowedCells, String answer){
+    public static List<String> allPaths(int row, int column, boolean[][] allowedCells, String answer){
         List<String> steps = new LinkedList<>();
 
         // base condition
@@ -66,14 +66,14 @@ public class Maze3_Restrictions {
 
         // count when moved right
         if(column < allowedCells[0].length-1){
-            List<String> right = stepsList(row, column+1, allowedCells, answer+"R");
+            List<String> right = allPaths(row, column+1, allowedCells, answer+"R");
             if(right != null)
             steps.addAll(right);
         }
 
         // count when moved down
         if(row < allowedCells.length-1){
-            List<String> down = stepsList(row+1, column, allowedCells, answer+"D");
+            List<String> down = allPaths(row+1, column, allowedCells, answer+"D");
             if(down != null)
                 steps.addAll(down);
         }

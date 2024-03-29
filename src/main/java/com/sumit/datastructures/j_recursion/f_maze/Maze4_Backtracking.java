@@ -16,17 +16,17 @@ public class Maze4_Backtracking {
         };
 
         // Note : we are considering the length of allowedCells matrix is the maze length.
-        System.out.println(stepsList(0, 0, allowedCells, ""));
+        System.out.println(allPaths(0, 0, allowedCells, ""));
     }
 
 
-    public static List<String> stepsList(int row, int column, boolean[][] allowedCells, String answer){
-        List<String> steps = new LinkedList<>();
+    public static List<String> allPaths(int row, int column, boolean[][] allowedCells, String answer){
+        List<String> paths = new LinkedList<>();
 
         // base condition
         if(row == allowedCells.length-1 && column == allowedCells[0].length-1) {
-            steps.add(answer);
-            return steps;
+            paths.add(answer);
+            return paths;
         }
 
         // return (cancel) this recursion call if we are at restricted cell
@@ -41,36 +41,36 @@ public class Maze4_Backtracking {
 
         // count when moved right
         if(column < allowedCells[0].length-1){
-            List<String> right = stepsList(row, column+1, allowedCells, answer+"R");
+            List<String> right = allPaths(row, column+1, allowedCells, answer+"R");
             if(right != null)
-                steps.addAll(right);
+                paths.addAll(right);
         }
 
         // count when moved left
         if(column > 0){
-            List<String> left = stepsList(row, column-1, allowedCells, answer+"L");
+            List<String> left = allPaths(row, column-1, allowedCells, answer+"L");
             if(left != null)
-                steps.addAll(left);
+                paths.addAll(left);
         }
 
         // count when moved down
         if(row < allowedCells.length-1){
-            List<String> down = stepsList(row+1, column, allowedCells, answer+"D");
+            List<String> down = allPaths(row+1, column, allowedCells, answer+"D");
             if(down != null)
-                steps.addAll(down);
+                paths.addAll(down);
         }
 
         // count when moved up
         if(row > 0){
-            List<String> up = stepsList(row-1, column, allowedCells, answer+"U");
+            List<String> up = allPaths(row-1, column, allowedCells, answer+"U");
             if(up != null)
-                steps.addAll(up);
+                paths.addAll(up);
         }
 
         // before returning re-marked the cell as TRUE
         allowedCells[row][column] = true;
 
-        return steps;
+        return paths;
     }
 
 }
