@@ -1,4 +1,4 @@
-package com.sumit.datastructures.j_recursion.f_maze;
+package com.sumit.datastructures.k_maze_backtracking;
 
 import java.util.Arrays;
 import java.util.LinkedList;
