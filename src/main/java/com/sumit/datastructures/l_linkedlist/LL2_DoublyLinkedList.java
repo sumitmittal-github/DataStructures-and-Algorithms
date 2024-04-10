@@ -19,6 +19,10 @@ public class LL2_DoublyLinkedList {
     }
 
     public Node insertLast(int value) {
+        if(head == null){
+            return insertFirst(value);
+        }
+
         Node node = new Node(value);
 
         Node lastNode = getLastNode();
@@ -31,7 +35,7 @@ public class LL2_DoublyLinkedList {
     }
 
     public Node insert(int value, int index){
-        if(index == 0){
+        if(index == 0 || head == null){
             return insertFirst(value);
         }
 
