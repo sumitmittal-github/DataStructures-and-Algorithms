@@ -1,10 +1,10 @@
 package com.sumit.datastructures.l_linkedlist;
 
-public class LL2_DoublyLinkedListMain {
+public class LL1_SinglyMain {
 
     public static void main(String[] args) {
 
-        LL2_DoublyLinkedList ll = new LL2_DoublyLinkedList();
+        LL1_Singly ll = new LL1_Singly();
         ll.insertFirst(1);
         ll.insertLast(2);
         ll.insertFirst(3);

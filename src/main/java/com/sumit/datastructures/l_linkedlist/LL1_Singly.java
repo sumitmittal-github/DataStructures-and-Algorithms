@@ -1,12 +1,12 @@
 package com.sumit.datastructures.l_linkedlist;
 
-public class LL1_SinglyLinkedList {
+public class LL1_Singly {
 
     private Node head;
     private Node tail;
     private int size;
 
-    public LL1_SinglyLinkedList(){
+    public LL1_Singly(){
         size=0;
     }
 

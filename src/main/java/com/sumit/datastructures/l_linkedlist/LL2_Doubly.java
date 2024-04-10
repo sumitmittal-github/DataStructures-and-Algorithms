@@ -1,6 +1,6 @@
 package com.sumit.datastructures.l_linkedlist;
 
-public class LL2_DoublyLinkedList {
+public class LL2_Doubly {
 
     private Node head;
 
