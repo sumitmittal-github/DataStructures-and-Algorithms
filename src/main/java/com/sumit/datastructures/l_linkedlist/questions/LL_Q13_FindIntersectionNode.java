@@ -34,38 +34,36 @@ public class LL_Q13_FindIntersectionNode {
         if(head1 == head2)
             return head1;
 
-        ListNode tempHead1 = head1;
-        ListNode tempHead2 = head2;
+        ListNode temp1 = head1;
+        ListNode temp2 = head2;
 
 
         // STEP-1 : get length of both the lists
-        int length1 = length(tempHead1);
-        int length2 = length(tempHead2);
+        int length1 = length(temp1);
+        int length2 = length(temp2);
 
 
         // STEP-2 : forward the bigger list head diff times
         if(length1 > length2) {
             int diff = length1 - length2;
-            while(diff != 0){
-                tempHead1 = tempHead1.next;
-                diff--;
+            for (int i = 1; i <= diff; i++) {
+                temp1 = temp1.next;
             }
         } else{
             int diff = length2 - length1;
-            while(diff != 0){
-                tempHead2 = tempHead2.next;
-                diff--;
+            for (int i = 1; i <= diff; i++) {
+                temp2 = temp2.next;
             }
         }
 
 
         // STEP-3 : forward both head till they meet
-        while(tempHead1 != tempHead2) {
-            tempHead1 = tempHead1.next;
-            tempHead2 = tempHead2.next;
+        while(temp1 != temp2) {
+            temp1 = temp1.next;
+            temp2 = temp2.next;
         }
 
-        return tempHead1;
+        return temp1;
     }
 
 
