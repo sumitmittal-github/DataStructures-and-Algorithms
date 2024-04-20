@@ -13,7 +13,10 @@ public class LL_Q3_Merge2SortedLists {
     }
 
 
-    public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
+    public ListNode mergeTwoLists(ListNode head1, ListNode head2) {
+        ListNode list1 = head1;
+        ListNode list2 = head2;
+
         if(list1 == null && list2 == null)
             return null;
         if(list1 == null)
@@ -21,9 +24,11 @@ public class LL_Q3_Merge2SortedLists {
         if(list2 == null)
             return list1;
 
+
         // adding dummy head node
         ListNode output = new ListNode(0, null);
         ListNode head = output;
+
         while(list1 != null || list2 != null) {
             if (list1 != null && list2 != null) {
                 if(list1.val < list2.val){
