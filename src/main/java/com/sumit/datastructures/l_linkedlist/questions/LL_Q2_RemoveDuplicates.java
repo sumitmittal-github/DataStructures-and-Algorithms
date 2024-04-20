@@ -2,7 +2,7 @@ package com.sumit.datastructures.l_linkedlist.questions;
 
 public class LL_Q2_RemoveDuplicates {
 
-    // Leet code : https://leetcode.com/problems/remove-duplicates-from-sorted-list/description/
+    //LeetCode-83 : https://leetcode.com/problems/remove-duplicates-from-sorted-list/description/
 
     public static void main(String[] args) {
         ListNode ll1_way1 = new ListNode(1, new ListNode(1, new ListNode(2, null)));

@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class Question3_SudokuSolver {
 
-    // Leet Code : https://leetcode.com/problems/sudoku-solver/description/
+    //LeetCode-37 : https://leetcode.com/problems/sudoku-solver/description/
 
     public static void main(String[] args) {
         char[][] board = {

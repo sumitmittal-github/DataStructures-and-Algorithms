@@ -2,7 +2,7 @@ package com.sumit.datastructures.l_linkedlist.questions;
 
 public class LL_Q9_SortUsingMergeSort_TODO {
 
-    // Leetcode 148 : https://leetcode.com/problems/sort-list/description/
+    //LeetCode-148 : https://leetcode.com/problems/sort-list/description/
 
     public static void main(String[] args) {
         // Question-0 : linked list with length = 0

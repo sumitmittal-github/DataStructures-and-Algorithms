@@ -1,8 +1,8 @@
 package com.sumit.datastructures.j_recursion.a_basics;
 
-// https://leetcode.com/problems/number-of-steps-to-reduce-a-number-to-zero/description/
-
 public class Recursion10_NumberOfSteps {
+
+    //LeetCode-1342 : https://leetcode.com/problems/number-of-steps-to-reduce-a-number-to-zero/description/
 
     public static void main(String[] args) {
         System.out.println(numberOfSteps(14));

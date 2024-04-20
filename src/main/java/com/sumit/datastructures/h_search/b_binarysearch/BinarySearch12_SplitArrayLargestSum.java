@@ -4,20 +4,21 @@ import java.util.Arrays;
 
 public class BinarySearch12_SplitArrayLargestSum {
 
-    // https://leetcode.com/problems/split-array-largest-sum/description/
+    //LeetCode-410 : https://leetcode.com/problems/split-array-largest-sum/description/
 
     public static void main(String[] args) {
         int[] arr1 = {7, 2, 5, 10, 8};
         int noOfPartitions1 = 2;
-        System.out.println("Partitions : " + noOfPartitions1 + ", Arr : "+ Arrays.toString(arr1)+" => Largest sum : "+splitArrayWithLargestSum(arr1, noOfPartitions1));
+        System.out.println("Partitions : " + noOfPartitions1 + ", Arr : "+ Arrays.toString(arr1)+" => Largest sum : ");
+        System.out.println(new BinarySearch12_SplitArrayLargestSum().splitArray(arr1, noOfPartitions1));
     }
 
-    private static int splitArrayWithLargestSum(int[] arr, int noOfPartitions){
+    public int splitArray(int[] arr, int noOfPartitions){
         int[] range = findRange(arr);
         return binarySearch(arr, noOfPartitions, range[0], range[1]);
     }
 
-    private static int[] findRange(int[] arr) {
+    public int[] findRange(int[] arr) {
         int maxValOfSum = 0;        // will be "end" for our binary search
         int minValOfSum = 0;        // will be "start" for our binary search
         for(int n : arr) {
@@ -31,7 +32,7 @@ public class BinarySearch12_SplitArrayLargestSum {
         return new int[]{minValOfSum, maxValOfSum};
     }
 
-    private static int binarySearch(int[] arr, int noOfPartitions, int start, int end) {
+    public int binarySearch(int[] arr, int noOfPartitions, int start, int end) {
 
         while(start < end) {
             int mid = start + (end-start)/2;    // max sum of each partition
@@ -49,7 +50,7 @@ public class BinarySearch12_SplitArrayLargestSum {
     }
 
     // if max sum of each partition can be "maxSum", then how many partitions it will have
-    private static int numberOfPartitionsWithMaxSum(int[] arr, int maxSum){
+    public int numberOfPartitionsWithMaxSum(int[] arr, int maxSum){
         int partitionCount=0;
 
         int tempSum=0;

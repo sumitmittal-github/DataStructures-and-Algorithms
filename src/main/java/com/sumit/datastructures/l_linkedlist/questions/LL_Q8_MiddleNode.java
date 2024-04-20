@@ -2,7 +2,7 @@ package com.sumit.datastructures.l_linkedlist.questions;
 
 public class LL_Q8_MiddleNode {
 
-    // LeetCode 876 : https://leetcode.com/problems/middle-of-the-linked-list/description/
+    //LeetCode-876 : https://leetcode.com/problems/middle-of-the-linked-list/description/
 
     public static void main(String[] args) {
 

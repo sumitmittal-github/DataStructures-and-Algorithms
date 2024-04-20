@@ -12,7 +12,7 @@ public class LL_Q1_InsertUsingRecursion {
         ll.insertUsingRecursion(16, 0);
         ll.display();
     }
-    
+
 
 
     private Node head;

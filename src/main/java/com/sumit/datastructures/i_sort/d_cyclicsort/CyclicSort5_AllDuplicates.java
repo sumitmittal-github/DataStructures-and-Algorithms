@@ -5,7 +5,7 @@ import java.util.List;
 
 public class CyclicSort5_AllDuplicates {
 
-    // Leet code : https://leetcode.com/problems/find-all-duplicates-in-an-array/description/
+    //LeetCode-442 : https://leetcode.com/problems/find-all-duplicates-in-an-array/description/
 
     public static void main(String[] args) {
         System.out.println(findDuplicates(new int[]{4,3,2,2,3,1}));

@@ -2,7 +2,7 @@ package com.sumit.datastructures.l_linkedlist.questions;
 
 public class LL_Q4_Cycle {
 
-    // Leet code : https://leetcode.com/problems/linked-list-cycle/description/
+    //LeetCode-141 : https://leetcode.com/problems/linked-list-cycle/description/
 
     public static void main(String[] args) {
 

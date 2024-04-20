@@ -2,7 +2,7 @@ package com.sumit.datastructures.l_linkedlist.questions;
 
 public class LL_Q6_CycleNode {
 
-    // Leet code : https://leetcode.com/problems/linked-list-cycle-ii/description/
+    //LeetCode-142 : https://leetcode.com/problems/linked-list-cycle-ii/description/
 
     public static void main(String[] args) {
 

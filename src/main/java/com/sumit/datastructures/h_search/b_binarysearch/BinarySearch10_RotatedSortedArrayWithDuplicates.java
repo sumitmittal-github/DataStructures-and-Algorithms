@@ -2,9 +2,9 @@ package com.sumit.datastructures.h_search.b_binarysearch;
 
 public class BinarySearch10_RotatedSortedArrayWithDuplicates {
 
-    // https://leetcode.com/problems/search-in-rotated-sorted-array/description/
-    // Note : It will work even if the array has the duplicate elements
+    //LeetCode-33 : https://leetcode.com/problems/search-in-rotated-sorted-array/description/
 
+    // Note : It will work even if the array has the duplicate elements
     public static void main(String[] args) {
         // Index :   0  1  2  3  4  5  6   7  8   9
         int[] arr = {4, 5, 6, 7, 8, 9, 10, 1, 2, 3};
