@@ -1,6 +1,6 @@
 package com.sumit.datastructures.l_linkedlist.questions;
 
-public class Question3_Merge2SortedLists {
+public class LL_Q3_Merge2SortedLists {
 
     // Leet code : https://leetcode.com/problems/merge-two-sorted-lists/description/
 
@@ -8,8 +8,8 @@ public class Question3_Merge2SortedLists {
         ListNode ll1 = new ListNode(1, new ListNode(2, new ListNode(4, null)));
         ListNode ll2 = new ListNode(1, new ListNode(3, new ListNode(4, null)));
 
-        ListNode ans = new Question3_Merge2SortedLists().mergeTwoLists(ll1, ll2);
-        new Question3_Merge2SortedLists().display(ans);
+        ListNode ans = new LL_Q3_Merge2SortedLists().mergeTwoLists(ll1, ll2);
+        new LL_Q3_Merge2SortedLists().display(ans);
     }
 
 

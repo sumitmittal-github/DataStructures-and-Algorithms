@@ -1,14 +1,11 @@
 package com.sumit.datastructures.l_linkedlist.questions;
 
-import java.util.List;
-import java.util.LinkedList;
-
-public class Question7_HappyNumber {
+public class LL_Q7_HappyNumber {
 
     // Leet code : https://leetcode.com/problems/happy-number/description/
 
     public static void main(String[] args) {
-        System.out.println(new Question7_HappyNumber().isHappy(19));
+        System.out.println(new LL_Q7_HappyNumber().isHappy(19));
     }
 
 

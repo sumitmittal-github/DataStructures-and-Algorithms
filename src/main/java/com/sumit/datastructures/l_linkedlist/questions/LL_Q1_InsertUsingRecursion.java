@@ -1,10 +1,9 @@
 package com.sumit.datastructures.l_linkedlist.questions;
 
-
-class Question1_MainClass {
+public class LL_Q1_InsertUsingRecursion {
 
     public static void main(String[] args) {
-        Question1_InsertUsingRecursion ll = new Question1_InsertUsingRecursion();
+        LL_Q1_InsertUsingRecursion ll = new LL_Q1_InsertUsingRecursion();
         ll.insertUsingRecursion(11, 0);
         ll.insertUsingRecursion(12, 1);
         ll.insertUsingRecursion(13, 2);
@@ -13,14 +12,10 @@ class Question1_MainClass {
         ll.insertUsingRecursion(16, 0);
         ll.display();
     }
+    
 
-}
-public class Question1_InsertUsingRecursion {
 
     private Node head;
-
-
-
 
     // insert in LL using recursion
     public void insertUsingRecursion(int inputValue, int inputIndex){
@@ -65,4 +60,5 @@ public class Question1_InsertUsingRecursion {
             this.next = next;
         }
     }
+
 }

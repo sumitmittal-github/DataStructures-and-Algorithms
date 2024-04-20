@@ -1,6 +1,6 @@
 package com.sumit.datastructures.l_linkedlist.questions;
 
-public class Question5_CycleLength {
+public class LL_Q5_CycleLength {
 
     public static void main(String[] args) {
 
@@ -12,19 +12,19 @@ public class Question5_CycleLength {
         q1_ll1.next = q1_ll2;
         q1_ll2.next = q1_ll3;
         q1_ll3.next = q1_ll4;
-        System.out.println(new Question5_CycleLength().cycleLength(q1_ll1));
+        System.out.println(new LL_Q5_CycleLength().cycleLength(q1_ll1));
 
         // Question-2 : which has a cycle of length : 2
         ListNode q2_ll1 = new ListNode(1, null);
         ListNode q2_ll2 = new ListNode(2, null);
         q2_ll1.next = q2_ll2;
         q2_ll2.next = q2_ll1;
-        System.out.println(new Question5_CycleLength().cycleLength(q2_ll1));
+        System.out.println(new LL_Q5_CycleLength().cycleLength(q2_ll1));
 
         // Question-3 : which has a cycle of length : 1
         ListNode q3_ll1 = new ListNode(1, null);
         q3_ll1.next = q3_ll1;
-        System.out.println(new Question5_CycleLength().cycleLength(q3_ll1));
+        System.out.println(new LL_Q5_CycleLength().cycleLength(q3_ll1));
 
         // Question-4 : which do not have a cycle
         ListNode q4_ll1 = new ListNode(1, null);
@@ -34,11 +34,11 @@ public class Question5_CycleLength {
         q4_ll1.next = q4_ll2;
         q4_ll2.next = q4_ll3;
         q4_ll3.next = q4_ll4;
-        System.out.println(new Question5_CycleLength().cycleLength(q4_ll1));
+        System.out.println(new LL_Q5_CycleLength().cycleLength(q4_ll1));
 
         // Question-5 : which do not have a cycle
         ListNode q5_ll1 = new ListNode(1, null);
-        System.out.println(new Question5_CycleLength().cycleLength(q5_ll1));
+        System.out.println(new LL_Q5_CycleLength().cycleLength(q5_ll1));
 
     }
 

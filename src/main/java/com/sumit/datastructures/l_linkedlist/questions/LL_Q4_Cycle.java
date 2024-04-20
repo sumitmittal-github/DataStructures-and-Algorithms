@@ -1,6 +1,6 @@
 package com.sumit.datastructures.l_linkedlist.questions;
 
-public class Question4_Cycle {
+public class LL_Q4_Cycle {
 
     // Leet code : https://leetcode.com/problems/linked-list-cycle/description/
 
@@ -14,14 +14,14 @@ public class Question4_Cycle {
         q1_ll1.next = q1_ll2;
         q1_ll2.next = q1_ll3;
         q1_ll3.next = q1_ll4;
-        System.out.println(new Question4_Cycle().hasCycle(q1_ll1));
+        System.out.println(new LL_Q4_Cycle().hasCycle(q1_ll1));
 
         // Question-2 : which has a cycle
         ListNode q2_ll1 = new ListNode(1, null);
         ListNode q2_ll2 = new ListNode(2, null);
         q2_ll1.next = q2_ll2;
         q2_ll2.next = q2_ll1;
-        System.out.println(new Question4_Cycle().hasCycle(q2_ll1));
+        System.out.println(new LL_Q4_Cycle().hasCycle(q2_ll1));
 
         // Question-3 : which do not have a cycle
         ListNode q3_ll1 = new ListNode(1, null);
@@ -31,11 +31,11 @@ public class Question4_Cycle {
         q3_ll1.next = q3_ll2;
         q3_ll2.next = q3_ll3;
         q3_ll3.next = q3_ll4;
-        System.out.println(new Question4_Cycle().hasCycle(q3_ll1));
+        System.out.println(new LL_Q4_Cycle().hasCycle(q3_ll1));
 
         // Question-4 : which do not have a cycle
         ListNode q4_ll1 = new ListNode(1, null);
-        System.out.println(new Question4_Cycle().hasCycle(q4_ll1));
+        System.out.println(new LL_Q4_Cycle().hasCycle(q4_ll1));
     }
 
     public boolean hasCycle(ListNode head) {
