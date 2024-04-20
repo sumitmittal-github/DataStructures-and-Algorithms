@@ -59,7 +59,7 @@ public class LL_Q11_NthNodeFromLast {
 
 
 
-    // Approach-2 : has only 1 iteration
+    // Approach-2 : Better approach because here we have only 1 iteration
     public ListNode findNthNodeFromLast_Approach2(ListNode head, int n){
         if(head == null || head.next == null)
             return head;
