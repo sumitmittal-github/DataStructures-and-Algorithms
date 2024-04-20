@@ -1,13 +1,13 @@
-package com.sumit.datastructures.j_recursion.e_questions;
+package com.sumit.datastructures.j_recursion.questions;
 
 import java.util.LinkedList;
 import java.util.List;
 
-public class Question2_DiceTotalSum {
+public class Recur_Q2_DiceTotalSum {
 
     public static void main(String[] args) {
-        System.out.println(new Question2_DiceTotalSum().getDiceCountToGetTotalSumAsN(6, ""));
-        System.out.println(new Question2_DiceTotalSum().getAllDiceCombinationsToGetTotalSumAsN(6, ""));
+        System.out.println(new Recur_Q2_DiceTotalSum().getDiceCountToGetTotalSumAsN(6, ""));
+        System.out.println(new Recur_Q2_DiceTotalSum().getAllDiceCombinationsToGetTotalSumAsN(6, ""));
     }
 
     public int getDiceCountToGetTotalSumAsN(int target, String answer) {

@@ -1,6 +1,6 @@
 package com.sumit.datastructures.k_maze_backtracking.questions;
 
-public class Question1_NQueens {
+public class BT_Q1_NQueens {
 
     public static void main(String[] args) {
         int n=5;

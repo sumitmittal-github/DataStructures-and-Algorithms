@@ -1,14 +1,14 @@
-package com.sumit.datastructures.j_recursion.e_questions;
+package com.sumit.datastructures.j_recursion.questions;
 
 import java.util.LinkedList;
 import java.util.List;
 
 // Ex - Dice has 15 faces :  1 -> 15
-public class Question3_MoreFacesDiceTotalSum {
+public class Recur_Q3_MoreFacesDiceTotalSum {
 
     public static void main(String[] args) {
-        System.out.println(new Question3_MoreFacesDiceTotalSum().getDiceCountToGetTotalSumAsN(15, 6, ""));
-        System.out.println(new Question3_MoreFacesDiceTotalSum().getAllDiceCombinationsToGetTotalSumAsN(15, 6, ""));
+        System.out.println(new Recur_Q3_MoreFacesDiceTotalSum().getDiceCountToGetTotalSumAsN(15, 6, ""));
+        System.out.println(new Recur_Q3_MoreFacesDiceTotalSum().getAllDiceCombinationsToGetTotalSumAsN(15, 6, ""));
     }
 
     public int getDiceCountToGetTotalSumAsN(int totalFaces, int target, String answer) {

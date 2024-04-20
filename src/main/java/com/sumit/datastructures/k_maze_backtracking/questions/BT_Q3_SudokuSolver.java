@@ -2,7 +2,7 @@ package com.sumit.datastructures.k_maze_backtracking.questions;
 
 import java.util.Arrays;
 
-public class Question3_SudokuSolver {
+public class BT_Q3_SudokuSolver {
 
     //LeetCode-37 : https://leetcode.com/problems/sudoku-solver/description/
 
