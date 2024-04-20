@@ -1,6 +1,6 @@
 package com.sumit.datastructures.l_linkedlist.questions;
 
-public class LL_Q11_NthNodeFromLast {
+public class LL_Q11_FindNthNodeFromLast {
 
 
     public static void main(String[] args) {
@@ -9,7 +9,7 @@ public class LL_Q11_NthNodeFromLast {
                                     new ListNode(100,
                                             new ListNode(50,
                                                     new ListNode(20, null)))));
-        LL_Q11_NthNodeFromLast obj = new LL_Q11_NthNodeFromLast();
+        LL_Q11_FindNthNodeFromLast obj = new LL_Q11_FindNthNodeFromLast();
 
 
         System.out.println(obj.findNthNodeFromLast_Approach1(q1_ll1, 1).val);
