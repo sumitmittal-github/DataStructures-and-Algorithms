@@ -5,30 +5,26 @@ public class LL_Q2_RemoveDuplicates {
     //LeetCode-83 : https://leetcode.com/problems/remove-duplicates-from-sorted-list/description/
 
     public static void main(String[] args) {
+        LL_Q2_RemoveDuplicates obj = new LL_Q2_RemoveDuplicates();
+
         ListNode ll1_way1 = new ListNode(1, new ListNode(1, new ListNode(2, null)));
-        new LL_Q2_RemoveDuplicates().display(ll1_way1);
-        ListNode ll1_way1_ans = new LL_Q2_RemoveDuplicates().deleteDuplicates_1(ll1_way1);
-        new LL_Q2_RemoveDuplicates().display(ll1_way1_ans);
+        display(ll1_way1);
+        display(obj.deleteDuplicates_1(ll1_way1));
         System.out.println("--------------------");
 
         ListNode ll1_way2 = new ListNode(1, new ListNode(1, new ListNode(2, null)));
-        new LL_Q2_RemoveDuplicates().display(ll1_way2);
-        ListNode ll1_way2_ans = new LL_Q2_RemoveDuplicates().deleteDuplicates_2(ll1_way2);
-        new LL_Q2_RemoveDuplicates().display(ll1_way2_ans);
+        display(ll1_way2);
+        display(obj.deleteDuplicates_1(ll1_way2));
         System.out.println("--------------------");
 
-
-
         ListNode ll2_way1 = new ListNode(1, new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(3, null)))));
-        new LL_Q2_RemoveDuplicates().display(ll2_way1);
-        ListNode ll2_way1_ans = new LL_Q2_RemoveDuplicates().deleteDuplicates_1(ll2_way1);
-        new LL_Q2_RemoveDuplicates().display(ll2_way1_ans);
+        display(ll2_way1);
+        display(obj.deleteDuplicates_1(ll2_way1));
         System.out.println("--------------------");
 
         ListNode ll2_way2 = new ListNode(1, new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(3, null)))));
-        new LL_Q2_RemoveDuplicates().display(ll2_way2);
-        ListNode ll2_way2_ans = new LL_Q2_RemoveDuplicates().deleteDuplicates_2(ll2_way2);
-        new LL_Q2_RemoveDuplicates().display(ll2_way2_ans);
+        display(ll2_way2);
+        display(obj.deleteDuplicates_1(ll2_way2));
     }
 
     // Way-1 : using iteration
@@ -69,7 +65,7 @@ public class LL_Q2_RemoveDuplicates {
         }
     }
 
-    public void display(ListNode head){
+    public static void display(ListNode head){
         ListNode node = head;
         while(node != null){
             System.out.print(node.val + " -> ");
