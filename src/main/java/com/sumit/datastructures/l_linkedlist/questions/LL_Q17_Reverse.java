@@ -28,7 +28,7 @@ public class LL_Q17_Reverse {
 
         ListNode previous = head;
         ListNode current = head.next;
-        
+
         previous.next = null;
         while(current != null){
             ListNode next = current.next;
