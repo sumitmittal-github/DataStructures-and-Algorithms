@@ -2,6 +2,7 @@ package com.sumit.datastructures.l_linkedlist.questions;
 
 public class LL_Q23_ReverseNodesInKGroup {
 
+    //LeetCode-25 : https://leetcode.com/problems/reverse-nodes-in-k-group/description/
     public ListNode reverseKGroup(ListNode head, int k) {
         if(head == null || head.next == null)
             return head;
