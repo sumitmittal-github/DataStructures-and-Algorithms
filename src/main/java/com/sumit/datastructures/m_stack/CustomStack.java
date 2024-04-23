@@ -38,6 +38,14 @@ public class CustomStack {
         return arr[ptr];
     }
 
+
+    public void display() {
+        for(int i=0; i<=ptr; i++){
+            System.out.print(arr[i] + " ");
+        }
+        System.out.println();
+    }
+
     public boolean isFull(){
         return ptr == arr.length-1;
     }
