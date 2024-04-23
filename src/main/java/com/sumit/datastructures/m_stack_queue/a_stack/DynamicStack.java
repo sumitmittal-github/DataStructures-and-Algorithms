@@ -1,4 +1,4 @@
-package com.sumit.datastructures.m_stack;
+package com.sumit.datastructures.m_stack_queue.a_stack;
 
 public class DynamicStack extends CustomStack {
 

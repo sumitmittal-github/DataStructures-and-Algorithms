@@ -1,6 +1,4 @@
-package com.sumit.datastructures.n_queue;
-
-import com.sumit.datastructures.m_stack.StackException;
+package com.sumit.datastructures.m_stack_queue.b_queue;
 
 public class CustomQueue {
 
