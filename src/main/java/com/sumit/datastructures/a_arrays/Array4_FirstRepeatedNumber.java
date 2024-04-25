@@ -1,16 +1,14 @@
-package com.sumit.datastructures.z_mixprograms;
+package com.sumit.datastructures.a_arrays;
 
-import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.Map;
 
-public class FirstRepeatedNumber {
+public class Array4_FirstRepeatedNumber {
 
     // Question : return 1st repeated number from an array
 
     public static void main(String[] args) {
-        FirstRepeatedNumber obj = new FirstRepeatedNumber();
+        Array4_FirstRepeatedNumber obj = new Array4_FirstRepeatedNumber();
 
         int[] arr = {1, 5, 3, 4, 6, 3, 4};
         System.out.println(obj.firstRepeatedNum_approach1(arr));

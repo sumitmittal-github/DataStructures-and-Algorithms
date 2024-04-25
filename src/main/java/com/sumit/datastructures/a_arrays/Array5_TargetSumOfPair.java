@@ -1,14 +1,14 @@
-package com.sumit.datastructures.z_mixprograms;
+package com.sumit.datastructures.a_arrays;
 
 import java.util.HashMap;
 import java.util.Map;
 
-public class TargetSumOfPair {
+public class Array5_TargetSumOfPair {
 
     // Question : Find the total number of pairs in the array, whose sum is equal to the given value x
 
     public static void main(String[] args) {
-        TargetSumOfPair obj = new TargetSumOfPair();
+        Array5_TargetSumOfPair obj = new Array5_TargetSumOfPair();
 
         int[] arr1 = {4, 6, 3, 5, 8, 2};
         int target1 = 7;
