@@ -2,7 +2,7 @@ package com.sumit.datastructures.m_stack_queue.questions;
 
 import java.util.Stack;
 
-public class Q1_QueueUsingStacks {
+public class SQ_Q1_QueueUsingStacks {
 
     //LeetCode-232 : https://leetcode.com/problems/implement-queue-using-stacks/description/
 

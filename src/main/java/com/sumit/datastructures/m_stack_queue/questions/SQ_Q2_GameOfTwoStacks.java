@@ -2,7 +2,7 @@ package com.sumit.datastructures.m_stack_queue.questions;
 
 import java.util.Stack;
 
-public class Q2_GameOfTwoStacks {
+public class SQ_Q2_GameOfTwoStacks {
 
     // https://www.hackerrank.com/challenges/game-of-two-stacks/problem
 
@@ -46,7 +46,7 @@ public class Q2_GameOfTwoStacks {
         //stack2.push(1); stack2.push(1); stack2.push(1); stack2.push(1); stack2.push(1); stack2.push(6);
         stack2.push(5); stack2.push(8); stack2.push(1); stack2.push(2);
 
-        Q2_GameOfTwoStacks obj = new Q2_GameOfTwoStacks();
+        SQ_Q2_GameOfTwoStacks obj = new SQ_Q2_GameOfTwoStacks();
         int maxScore = obj.findMaxScore(stack1, stack2, 10);
         System.out.println("Max score : "+maxScore);
     }
