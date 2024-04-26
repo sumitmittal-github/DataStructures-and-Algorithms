@@ -2,9 +2,18 @@ package com.sumit.datastructures.a_arrays.b_2DArray;
 
 public class Array2D_1_Add2Matrices {
 
-    private static int[][] add(int[][] arr1, int[][] arr2) {
-        int[][] sum = new int[arr1.length][arr1[0].length];
+    private int[][] add(int[][] arr1, int[][] arr2) {
+        int matrix1RowCount = arr1.length;
+        int matrix1ColCount = arr1[0].length;
+        int matrix2RowCount = arr2.length;
+        int matrix2ColCount = arr2[0].length;
 
+        if( (matrix1RowCount != matrix2RowCount)  &&  (matrix1ColCount != matrix2ColCount)){
+            System.out.println("Addition is not possible, because both matrices sizes are incompatible");
+            return null;
+        }
+
+        int[][] sum = new int[arr1.length][arr1[0].length];
         for(int i=0; i<arr1.length; i++){
             for(int j=0; j<arr1[i].length; j++) {
                 sum[i][j] = arr1[i][j] +arr2[i][j];
@@ -13,7 +22,7 @@ public class Array2D_1_Add2Matrices {
         return sum;
     }
 
-    private static void display(int[][] sum) {
+    private void display(int[][] sum) {
         for(int i=0; i<sum.length; i++){
             for(int j=0; j<sum[i].length; j++) {
                 System.out.print(sum[i][j] + " ");
@@ -32,8 +41,8 @@ public class Array2D_1_Add2Matrices {
                        };
 
         Array2D_1_Add2Matrices obj = new Array2D_1_Add2Matrices();
-        int[][] sum = add(arr1, arr2);
-        display(sum);
+        int[][] sum = obj.add(arr1, arr2);
+        obj.display(sum);
     }
 
 }
