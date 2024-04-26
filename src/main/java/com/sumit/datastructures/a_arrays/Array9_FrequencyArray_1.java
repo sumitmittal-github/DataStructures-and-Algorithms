@@ -2,7 +2,7 @@ package com.sumit.datastructures.a_arrays;
 
 public class Array9_FrequencyArray_1 {
 
-    //Problem : check if the given elements is present in the input array
+    //Question : check if the given elements is present in the input array
     //Note : value of all the elements in the array is less than 10 to the power of 5.
 
     public static void main(String[] args) {

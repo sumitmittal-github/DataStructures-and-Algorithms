@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class Array10_SortArrayConsisting_0_1 {
 
-    //Problem : Sort an array consisting of only 0 and 1
+    //Question : Sort an array consisting of only 0 and 1
     //https://www.geeksforgeeks.org/segregate-0s-and-1s-in-an-array-by-traversing-array-once/
 
     public void sort(int[] arr){
