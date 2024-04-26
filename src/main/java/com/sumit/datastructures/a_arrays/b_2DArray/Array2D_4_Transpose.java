@@ -3,9 +3,7 @@ package com.sumit.datastructures.a_arrays.b_2DArray;
 public class Array2D_4_Transpose {
 
     //LeetCode-867 : https://leetcode.com/problems/transpose-matrix/description/
-
-
-
+    
     // Approach-1 : Creating new transpose matrix
     public int[][] transpose(int[][] arr) {
         int rowSize = arr.length;
