@@ -5,6 +5,7 @@ import java.util.Arrays;
 public class Array11_SortEvenOdd {
 
     //Problem : Sort an array. All evens followed by odds.
+    //https://www.geeksforgeeks.org/segregate-even-and-odd-numbers/
 
 
     public void sort(int[] arr){
