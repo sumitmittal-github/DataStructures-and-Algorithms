@@ -1,8 +1,8 @@
-package com.sumit.datastructures.a_arrays;
+package com.sumit.datastructures.a_arrays.a_1DArray;
 
 import java.util.Arrays;
 
-public class Array12_SortedSquares {
+public class Array1D_12_SortedSquares {
 
     //LeetCode-977 : https://leetcode.com/problems/squares-of-a-sorted-array/submissions/1242634624/
 
@@ -27,7 +27,7 @@ public class Array12_SortedSquares {
     }
 
     public static void main(String[] args) {
-        Array12_SortedSquares obj = new Array12_SortedSquares();
+        Array1D_12_SortedSquares obj = new Array1D_12_SortedSquares();
 
         System.out.println(Arrays.toString(obj.sortedSquares(new int[]{-4,-1,0,3,10})));
         System.out.println(Arrays.toString(obj.sortedSquares(new int[]{-1})));

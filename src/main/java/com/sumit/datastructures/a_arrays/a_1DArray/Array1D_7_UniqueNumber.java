@@ -1,11 +1,11 @@
-package com.sumit.datastructures.a_arrays;
+package com.sumit.datastructures.a_arrays.a_1DArray;
 
-public class Array7_UniqueNumber {
+public class Array1D_7_UniqueNumber {
 
     // Program: Find the unique number is an array, where all numbers are coming twice, except 1 number.
 
     public static void main(String[] args) {
-        Array7_UniqueNumber obj = new Array7_UniqueNumber();
+        Array1D_7_UniqueNumber obj = new Array1D_7_UniqueNumber();
 
         int[] arr1 = {1, 2, 4, 4, 2, 3, 3};
         System.out.println(obj.uniqueNumber_approach1(arr1));

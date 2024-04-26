@@ -1,8 +1,8 @@
-package com.sumit.datastructures.a_arrays;
+package com.sumit.datastructures.a_arrays.a_1DArray;
 
 import java.util.Arrays;
 
-public class Array1_ReverseArray {
+public class Array1D_1_ReverseArray {
 
     public static void main(String[] args) {
         int[] arr = {1,2,3,4,5,6,7};

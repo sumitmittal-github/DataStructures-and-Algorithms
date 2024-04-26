@@ -1,8 +1,8 @@
-package com.sumit.datastructures.a_arrays;
+package com.sumit.datastructures.a_arrays.a_1DArray;
 
 import java.util.Arrays;
 
-public class Array3_ArrayFromPermutation {
+public class Array1D_3_ArrayFromPermutation {
 
     //LeetCode-1920 : https://leetcode.com/problems/build-array-from-permutation/description/
 

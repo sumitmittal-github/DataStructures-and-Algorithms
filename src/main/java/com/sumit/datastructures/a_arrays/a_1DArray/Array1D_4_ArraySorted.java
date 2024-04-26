@@ -1,6 +1,6 @@
-package com.sumit.datastructures.a_arrays;
+package com.sumit.datastructures.a_arrays.a_1DArray;
 
-public class Array2_ArraySorted {
+public class Array1D_4_ArraySorted {
 
     public static void main(String[] args) {
         int[] arr1 = {1, 2, 4, 8, 9, 12};

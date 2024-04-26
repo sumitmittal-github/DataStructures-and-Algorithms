@@ -1,8 +1,8 @@
-package com.sumit.datastructures.a_arrays;
+package com.sumit.datastructures.a_arrays.a_1DArray;
 
 import java.util.Arrays;
 
-public class Array8_RotateArray {
+public class Array1D_8_RotateArray {
 
     //LeetCode-189 : https://leetcode.com/problems/rotate-array/description/
 
@@ -58,7 +58,7 @@ public class Array8_RotateArray {
         }
     }
     public static void main(String[] args) {
-        Array8_RotateArray obj = new Array8_RotateArray();
+        Array1D_8_RotateArray obj = new Array1D_8_RotateArray();
         int[] nums = {1,2,3,4,5,6,7};
 
         // approach-1

@@ -1,8 +1,8 @@
-package com.sumit.datastructures.a_arrays;
+package com.sumit.datastructures.a_arrays.a_1DArray;
 
 import java.util.Arrays;
 
-public class Array10_SortArrayConsisting_0_1 {
+public class Array1D_10_SortArrayConsisting_0_1 {
 
     //Question : Sort an array consisting of only 0 and 1
     //https://www.geeksforgeeks.org/segregate-0s-and-1s-in-an-array-by-traversing-array-once/
@@ -30,7 +30,7 @@ public class Array10_SortArrayConsisting_0_1 {
     }
 
     public static void main(String[] args) {
-        Array10_SortArrayConsisting_0_1 obj = new Array10_SortArrayConsisting_0_1();
+        Array1D_10_SortArrayConsisting_0_1 obj = new Array1D_10_SortArrayConsisting_0_1();
 
         int[] arr = {};
         obj.sort(arr);

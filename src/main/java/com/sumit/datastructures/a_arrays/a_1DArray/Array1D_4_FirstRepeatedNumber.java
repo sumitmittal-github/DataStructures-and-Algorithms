@@ -1,14 +1,14 @@
-package com.sumit.datastructures.a_arrays;
+package com.sumit.datastructures.a_arrays.a_1DArray;
 
 import java.util.LinkedList;
 import java.util.List;
 
-public class Array4_FirstRepeatedNumber {
+public class Array1D_4_FirstRepeatedNumber {
 
     // Question : return 1st repeated number from an array
 
     public static void main(String[] args) {
-        Array4_FirstRepeatedNumber obj = new Array4_FirstRepeatedNumber();
+        Array1D_4_FirstRepeatedNumber obj = new Array1D_4_FirstRepeatedNumber();
 
         int[] arr = {1, 5, 3, 4, 6, 3, 4};
         System.out.println(obj.firstRepeatedNum_approach1(arr));

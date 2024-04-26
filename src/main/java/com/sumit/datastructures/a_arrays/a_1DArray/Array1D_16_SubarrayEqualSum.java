@@ -1,6 +1,6 @@
-package com.sumit.datastructures.a_arrays;
+package com.sumit.datastructures.a_arrays.a_1DArray;
 
-public class Array16_SubarrayEqualSum {
+public class Array1D_16_SubarrayEqualSum {
 
     //Question : Check if we can partition the array into two sub arrays with equal sum.
 
@@ -92,7 +92,7 @@ public class Array16_SubarrayEqualSum {
     }
 
     public static void main(String[] args) {
-        Array16_SubarrayEqualSum obj = new Array16_SubarrayEqualSum();
+        Array1D_16_SubarrayEqualSum obj = new Array1D_16_SubarrayEqualSum();
         System.out.println(obj.canPartition_WithBoth_Prefix_Suffix(new int[]{5, 3, 2, 6, 3, 1}));      // true
         System.out.println(obj.canPartition_WithOnly_Prefix(new int[]{5, 3, 2, 6, 3, 1}));      // true
         System.out.println(obj.canPartition_Without_Prefix_Suffix_Array(new int[]{5, 3, 2, 6, 3, 1}));      // true

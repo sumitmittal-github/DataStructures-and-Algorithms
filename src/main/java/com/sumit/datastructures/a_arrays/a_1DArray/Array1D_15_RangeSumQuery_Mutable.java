@@ -1,6 +1,6 @@
-package com.sumit.datastructures.a_arrays;
+package com.sumit.datastructures.a_arrays.a_1DArray;
 
-public class Array15_RangeSumQuery_Mutable {
+public class Array1D_15_RangeSumQuery_Mutable {
 
     //LeetCode-307 : https://leetcode.com/problems/range-sum-query-mutable/description/
 
@@ -10,7 +10,7 @@ public class Array15_RangeSumQuery_Mutable {
     int[] prefixArr;
     int[] arr;
 
-    public Array15_RangeSumQuery_Mutable(int[] inputArr) {
+    public Array1D_15_RangeSumQuery_Mutable(int[] inputArr) {
         this.arr = inputArr;
         this.prefixArr = new int[inputArr.length];
         refillPefixArr();

@@ -1,8 +1,8 @@
-package com.sumit.datastructures.a_arrays;
+package com.sumit.datastructures.a_arrays.a_1DArray;
 
 import java.util.Arrays;
 
-public class Array11_SortByParity {
+public class Array1D_11_SortByParity {
 
     //LeetCode-905 : https://leetcode.com/problems/sort-array-by-parity/description/
 
@@ -36,7 +36,7 @@ public class Array11_SortByParity {
     }
 
     public static void main(String[] args) {
-        Array11_SortByParity obj = new Array11_SortByParity();
+        Array1D_11_SortByParity obj = new Array1D_11_SortByParity();
 
         System.out.println(Arrays.toString(obj.sortArrayByParity(new int[]{1, 2, 3, 5, 4, 7, 10})));
         System.out.println(Arrays.toString(obj.sortArrayByParity(new int[]{0, 4, 5, 3, 7, 2, 1})));
