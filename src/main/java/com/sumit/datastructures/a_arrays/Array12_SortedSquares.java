@@ -29,20 +29,11 @@ public class Array12_SortedSquares {
     public static void main(String[] args) {
         Array12_SortedSquares obj = new Array12_SortedSquares();
 
-        int[] arr1 = {-4,-1,0,3,10};
-        System.out.println(Arrays.toString(obj.sortedSquares(arr1)));
-
-        int[] arr2 = {-1};
-        System.out.println(Arrays.toString(obj.sortedSquares(arr2)));
-
-        int[] arr3 = {1};
-        System.out.println(Arrays.toString(obj.sortedSquares(arr3)));
-
-        int[] arr4 = {-100, -50, -15, 0};
-        System.out.println(Arrays.toString(obj.sortedSquares(arr4)));
-
-        int[] arr5 = {-7,-3,2,3,11};
-        System.out.println(Arrays.toString(obj.sortedSquares(arr5)));
+        System.out.println(Arrays.toString(obj.sortedSquares(new int[]{-4,-1,0,3,10})));
+        System.out.println(Arrays.toString(obj.sortedSquares(new int[]{-1})));
+        System.out.println(Arrays.toString(obj.sortedSquares(new int[]{1})));
+        System.out.println(Arrays.toString(obj.sortedSquares(new int[]{-100, -50, -15, 0})));
+        System.out.println(Arrays.toString(obj.sortedSquares(new int[]{-7,-3,2,3,11})));
     }
 
 }
