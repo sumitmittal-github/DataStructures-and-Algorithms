@@ -3,6 +3,10 @@ package com.sumit.datastructures.a_arrays.b_2DArray;
 public class Array2D_11_RangeSumQuery_BruteForce {
 
     //LeetCode-304 : https://leetcode.com/problems/range-sum-query-2d-immutable/description/
+    //LeetCode submission response :
+    //  Runtime = 1529ms
+    //            Beats 5.07% of users with Java
+    //  Therefore not a good approach because for q such queries it will calculate sum q times
 
     int[][] matrix;
     public Array2D_11_RangeSumQuery_BruteForce(int[][] matrix) {
