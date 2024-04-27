@@ -2,9 +2,9 @@ package com.sumit.datastructures.a_arrays.c_arraylist;
 
 import java.util.*;
 
-public class ArrayList_2_Sort {
+public class ArrayList_2_Sort_Integer {
 
-    //Program : Write a program to sort the given ArrayList
+    //Program : Write a program to sort the given ArrayList of Integer
 
     public void sort_1(List<Integer> list){
         if(list == null || list.size() <= 1)
@@ -25,7 +25,7 @@ public class ArrayList_2_Sort {
     }
 
         public static void main(String[] args) {
-        ArrayList_2_Sort obj = new ArrayList_2_Sort();
+        ArrayList_2_Sort_Integer obj = new ArrayList_2_Sort_Integer();
 
         List<Integer> list = Arrays.asList(1,12,3,45,5,6,7,18,99,-100);
         System.out.println("Original List : " + list);
