@@ -1,6 +1,5 @@
 package com.sumit.datastructures.a_arrays.b_2DArray;
 
-
 import com.sumit.utils.DSAUtils;
 
 public class Array2D_9_SpiralMatrix2 {
@@ -48,9 +47,6 @@ public class Array2D_9_SpiralMatrix2 {
         }
         return output;
     }
-
-
-
 
 
     public static void main(String[] args) {
