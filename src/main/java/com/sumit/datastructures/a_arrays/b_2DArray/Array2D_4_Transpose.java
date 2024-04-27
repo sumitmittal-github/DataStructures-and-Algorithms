@@ -1,5 +1,7 @@
 package com.sumit.datastructures.a_arrays.b_2DArray;
 
+import com.sumit.utils.DSAUtils;
+
 public class Array2D_4_Transpose {
 
     //LeetCode-867 : https://leetcode.com/problems/transpose-matrix/description/
@@ -33,14 +35,7 @@ public class Array2D_4_Transpose {
     }
 
 
-    public void display(int[][] sum) {
-        for(int i=0; i<sum.length; i++){
-            for(int j=0; j<sum[i].length; j++) {
-                System.out.print(sum[i][j] + " ");
-            }
-            System.out.println();
-        }
-    }
+
 
     public static void main(String[] args) {
         Array2D_4_Transpose obj = new Array2D_4_Transpose();
@@ -52,13 +47,13 @@ public class Array2D_4_Transpose {
 
         System.out.println("Transpose : ");
         int[][] transposeMatrix = obj.transpose(arr);
-        obj.display(transposeMatrix);
+        DSAUtils.printInt2DArray(transposeMatrix);
         System.out.println("------------------------");
 
 
         System.out.println("In place transpose : ");
         obj.transposeInplace(arr);
-        obj.display(arr);
+        DSAUtils.printInt2DArray(arr);
     }
 
 }

@@ -1,5 +1,7 @@
 package com.sumit.datastructures.a_arrays.b_2DArray;
 
+import com.sumit.utils.DSAUtils;
+
 public class Array2D_5_Rotate {
 
     //LeetCode-48 : https://leetcode.com/problems/rotate-image/description/
@@ -37,15 +39,6 @@ public class Array2D_5_Rotate {
     }
 
 
-    public void display(int[][] sum) {
-        for(int i=0; i<sum.length; i++){
-            for(int j=0; j<sum[i].length; j++) {
-                System.out.print(sum[i][j] + " ");
-            }
-            System.out.println();
-        }
-    }
-
     public static void main(String[] args) {
         Array2D_5_Rotate obj = new Array2D_5_Rotate();
 
@@ -57,7 +50,7 @@ public class Array2D_5_Rotate {
 
         System.out.println("Rotate : ");
         obj.rotate(arr);
-        obj.display(arr);
+        DSAUtils.printInt2DArray(arr);
     }
 
 }

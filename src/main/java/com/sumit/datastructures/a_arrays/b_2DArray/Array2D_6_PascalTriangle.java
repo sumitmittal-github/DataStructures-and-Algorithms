@@ -1,5 +1,7 @@
 package com.sumit.datastructures.a_arrays.b_2DArray;
 
+import com.sumit.utils.DSAUtils;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -35,25 +37,18 @@ public class Array2D_6_PascalTriangle {
     }
 
 
-    public void display(List<List<Integer>> triangle) {
-        for(List<Integer> row : triangle){
-            for(Integer element : row) {
-                System.out.print(element + " ");
-            }
-            System.out.println();
-        }
-    }
+
 
     public static void main(String[] args) {
         Array2D_6_PascalTriangle obj = new Array2D_6_PascalTriangle();
 
-        obj.display(obj.generate(1));
+        DSAUtils.printIntListOfList(obj.generate(1));
         System.out.println("-----------------------");
 
-        obj.display(obj.generate(2));
+        DSAUtils.printIntListOfList(obj.generate(2));
         System.out.println("-----------------------");
 
-        obj.display(obj.generate(5));
+        DSAUtils.printIntListOfList(obj.generate(5));
         System.out.println("-----------------------");
     }
 

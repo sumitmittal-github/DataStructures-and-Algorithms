@@ -1,5 +1,7 @@
 package com.sumit.datastructures.a_arrays.b_2DArray;
 
+import com.sumit.utils.DSAUtils;
+
 public class Array2D_2_Multiply2Matrices {
 
     private int[][] multiply(int[][] arr1, int[][] arr2) {
@@ -26,14 +28,6 @@ public class Array2D_2_Multiply2Matrices {
         return output;
     }
 
-    private void display(int[][] arr) {
-        for(int i=0; i<arr.length; i++){
-            for(int j=0; j<arr[i].length; j++) {
-                System.out.print(arr[i][j] + " ");
-            }
-            System.out.println();
-        }
-    }
 
 
     public static void main(String[] args) {
@@ -48,7 +42,7 @@ public class Array2D_2_Multiply2Matrices {
 
         Array2D_2_Multiply2Matrices obj = new Array2D_2_Multiply2Matrices();
         int[][] sum = obj.multiply(arr1, arr2);
-        obj.display(sum);
+        DSAUtils.printInt2DArray(sum);
     }
 
 }

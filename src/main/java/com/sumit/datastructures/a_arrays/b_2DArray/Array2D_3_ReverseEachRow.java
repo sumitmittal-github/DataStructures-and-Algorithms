@@ -1,5 +1,7 @@
 package com.sumit.datastructures.a_arrays.b_2DArray;
 
+import com.sumit.utils.DSAUtils;
+
 public class Array2D_3_ReverseEachRow {
 
     public void reverseEachRow(int[][] arr) {
@@ -26,14 +28,6 @@ public class Array2D_3_ReverseEachRow {
         }
     }
 
-    public void display(int[][] sum) {
-        for(int i=0; i<sum.length; i++){
-            for(int j=0; j<sum[i].length; j++) {
-                System.out.print(sum[i][j] + " ");
-            }
-            System.out.println();
-        }
-    }
 
     public static void main(String[] args) {
         int[][] arr = {    {1, 2, 3},
@@ -43,7 +37,7 @@ public class Array2D_3_ReverseEachRow {
 
         Array2D_3_ReverseEachRow obj = new Array2D_3_ReverseEachRow();
         obj.reverseEachRow(arr);
-        obj.display(arr);
+        DSAUtils.printInt2DArray(arr);
     }
 
 }
