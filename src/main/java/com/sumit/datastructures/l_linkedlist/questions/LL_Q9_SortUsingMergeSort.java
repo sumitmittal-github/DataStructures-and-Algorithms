@@ -86,21 +86,21 @@ public class LL_Q9_SortUsingMergeSort {
 
 
     public static void main(String[] args) {
-        // Question-0 : linked list with length = 0
+        //Program-0 : linked list with length = 0
         ListNode q0_ll1 = null;
         display(new LL_Q9_SortUsingMergeSort().sortList(q0_ll1));
 
-        // Question-1 : linked list with length = 1
+        //Program-1 : linked list with length = 1
         ListNode q1_ll1 = new ListNode(1, null);
         display(new LL_Q9_SortUsingMergeSort().sortList(q1_ll1));
 
-        // Question-2 : linked list with length = 2
+        //Program-2 : linked list with length = 2
         ListNode q2_ll1 = new ListNode(2, null);
         ListNode q2_ll2 = new ListNode(1, null);
         q2_ll1.next = q2_ll2;
         display(new LL_Q9_SortUsingMergeSort().sortList(q2_ll1));
 
-        // Question-3 : linked list with length = 3
+        //Program-3 : linked list with length = 3
         ListNode q3_ll1 = new ListNode(1, null);
         ListNode q3_ll2 = new ListNode(3, null);
         ListNode q3_ll3 = new ListNode(2, null);
@@ -108,7 +108,7 @@ public class LL_Q9_SortUsingMergeSort {
         q3_ll2.next = q3_ll3;
         display(new LL_Q9_SortUsingMergeSort().sortList(q3_ll1));
 
-        // Question-4 : linked list with length = 4
+        //Program-4 : linked list with length = 4
         ListNode q4_ll1 = new ListNode(3, null);
         ListNode q4_ll2 = new ListNode(4, null);
         ListNode q4_ll3 = new ListNode(2, null);
@@ -118,7 +118,7 @@ public class LL_Q9_SortUsingMergeSort {
         q4_ll3.next = q4_ll4;
         display(new LL_Q9_SortUsingMergeSort().sortList(q4_ll1));
 
-        // Question-5 : linked list with length = 5
+        //Program-5 : linked list with length = 5
         ListNode q5_ll1 = new ListNode(5, null);
         ListNode q5_ll2 = new ListNode(3, null);
         ListNode q5_ll3 = new ListNode(4, null);

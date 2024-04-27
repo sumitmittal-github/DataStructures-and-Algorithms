@@ -2,7 +2,7 @@ package com.sumit.datastructures.c_numbersystem;
 
 public class h_FindNthMagicNumber {
 
-    /** Problem : Ex: 6th Magic No ->
+    /** Program : Ex: 6th Magic No ->
      *             STEP-1 :    write 6 in binary =>    1 1 0
      *             STEP-2 :    multiply with power of 5     1       1      0
      *                                                      5*5*5   5*5    5

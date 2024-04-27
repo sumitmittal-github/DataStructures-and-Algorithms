@@ -2,7 +2,7 @@ package com.sumit.datastructures.a_arrays.a_1DArray;
 
 public class Array1D_16_SubarrayEqualSum {
 
-    //Question : Check if we can partition the array into two sub arrays with equal sum.
+    //Program : Check if we can partition the array into two sub arrays with equal sum.
 
 
     // Approach-1 : we used both prefix sum and suffix sum

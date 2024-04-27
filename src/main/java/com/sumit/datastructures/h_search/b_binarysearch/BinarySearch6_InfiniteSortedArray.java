@@ -4,7 +4,7 @@ package com.sumit.datastructures.h_search.b_binarysearch;
 public class BinarySearch6_InfiniteSortedArray {
 
     /*
-    * Question : Suppose you have a sorted array of infinite numbers, how would you search an element in the array?
+    * Program : Suppose you have a sorted array of infinite numbers, how would you search an element in the array?
     * Concept  : Infinite array means never use array.length
     * */
 

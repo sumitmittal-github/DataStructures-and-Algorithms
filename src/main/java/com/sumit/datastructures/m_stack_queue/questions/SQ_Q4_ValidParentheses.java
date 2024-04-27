@@ -11,7 +11,7 @@ public record SQ_Q4_ValidParentheses() {
             return false;
 
         // if string contains odd number of characters then it is not valid
-        // because as per question the input string only contains '()[]{}'
+        // because as per program the input string only contains '()[]{}'
         if((s.length() & 1) == 1)
             return false;
 

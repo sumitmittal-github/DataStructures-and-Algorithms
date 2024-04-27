@@ -18,7 +18,7 @@ public class CyclicSort2_MissingNumber {
      *   STEP-2 : Array after sorting will look like -
      *          values : {1, 2, 3, 0}
      *         indexes :  0, 1, 2, 3
-     * => index 3 should contain value = 4, but don't have it, means answer of this question will be 4
+     * => index 3 should contain value = 4, but don't have it, means answer of this program will be 4
      */
 
     public static void main(String[] args) {

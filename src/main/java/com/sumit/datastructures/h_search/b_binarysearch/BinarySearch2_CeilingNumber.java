@@ -2,7 +2,7 @@ package com.sumit.datastructures.h_search.b_binarysearch;
 
 public class BinarySearch2_CeilingNumber {
 
-    /*Problem :- find the ceiling number of a target from an array
+    /*Program :- find the ceiling number of a target from an array
     *       Ex- [1, 4, 7, 12, 45, 55, 90]
      *       if target = 6 => result = 7
      *       if target = 7 => result = 7

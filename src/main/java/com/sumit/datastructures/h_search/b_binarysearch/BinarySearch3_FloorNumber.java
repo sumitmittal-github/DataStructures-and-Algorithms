@@ -2,7 +2,7 @@ package com.sumit.datastructures.h_search.b_binarysearch;
 
 public class BinarySearch3_FloorNumber {
 
-    /*Problem :- find the floor number of a target from an array
+    /*Program :- find the floor number of a target from an array
      *       Ex- [1, 4, 7, 12, 45, 55, 90]
      *       if target = 6 => result = 4
      *       if target = 7 => result = 7

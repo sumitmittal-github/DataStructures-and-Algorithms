@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class g_NumbersAppearedNTimes {
 
-    /** Problem : In an array, every number is appearing n times, except 1 number. find that number.
+    /** Program : In an array, every number is appearing n times, except 1 number. find that number.
      * Ex: [2,2,5,2,7,7,8,7,8,8]
      * In above array all numbers are appearing 3 times, except 5. => Answer = 5
     */

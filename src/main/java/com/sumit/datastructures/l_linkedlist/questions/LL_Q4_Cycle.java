@@ -6,7 +6,7 @@ public class LL_Q4_Cycle {
 
     public static void main(String[] args) {
 
-        // Question-1 : which has a cycle
+        //Program-1 : which has a cycle
         ListNode q1_ll1 = new ListNode(3, null);
         ListNode q1_ll2 = new ListNode(2, null);
         ListNode q1_ll3 = new ListNode(0, null);
@@ -16,14 +16,14 @@ public class LL_Q4_Cycle {
         q1_ll3.next = q1_ll4;
         System.out.println(new LL_Q4_Cycle().hasCycle(q1_ll1));
 
-        // Question-2 : which has a cycle
+        //Program-2 : which has a cycle
         ListNode q2_ll1 = new ListNode(1, null);
         ListNode q2_ll2 = new ListNode(2, null);
         q2_ll1.next = q2_ll2;
         q2_ll2.next = q2_ll1;
         System.out.println(new LL_Q4_Cycle().hasCycle(q2_ll1));
 
-        // Question-3 : which do not have a cycle
+        //Program-3 : which do not have a cycle
         ListNode q3_ll1 = new ListNode(1, null);
         ListNode q3_ll2 = new ListNode(2, null);
         ListNode q3_ll3 = new ListNode(3, null);
@@ -33,7 +33,7 @@ public class LL_Q4_Cycle {
         q3_ll3.next = q3_ll4;
         System.out.println(new LL_Q4_Cycle().hasCycle(q3_ll1));
 
-        // Question-4 : which do not have a cycle
+        //Program-4 : which do not have a cycle
         ListNode q4_ll1 = new ListNode(1, null);
         System.out.println(new LL_Q4_Cycle().hasCycle(q4_ll1));
     }

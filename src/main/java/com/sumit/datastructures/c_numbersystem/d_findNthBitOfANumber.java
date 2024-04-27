@@ -3,7 +3,7 @@ package com.sumit.datastructures.c_numbersystem;
 public class d_findNthBitOfANumber {
 
     /**
-     * problem : Find nth bit of any number.
+     * Program : Find nth bit of any number.
      * Ex  - for digit 182 find 4th, 5th, 6th, 7th bit
      * Sol - 182 in binary =>   1   0   1   1   0   1   1   0
      *                         8th 7th 6th 5th 4th 3rd 2nd 1st

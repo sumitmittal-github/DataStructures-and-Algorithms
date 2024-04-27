@@ -5,7 +5,7 @@ import java.util.HashMap;
 public class Array1D_5_TargetSumOfPair {
 
     // https://www.geeksforgeeks.org/count-pairs-with-given-sum/
-    // Question : Find the total number of pairs in the array, whose sum is equal to the given value x
+    //Program : Find the total number of pairs in the array, whose sum is equal to the given value x
 
     public static void main(String[] args) {
         Array1D_5_TargetSumOfPair obj = new Array1D_5_TargetSumOfPair();

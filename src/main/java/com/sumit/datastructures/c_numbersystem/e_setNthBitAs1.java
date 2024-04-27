@@ -3,7 +3,7 @@ package com.sumit.datastructures.c_numbersystem;
 public class e_setNthBitAs1 {
 
     /**
-     * problem : Set nth bit of any number to 1. If it is already 1 then no change else change it to 1.
+     * Program : Set nth bit of any number to 1. If it is already 1 then no change else change it to 1.
      * Ex: for 182 in binary =>   1   0   1   1   0   1   1   0
      *                           8th 7th 6th 5th 4th 3rd 2nd 1st
      * 4th bit to 1 => 1   0   1   1   0   1   1   0

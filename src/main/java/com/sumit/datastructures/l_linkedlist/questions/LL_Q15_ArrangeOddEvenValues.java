@@ -2,9 +2,9 @@ package com.sumit.datastructures.l_linkedlist.questions;
 
 public class LL_Q15_ArrangeOddEvenValues {
 
-/** Problem :
+/** Program :
     Given a linked list, arrange this ist such that odd values should come first and even values should come later.
-    You must solve the problem in O(1) extra space complexity and O(n) time complexity
+    You must solve the program in O(1) extra space complexity and O(n) time complexity
 
     Input: head = [1,2,3,4,5]
     Output:       [1,3,5,2,4]

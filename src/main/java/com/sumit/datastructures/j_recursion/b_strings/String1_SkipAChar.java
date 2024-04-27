@@ -2,7 +2,7 @@ package com.sumit.datastructures.j_recursion.b_strings;
 
 public class String1_SkipAChar {
 
-    // Program : remove all 'a' from the input string
+    //Program : remove all 'a' from the input string
     public static void main(String[] args) {
 
         // Way-1 : keeping the result in return response

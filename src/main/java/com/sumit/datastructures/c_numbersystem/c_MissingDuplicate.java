@@ -3,7 +3,7 @@ package com.sumit.datastructures.c_numbersystem;
 public class c_MissingDuplicate {
 
     /**
-     * problem : Array contains duplicate numbers, except 1 number. Find that no.
+     * Program : Array contains duplicate numbers, except 1 number. Find that no.
      * Ex - [2, 3, 3, 4, 2, 6, 4]
      * And : 6 because 6 duplicate does not exist in the array.
      */

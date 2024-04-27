@@ -2,7 +2,7 @@ package com.sumit.datastructures.a_arrays.a_1DArray;
 
 public class Array1D_6_TargetSumOfTriplet {
 
-    // Question : Find the total number of pairs in the array, whose sum is equal to the given value x
+    //Program : Find the total number of pairs in the array, whose sum is equal to the given value x
 
     public static void main(String[] args) {
         Array1D_6_TargetSumOfTriplet obj = new Array1D_6_TargetSumOfTriplet();

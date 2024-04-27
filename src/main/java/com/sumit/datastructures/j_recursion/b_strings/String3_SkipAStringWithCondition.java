@@ -2,7 +2,7 @@ package com.sumit.datastructures.j_recursion.b_strings;
 
 public class String3_SkipAStringWithCondition {
 
-    // Program : remove 'app' from the input string if the matching string is not apple
+    //Program : remove 'app' from the input string if the matching string is not apple
     // Input : baccappled       => Output : baccappled
     // Input : baccappld        => Output : baccld
     public static void main(String[] args) {

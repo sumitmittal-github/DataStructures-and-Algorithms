@@ -4,7 +4,7 @@ public class LL_Q5_CycleLength {
 
     public static void main(String[] args) {
 
-        // Question-1 : which has a cycle of length : 3
+        //Program-1 : which has a cycle of length : 3
         ListNode q1_ll1 = new ListNode(3, null);
         ListNode q1_ll2 = new ListNode(2, null);
         ListNode q1_ll3 = new ListNode(0, null);
@@ -14,19 +14,19 @@ public class LL_Q5_CycleLength {
         q1_ll3.next = q1_ll4;
         System.out.println(new LL_Q5_CycleLength().cycleLength(q1_ll1));
 
-        // Question-2 : which has a cycle of length : 2
+        //Program-2 : which has a cycle of length : 2
         ListNode q2_ll1 = new ListNode(1, null);
         ListNode q2_ll2 = new ListNode(2, null);
         q2_ll1.next = q2_ll2;
         q2_ll2.next = q2_ll1;
         System.out.println(new LL_Q5_CycleLength().cycleLength(q2_ll1));
 
-        // Question-3 : which has a cycle of length : 1
+        //Program-3 : which has a cycle of length : 1
         ListNode q3_ll1 = new ListNode(1, null);
         q3_ll1.next = q3_ll1;
         System.out.println(new LL_Q5_CycleLength().cycleLength(q3_ll1));
 
-        // Question-4 : which do not have a cycle
+        //Program-4 : which do not have a cycle
         ListNode q4_ll1 = new ListNode(1, null);
         ListNode q4_ll2 = new ListNode(2, null);
         ListNode q4_ll3 = new ListNode(3, null);
@@ -36,7 +36,7 @@ public class LL_Q5_CycleLength {
         q4_ll3.next = q4_ll4;
         System.out.println(new LL_Q5_CycleLength().cycleLength(q4_ll1));
 
-        // Question-5 : which do not have a cycle
+        //Program-5 : which do not have a cycle
         ListNode q5_ll1 = new ListNode(1, null);
         System.out.println(new LL_Q5_CycleLength().cycleLength(q5_ll1));
 

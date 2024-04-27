@@ -3,7 +3,7 @@ package com.sumit.datastructures.c_numbersystem;
 public class b_missingCounterpart {
 
     /**
-     * problem : Array contains +ve and -ve of the same numbers, except 1 number. Find that no.
+     * Program : Array contains +ve and -ve of the same numbers, except 1 number. Find that no.
      * Ex - [-2, 3, 2, 4, -5, 5, -4]
      * And : 3 because 2 has -2, 4 has -4, 5 has -5.
     */

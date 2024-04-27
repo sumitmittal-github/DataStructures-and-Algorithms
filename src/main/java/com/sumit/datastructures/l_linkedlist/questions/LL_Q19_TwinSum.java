@@ -4,7 +4,7 @@ public class LL_Q19_TwinSum {
 
     //LeetCode-2130 : https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list/description/
 
-    /** Problem :
+    /** Program :
      find the maximum twin sum of a linked list of even length
      Twin numbers are :
             -number at 0th index and number and length-0 index

@@ -3,7 +3,7 @@ package com.sumit.datastructures.c_numbersystem;
 public class f_resetNthBit {
 
     /**
-     * problem : Reset nth bit of any number. If it is 0 then make it 1. If it is 1 then make it 0.
+     * Program : Reset nth bit of any number. If it is 0 then make it 1. If it is 1 then make it 0.
      * Ex: for 182 in binary =>   1   0   1   1   0   1   1   0
      *                           8th 7th 6th 5th 4th 3rd 2nd 1st
      * reset 4th bit => 1   0   1   1   1   1   1   0 => 190
