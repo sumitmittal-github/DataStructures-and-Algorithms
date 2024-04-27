@@ -3,10 +3,12 @@ package com.sumit.datastructures.a_arrays.b_2DArray;
 public class Array2D_13_RangeSumQuery_WithRowColumnPrefixSum {
 
     //LeetCode-304 : https://leetcode.com/problems/range-sum-query-2d-immutable/description/
+
     //LeetCode submission response :
     //  Runtime = 95ms
     //            Beats 99.69% of users with Java
     //  Best approach because for q iteration we need to calculate the prefix matrix only once
+    //  and with just few addition and subtraction we can find the answer
 
     int[][] matrix;
 
