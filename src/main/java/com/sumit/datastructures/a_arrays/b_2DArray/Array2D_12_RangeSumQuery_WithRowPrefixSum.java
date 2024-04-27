@@ -1,17 +1,19 @@
 package com.sumit.datastructures.a_arrays.b_2DArray;
 
-public class Array2D_12_RangeSumQuery_WithPrefixSum {
+public class Array2D_12_RangeSumQuery_WithRowPrefixSum {
 
     //LeetCode-304 : https://leetcode.com/problems/range-sum-query-2d-immutable/description/
     //LeetCode submission response :
     //  Runtime = 117ms
     //            Beats 19.20% of users with Java
-    //  Better than before, but there is even better approach
+    //  Better than before because for q iteration we need to calculate the prefix matrix once,
+    //  but have to iterate each row to add the total sum
+    //  there is even better approach where we can skip the 2nd part of iterating the rows again
     int[][] matrix;
 
-    public Array2D_12_RangeSumQuery_WithPrefixSum(int[][] matrix) {
+    public Array2D_12_RangeSumQuery_WithRowPrefixSum(int[][] matrix) {
         this.matrix = matrix;
-        convertInPrefixMatrix();
+        convertInRowPrefixSumMatrix();
     }
 
     public int sumRegion(int row1, int col1, int row2, int col2) {
@@ -29,7 +31,7 @@ public class Array2D_12_RangeSumQuery_WithPrefixSum {
         return sum;
     }
 
-    public void convertInPrefixMatrix() {
+    public void convertInRowPrefixSumMatrix() {
         for (int r = 0; r < matrix.length; r++) {
             for (int c = 1; c < matrix[r].length; c++) {
                 matrix[r][c] = matrix[r][c - 1] + matrix[r][c];
@@ -44,7 +46,7 @@ public class Array2D_12_RangeSumQuery_WithPrefixSum {
                             {4,1,0,1,7},
                             {1,0,3,0,5}
                        };
-        Array2D_12_RangeSumQuery_WithPrefixSum obj = new Array2D_12_RangeSumQuery_WithPrefixSum(arr);
+        Array2D_12_RangeSumQuery_WithRowPrefixSum obj = new Array2D_12_RangeSumQuery_WithRowPrefixSum(arr);
         System.out.println(obj.sumRegion(2,1,4,3));
         System.out.println(obj.sumRegion(1,1,2,2));
         System.out.println(obj.sumRegion(1,2,2,4));
