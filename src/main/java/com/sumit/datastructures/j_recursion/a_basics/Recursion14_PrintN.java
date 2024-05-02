@@ -1,6 +1,6 @@
-package com.sumit.datastructures.j_recursion.questions;
+package com.sumit.datastructures.j_recursion.a_basics;
 
-public class Recur_Q4_PrintN {
+public class Recursion14_PrintN {
 
     // print from  1 to n
     public void print_1_to_N(int n){
@@ -23,7 +23,7 @@ public class Recur_Q4_PrintN {
 
 
     public static void main(String[] args) {
-        Recur_Q4_PrintN obj = new Recur_Q4_PrintN();
+        Recursion14_PrintN obj = new Recursion14_PrintN();
 
         obj.print_1_to_N(5);
         System.out.println();

@@ -1,26 +1,26 @@
-package com.sumit.datastructures.j_recursion.questions;
+package com.sumit.datastructures.j_recursion.a_basics;
 
 import java.util.*;
 
-public class Recur_Q1_LetterCombinationsPhoneNumber {
+public class Recursion11_LetterCombinationsPhoneNumber {
 
     //LeetCode-17 : https://leetcode.com/problems/letter-combinations-of-a-phone-number/description/
 
     public static void main(String[] args) {
-        System.out.println(new Recur_Q1_LetterCombinationsPhoneNumber().letterCombinations("846"));
-        System.out.println(new Recur_Q1_LetterCombinationsPhoneNumber().countAllPermutations("846"));
+        System.out.println(new Recursion11_LetterCombinationsPhoneNumber().letterCombinations("846"));
+        System.out.println(new Recursion11_LetterCombinationsPhoneNumber().countAllPermutations("846"));
 
-        System.out.println(new Recur_Q1_LetterCombinationsPhoneNumber().letterCombinations("23"));
-        System.out.println(new Recur_Q1_LetterCombinationsPhoneNumber().countAllPermutations("23"));
+        System.out.println(new Recursion11_LetterCombinationsPhoneNumber().letterCombinations("23"));
+        System.out.println(new Recursion11_LetterCombinationsPhoneNumber().countAllPermutations("23"));
 
-        System.out.println(new Recur_Q1_LetterCombinationsPhoneNumber().letterCombinations(""));
-        System.out.println(new Recur_Q1_LetterCombinationsPhoneNumber().countAllPermutations(""));
+        System.out.println(new Recursion11_LetterCombinationsPhoneNumber().letterCombinations(""));
+        System.out.println(new Recursion11_LetterCombinationsPhoneNumber().countAllPermutations(""));
 
-        System.out.println(new Recur_Q1_LetterCombinationsPhoneNumber().letterCombinations("2"));
-        System.out.println(new Recur_Q1_LetterCombinationsPhoneNumber().countAllPermutations("2"));
+        System.out.println(new Recursion11_LetterCombinationsPhoneNumber().letterCombinations("2"));
+        System.out.println(new Recursion11_LetterCombinationsPhoneNumber().countAllPermutations("2"));
 
-        System.out.println(new Recur_Q1_LetterCombinationsPhoneNumber().letterCombinations("2379"));
-        System.out.println(new Recur_Q1_LetterCombinationsPhoneNumber().countAllPermutations("2379"));
+        System.out.println(new Recursion11_LetterCombinationsPhoneNumber().letterCombinations("2379"));
+        System.out.println(new Recursion11_LetterCombinationsPhoneNumber().countAllPermutations("2379"));
     }
 
     // Returning all the permutations
