@@ -4,6 +4,10 @@ import java.util.Scanner;
 
 public class FibonacciSeries {
 
+    //LeetCode-509  : https://leetcode.com/problems/fibonacci-number/description/
+    //LeetCode-2648 : https://leetcode.com/problems/generate-fibonacci-sequence/description/
+
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -40,9 +44,9 @@ public class FibonacciSeries {
     private static long getNthFibonacciNumberWithFormula(int position){
         double squareRoot5 = Math.sqrt(5);
         double part1 = Math.pow( ((1+squareRoot5)/2), position);
-        double part2 = Math.pow( ((1-squareRoot5)/2), position);        // we can also remove this part2 as it is less dominating term
+        double part2 = Math.pow( ((1-squareRoot5)/2), position);
 
-        return (long)((part1-part2)/squareRoot5);
+        return (long)(   (part1-part2) / squareRoot5   );
     }
 
 }
