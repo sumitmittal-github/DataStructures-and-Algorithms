@@ -2,46 +2,29 @@ package com.sumit.datastructures.j_recursion.a_basics;
 
 public class Recursion7_ReverseNumber {
 
-    private static int reverseNum = 0;
-
     public static void main(String[] args) {
-        // general approach
-        System.out.println(reverseNumberByGeneralApproach(3124));
-        // recursion approach way-1
-        reverseNum = 0;
-        reverseNumberByRecursion_1(3124);
-        System.out.println(reverseNum);
-        // recursion approach way-2
-        System.out.println(reverseNumberByRecursion_2(3124));
-        // recursion approach way-3
-        System.out.println(reverseNumberByGeneralApproach(3124));
-
-        // general approach
-        System.out.println(reverseNumberByGeneralApproach(120));
-        // recursion approach way-1
-        reverseNum = 0;
-        reverseNumberByRecursion_1(120);
-        System.out.println(reverseNum);
-        // recursion approach way-2
-        System.out.println(reverseNumberByRecursion_2(120));
-        // recursion approach way-3
-        System.out.println(reverseNumberByGeneralApproach(120));
-
-        // general approach
-        System.out.println(reverseNumberByGeneralApproach(120035));
-        // recursion approach way-1
-        reverseNum = 0;
-        reverseNumberByRecursion_1(120035);
-        System.out.println(reverseNum);
-        // recursion approach way-2
-        System.out.println(reverseNumberByRecursion_2(120035));
-        // recursion approach way-3
-        System.out.println(reverseNumberByGeneralApproach(120035));
+        System.out.println(reverseNumber_1(123456789));
+        System.out.println(reverseNumber_2(123456789));
+        System.out.println(reverseNumber_3(123456789));
+        System.out.println(reverseNumber_4(123456789));
+        System.out.println(reverseNumber_5(123456789));
     }
 
 
-    // Way-1 : general approach
-    private static int reverseNumberByGeneralApproach(int n) {
+    // Approach-1 : by converting in string
+    private static int reverseNumber_1(int num){
+        String strNum = String.valueOf(num);
+        StringBuilder outputStrNum = new StringBuilder();
+        for(int i = strNum.length()-1; i>=0; i--) {
+            outputStrNum.append(strNum.charAt(i));
+        }
+        return Integer.parseInt(outputStrNum.toString());
+    }
+
+
+
+    // Approach-2 : iteration
+    public static int reverseNumber_2(int n) {
         int ans = 0;
         while(n>0){
             ans = (ans * 10) + (n%10);
@@ -51,19 +34,47 @@ public class Recursion7_ReverseNumber {
     }
 
 
-    // Way-2 : not good approach, because we need to maintain 1 variable outside recursion function
-    private static void reverseNumberByRecursion_1(int n) {
-        if(n <= 0)
-            return;
 
-        reverseNum = (reverseNum * 10) +  (n%10);
-        reverseNumberByRecursion_1(n/10);
+    // Approach-3 : recursion
+    // not good approach, because we need to maintain 1 variable in recursion function
+    public static int reverseNumber_3(int n) {
+        if(n <= 10)
+            return n;
+
+        return reverseNumber_3_helper(n, 0);
+    }
+    private static int reverseNumber_3_helper(int n, int ans) {
+        if(n == 0)  return ans;
+
+        ans = (ans * 10) +  (n % 10);
+        return reverseNumber_3_helper(n/10, ans);
     }
 
 
-    // Way-3 : better than Way-2, because in this approach we are counting the number of digits in the iteration itself
-    // and we do not need the outside variable
-    private static int reverseNumberByRecursion_2(int n) {
+
+    // Approach-4 : better than approach-3
+    // because, in this approach we are counting the number of digits only once
+    // drawback : 1 extra variable, therefore helper method
+    public static int reverseNumber_4(int n) {
+        int numOfDigitsInN = (int)Math.log10(n) + 1;
+        return reverseNumber_4_helper(n,numOfDigitsInN-1);
+    }
+    private static int reverseNumber_4_helper(int n, int numOfDigitsInN){
+        if(n < 10)
+            return n;
+
+        int lastDigit = n % 10;
+        int multiply = (int)Math.pow(10, numOfDigitsInN);
+
+        return   (lastDigit * multiply)  +  reverseNumber_4_helper(n/10, --numOfDigitsInN);
+    }
+
+
+
+    // Approach-5 : Best approach, better than approach-4
+    // because no helper method, we can count numOfDigits in same iteration
+    // also we do not need the extra variable
+    private static int reverseNumber_5(int n) {
         if(n < 10)
             return n;
 
@@ -71,21 +82,8 @@ public class Recursion7_ReverseNumber {
         int lastDigit = (n%10);
         int multiply = (int)Math.pow(10, numOfDigitsInN-1);
 
-        return (lastDigit * multiply) + reverseNumberByRecursion_2(n/10);
+        return (lastDigit * multiply) + reverseNumber_5(n/10);
     }
 
-
-    // Way-4 : better than Way-3, because in this approach we are counting the number of digits only 1
-    private static int reverseNumberByRecursion_3(int n) {
-        int numOfDigitsInN = (int)Math.log10(n) + 1;
-        return helper(n,numOfDigitsInN-1);
-    }
-
-    private static int helper(int n, int numOfDigitsInN){
-        if(n < 10)
-            return n;
-
-        return (n) * (int)Math.pow(n, numOfDigitsInN) + helper(n/10, --numOfDigitsInN);
-    }
 
 }

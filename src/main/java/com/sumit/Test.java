@@ -3,36 +3,12 @@ package com.sumit;
 public class Test {
 
     public static void main(String[] args) {
-
-
-        double part1 = (1+Math.sqrt(5))/2;      // 1.618
-        double part2 = (1-Math.sqrt(5))/2;      //-0.618
-        System.out.println(part1);
-        System.out.println(part2);
-
-        int ans = (int) ((Math.pow(1.618, 11) - Math.pow(-0.618, 11) ) / Math.sqrt(5) );
-        System.out.println(ans);
-
-        int ans2 = (int) ((Math.pow(part1, 11) - Math.pow(part2, 11) ) / Math.sqrt(5) );
-        System.out.println(ans2);
-
-    }
-
-
-    public static int factorial(int n){
-        if(n == 1)
-            return 1;
-
-        return n * factorial(n-1);
+        int numOfDigitsInN = (int)Math.log10(1234) + 1;
+        System.out.println( numOfDigitsInN );
     }
 
 
 
-    public static int fibonacciNthTerm(int n){
-        if(n == 0) return 0;
-        if(n == 1) return 1;
 
-        return fibonacciNthTerm(n-1) + fibonacciNthTerm(n-2);
-    }
 
 }
