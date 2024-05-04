@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class Array1D_12_SortedSquares {
 
-    //LeetCode-977 : https://leetcode.com/problems/squares-of-a-sorted-array/submissions/1242634624/
+    // LeetCode-977 : https://leetcode.com/problems/squares-of-a-sorted-array/submissions/1242634624/
 
     public int[] sortedSquares(int[] arr) {
         int[] ans = new int[arr.length];

@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class BinarySearch12_SplitArrayLargestSum {
 
-    //LeetCode-410 : https://leetcode.com/problems/split-array-largest-sum/description/
+    // LeetCode-410 : https://leetcode.com/problems/split-array-largest-sum/description/
 
     public static void main(String[] args) {
         int[] arr1 = {7, 2, 5, 10, 8};

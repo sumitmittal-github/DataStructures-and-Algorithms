@@ -2,7 +2,7 @@ package com.sumit.datastructures.l_linkedlist.questions;
 
 public class LL_Q13_FindIntersectionNode {
 
-    //LeetCode-160 : https://leetcode.com/problems/intersection-of-two-linked-lists/description/
+    // LeetCode-160 : https://leetcode.com/problems/intersection-of-two-linked-lists/description/
 
     public static void main(String[] args) {
         ListNode node11 = new ListNode(87, null);

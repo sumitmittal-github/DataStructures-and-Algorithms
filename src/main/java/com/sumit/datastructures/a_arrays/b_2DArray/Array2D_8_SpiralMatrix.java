@@ -7,7 +7,7 @@ import java.util.List;
 
 public class Array2D_8_SpiralMatrix {
 
-    //LeetCode-54 : https://leetcode.com/problems/spiral-matrix/description/
+    // LeetCode-54 : https://leetcode.com/problems/spiral-matrix/description/
 
     public List<Integer> returnAllSpiralElements(int[][] matrix) {
         List<Integer> list = new LinkedList<>();

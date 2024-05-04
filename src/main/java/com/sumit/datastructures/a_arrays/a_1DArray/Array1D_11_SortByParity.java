@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class Array1D_11_SortByParity {
 
-    //LeetCode-905 : https://leetcode.com/problems/sort-array-by-parity/description/
+    // LeetCode-905 : https://leetcode.com/problems/sort-array-by-parity/description/
 
     public int[] sortArrayByParity(int[] arr){
         int even = 0;

@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class LinearSearch7_FindNumbersEvenDigits {
 
-    //LeetCode-1295 : https://leetcode.com/problems/find-numbers-with-even-number-of-digits/
+    // LeetCode-1295 : https://leetcode.com/problems/find-numbers-with-even-number-of-digits/
 
     public static void main(String[] args) {
         int[] arr = {121, 345, 0, 31, 7196};

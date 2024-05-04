@@ -2,7 +2,7 @@ package com.sumit.datastructures.l_linkedlist.questions;
 
 public class LL_Q21_ReverseBetween {
 
-    //LeetCode-92 : https://leetcode.com/problems/reverse-linked-list-ii/description/
+    // LeetCode-92 : https://leetcode.com/problems/reverse-linked-list-ii/description/
 
     public ListNode reverseBetween(ListNode head, int left, int right) {
         if(head == null || head.next == null)

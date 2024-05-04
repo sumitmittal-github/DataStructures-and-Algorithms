@@ -4,7 +4,7 @@ import java.util.*;
 
 public class ArrayList_1_Reverse {
 
-    //Program : Write a program to Reverse the given ArrayList
+    // Program : Write a program to Reverse the given ArrayList
 
     public void reverseList_1(List<Integer> list){
         if(list == null || list.size() <= 1)

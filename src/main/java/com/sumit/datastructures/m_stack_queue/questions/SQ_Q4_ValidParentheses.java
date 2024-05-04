@@ -4,7 +4,7 @@ import java.util.Stack;
 
 public record SQ_Q4_ValidParentheses() {
 
-    //LeetCode-20 : https://leetcode.com/problems/valid-parentheses/description/
+    // LeetCode-20 : https://leetcode.com/problems/valid-parentheses/description/
 
     public boolean isValid(String s) {
         if(s == null || s.trim().isEmpty())

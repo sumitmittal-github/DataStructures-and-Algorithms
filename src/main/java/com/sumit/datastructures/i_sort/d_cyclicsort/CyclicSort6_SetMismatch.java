@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class CyclicSort6_SetMismatch {
 
-    //LeetCode-645 : https://leetcode.com/problems/set-mismatch/description/
+    // LeetCode-645 : https://leetcode.com/problems/set-mismatch/description/
 
     public static void main(String[] args) {
         System.out.println(Arrays.toString(findErrorNums(new int[]{1,2,2,4})));

@@ -2,7 +2,7 @@ package com.sumit.datastructures.a_arrays.a_1DArray;
 
 public class Array1D_14_RangeSumQuery_Immutable {
 
-    //LeetCode-303 : https://leetcode.com/problems/range-sum-query-immutable/description/
+    // LeetCode-303 : https://leetcode.com/problems/range-sum-query-immutable/description/
 
     int[] arr;
 

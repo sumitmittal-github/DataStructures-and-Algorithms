@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class Array1D_8_RotateArray {
 
-    //LeetCode-189 : https://leetcode.com/problems/rotate-array/description/
+    // LeetCode-189 : https://leetcode.com/problems/rotate-array/description/
 
 
     // Not a good approach : because taking extra space
@@ -61,7 +61,7 @@ public class Array1D_8_RotateArray {
         Array1D_8_RotateArray obj = new Array1D_8_RotateArray();
         int[] nums = {1,2,3,4,5,6,7};
 
-        // approach-1
+        // Approach-1
         System.out.println("Before : ");
         System.out.println(Arrays.toString(nums));
         int[] ans = obj.rotate_approach1(nums, 3);
@@ -69,7 +69,7 @@ public class Array1D_8_RotateArray {
         System.out.println(Arrays.toString(ans));
 
 
-        // approach-2
+        // Approach-2
         System.out.println("Before : ");
         System.out.println(Arrays.toString(nums));
         obj.rotate_approach2(nums, 3);

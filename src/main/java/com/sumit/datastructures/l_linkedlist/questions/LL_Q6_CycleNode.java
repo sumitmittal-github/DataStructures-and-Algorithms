@@ -2,11 +2,11 @@ package com.sumit.datastructures.l_linkedlist.questions;
 
 public class LL_Q6_CycleNode {
 
-    //LeetCode-142 : https://leetcode.com/problems/linked-list-cycle-ii/description/
+    // LeetCode-142 : https://leetcode.com/problems/linked-list-cycle-ii/description/
 
     public static void main(String[] args) {
 
-        //Program-1 : which has a cycle of length : 3
+        // Program-1 : which has a cycle of length : 3
         ListNode q1_ll1 = new ListNode(3, null);
         ListNode q1_ll2 = new ListNode(2, null);
         ListNode q1_ll3 = new ListNode(0, null);
@@ -16,19 +16,19 @@ public class LL_Q6_CycleNode {
         q1_ll3.next = q1_ll4;
         System.out.println(new LL_Q6_CycleNode().cycleNode(q1_ll1).val);
 
-        //Program-2 : which has a cycle of length : 2
+        // Program-2 : which has a cycle of length : 2
         ListNode q2_ll1 = new ListNode(1, null);
         ListNode q2_ll2 = new ListNode(2, null);
         q2_ll1.next = q2_ll2;
         q2_ll2.next = q2_ll1;
         System.out.println(new LL_Q6_CycleNode().cycleNode(q2_ll1).val);
 
-        //Program-3 : which has a cycle of length : 1
+        // Program-3 : which has a cycle of length : 1
         ListNode q3_ll1 = new ListNode(1, null);
         q3_ll1.next = q3_ll1;
         System.out.println(new LL_Q6_CycleNode().cycleNode(q3_ll1).val);
 
-        //Program-4 : which do not have a cycle
+        // Program-4 : which do not have a cycle
         ListNode q4_ll1 = new ListNode(1, null);
         ListNode q4_ll2 = new ListNode(2, null);
         ListNode q4_ll3 = new ListNode(3, null);
@@ -38,7 +38,7 @@ public class LL_Q6_CycleNode {
         q4_ll3.next = q4_ll4;
         System.out.println(new LL_Q6_CycleNode().cycleNode(q4_ll1));
 
-        //Program-5 : which do not have a cycle
+        // Program-5 : which do not have a cycle
         ListNode q5_ll1 = new ListNode(1, null);
         System.out.println(new LL_Q6_CycleNode().cycleNode(q5_ll1));
     }

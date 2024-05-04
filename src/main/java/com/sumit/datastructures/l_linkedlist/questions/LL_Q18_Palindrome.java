@@ -2,7 +2,7 @@ package com.sumit.datastructures.l_linkedlist.questions;
 
 public class LL_Q18_Palindrome {
 
-    //LeetCode-234 : https://leetcode.com/problems/palindrome-linked-list/description/
+    // LeetCode-234 : https://leetcode.com/problems/palindrome-linked-list/description/
 
     public static void main(String[] args) {
         LL_Q18_Palindrome obj = new LL_Q18_Palindrome();

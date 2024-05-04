@@ -2,7 +2,7 @@ package com.sumit.datastructures.a_arrays.a_1DArray;
 
 public class Array1D_15_RangeSumQuery_Mutable {
 
-    //LeetCode-307 : https://leetcode.com/problems/range-sum-query-mutable/description/
+    // LeetCode-307 : https://leetcode.com/problems/range-sum-query-mutable/description/
 
     //TODO - giving time limit exceed for 1 of the test case.
     //As per comments :-    2 solutions: Binary Indexed Tree, Segment Tree

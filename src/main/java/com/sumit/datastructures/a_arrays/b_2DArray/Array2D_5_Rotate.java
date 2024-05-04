@@ -4,7 +4,7 @@ import com.sumit.utils.DSAUtils;
 
 public class Array2D_5_Rotate {
 
-    //LeetCode-48 : https://leetcode.com/problems/rotate-image/description/
+    // LeetCode-48 : https://leetcode.com/problems/rotate-image/description/
     // rotate the image by 90 degrees (clockwise).
     // n == matrix.length == matrix[i].length    :    means n*n matrix
 

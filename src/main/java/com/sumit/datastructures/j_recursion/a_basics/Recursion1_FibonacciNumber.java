@@ -6,7 +6,7 @@ package com.sumit.datastructures.j_recursion.a_basics;
 
 public class Recursion1_FibonacciNumber {
 
-    //LeetCode-509 : https://leetcode.com/problems/fibonacci-number/description/
+    // LeetCode-509 : https://leetcode.com/problems/fibonacci-number/description/
 
     public static void main(String[] args) {
         System.out.println(getNthFibonacciNumber_3(0));

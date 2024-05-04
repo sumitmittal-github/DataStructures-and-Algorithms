@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Array1D_4_FirstRepeatedNumber {
 
-    //Program : return 1st repeated number from an array
+    // Program : return 1st repeated number from an array
 
     public static void main(String[] args) {
         Array1D_4_FirstRepeatedNumber obj = new Array1D_4_FirstRepeatedNumber();

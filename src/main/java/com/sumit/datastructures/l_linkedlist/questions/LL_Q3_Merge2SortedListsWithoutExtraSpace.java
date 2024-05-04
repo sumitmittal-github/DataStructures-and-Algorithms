@@ -2,7 +2,7 @@ package com.sumit.datastructures.l_linkedlist.questions;
 
 public class LL_Q3_Merge2SortedListsWithoutExtraSpace {
 
-    //LeetCode-21 : https://leetcode.com/problems/merge-two-sorted-lists/description/
+    // LeetCode-21 : https://leetcode.com/problems/merge-two-sorted-lists/description/
 
     public static void main(String[] args) {
         ListNode ll1 = new ListNode(1, new ListNode(2, new ListNode(5, null)));

@@ -2,7 +2,7 @@ package com.sumit.datastructures.a_arrays.a_1DArray;
 
 public class Array1D_7_UniqueNumber {
 
-    //Program: Find the unique number is an array, where all numbers are coming twice, except 1 number.
+    // Program: Find the unique number is an array, where all numbers are coming twice, except 1 number.
 
     public static void main(String[] args) {
         Array1D_7_UniqueNumber obj = new Array1D_7_UniqueNumber();

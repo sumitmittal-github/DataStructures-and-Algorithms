@@ -4,7 +4,7 @@ import java.util.Stack;
 
 public class SQ_Q1_QueueUsingStacks {
 
-    //LeetCode-232 : https://leetcode.com/problems/implement-queue-using-stacks/description/
+    // LeetCode-232 : https://leetcode.com/problems/implement-queue-using-stacks/description/
 
     public static void main(String[] args) {
         MyQueue queue = new MyQueue();

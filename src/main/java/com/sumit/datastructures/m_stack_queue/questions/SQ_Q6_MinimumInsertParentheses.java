@@ -4,7 +4,7 @@ import java.util.Stack;
 
 public class SQ_Q6_MinimumInsertParentheses {
 
-    //LeetCode-1541 : https://leetcode.com/problems/minimum-insertions-to-balance-a-parentheses-string/description/
+    // LeetCode-1541 : https://leetcode.com/problems/minimum-insertions-to-balance-a-parentheses-string/description/
 
     public int minInsertions(String s) {
         int count = 0;

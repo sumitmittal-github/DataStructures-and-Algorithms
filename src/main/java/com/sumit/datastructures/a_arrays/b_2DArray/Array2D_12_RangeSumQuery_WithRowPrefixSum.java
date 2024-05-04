@@ -2,9 +2,9 @@ package com.sumit.datastructures.a_arrays.b_2DArray;
 
 public class Array2D_12_RangeSumQuery_WithRowPrefixSum {
 
-    //LeetCode-304 : https://leetcode.com/problems/range-sum-query-2d-immutable/description/
+    // LeetCode-304 : https://leetcode.com/problems/range-sum-query-2d-immutable/description/
 
-    //LeetCode submission response :
+    // LeetCode submission response :
     //  Runtime = 117ms
     //            Beats 19.20% of users with Java
     //  Better than before because for q iteration we need to calculate the prefix matrix once,

@@ -6,7 +6,7 @@ import java.util.List;
 
 public class Array2D_10_SpiralMatrix3 {
 
-    //Program : print m*n matrix in reverse spiral order
+    // Program : print m*n matrix in reverse spiral order
 
     public List<Integer> getReverseSpiral(int[][] matrix) {
         List<Integer> result = new LinkedList<>();

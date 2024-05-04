@@ -2,10 +2,10 @@ package com.sumit.datastructures.j_recursion.a_basics;
 
 public class Recursion15_Power {
 
-    //LeetCode-50 : https://leetcode.com/problems/powx-n/description/
+    // LeetCode-50 : https://leetcode.com/problems/powx-n/description/
 
 
-    //Approach-1 : BEST approach : using binary of power
+    // Approach-1 : BEST approach : using binary of power
     public double myPow_1(double num, int pow) {
         // if power is negative then converting it into +ve
         // Ex- (3)^(-9)   ==>   (1/3)^9
@@ -29,7 +29,7 @@ public class Recursion15_Power {
     }
 
 
-    //Approach-2 : using recursion, but it will fail if pow is very large
+    // Approach-2 : using recursion, but it will fail if pow is very large
     //   p^q   =  p * p^(q-1)
     // TC : O(pow)
     public double myPow_2(double num, int pow) {
@@ -43,7 +43,7 @@ public class Recursion15_Power {
     }
 
 
-    //Approach-3 : using recursion, but it will fail if pow is very large
+    // Approach-3 : using recursion, but it will fail if pow is very large
     //   p^q   =      p^(q/2) * p^(q/2)     if q is even
     //         =  p * p^(q/2) * p^(q/2)     if q is odd
     // TC : O(log(pow))

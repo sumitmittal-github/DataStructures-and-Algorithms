@@ -4,7 +4,7 @@ import java.util.Stack;
 
 public class SQ_Q5_MinimumParentheses {
 
-    //LeetCode-921 : https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/description/
+    // LeetCode-921 : https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/description/
 
     public int minAddToMakeValid(String s) {
         int count = 0;

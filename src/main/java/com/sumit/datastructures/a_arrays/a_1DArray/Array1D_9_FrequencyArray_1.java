@@ -2,7 +2,7 @@ package com.sumit.datastructures.a_arrays.a_1DArray;
 
 public class Array1D_9_FrequencyArray_1 {
 
-    //Program : check if the given elements is present in the input array
+    // Program : check if the given elements is present in the input array
     //Note : value of all the elements in the array is less than 10 to the power of 5.
 
     public static void main(String[] args) {

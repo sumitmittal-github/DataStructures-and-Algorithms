@@ -2,7 +2,7 @@ package com.sumit.datastructures.h_search.a_linearsearch;
 
 public class LinearSearch8_MiximumWealth {
 
-    //LeetCode-1672 : https://leetcode.com/problems/richest-customer-wealth/description/
+    // LeetCode-1672 : https://leetcode.com/problems/richest-customer-wealth/description/
 
     public static void main(String[] args) {
         int[][] arr = {

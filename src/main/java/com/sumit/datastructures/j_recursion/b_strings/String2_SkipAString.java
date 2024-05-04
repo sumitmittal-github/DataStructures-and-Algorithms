@@ -2,7 +2,7 @@ package com.sumit.datastructures.j_recursion.b_strings;
 
 public class String2_SkipAString {
 
-    //Program : remove 'apple' from the input string
+    // Program : remove 'apple' from the input string
     public static void main(String[] args) {
 
         // Way-1 : keeping the result in return response

@@ -2,7 +2,7 @@ package com.sumit.datastructures.c_numbersystem;
 
 public class q_FlipTheImage {
 
-    //LeetCode-832 : https://leetcode.com/problems/flipping-an-image/description/
+    // LeetCode-832 : https://leetcode.com/problems/flipping-an-image/description/
 
     public static void main(String[] args) {
 

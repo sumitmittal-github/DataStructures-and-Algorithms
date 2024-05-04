@@ -2,7 +2,7 @@ package com.sumit.datastructures.l_linkedlist.questions;
 
 public class LL_Q20_CopyListWithRandomPointers {
 
-    //LeetCode-138 : https://leetcode.com/problems/copy-list-with-random-pointer/description/
+    // LeetCode-138 : https://leetcode.com/problems/copy-list-with-random-pointer/description/
 
     public static void main(String[] args) {
         Node n1 = new Node(7);

@@ -2,7 +2,7 @@ package com.sumit.datastructures.l_linkedlist.questions;
 
 public class LL_Q7_HappyNumber {
 
-    //LeetCode-202 : https://leetcode.com/problems/happy-number/description/
+    // LeetCode-202 : https://leetcode.com/problems/happy-number/description/
 
     public static void main(String[] args) {
         System.out.println(new LL_Q7_HappyNumber().isHappy(19));

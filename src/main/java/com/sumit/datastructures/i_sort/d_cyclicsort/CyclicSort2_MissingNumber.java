@@ -2,7 +2,7 @@ package com.sumit.datastructures.i_sort.d_cyclicsort;
 
 public class CyclicSort2_MissingNumber {
 
-    //LeetCode-268 : https://leetcode.com/problems/missing-number/description/
+    // LeetCode-268 : https://leetcode.com/problems/missing-number/description/
 
     /** STEP-1 : Sort all numbers, if 0 comes then skip that number (i++) because our array should be 1 -> N
      *   EX :   values : {1, 0, 2, 3}
@@ -45,7 +45,7 @@ public class CyclicSort2_MissingNumber {
 
     }
 
-    // approach : sum of 1-N numbers is (n*(n+1))/2;
+    // Approach : sum of 1-N numbers is (n*(n+1))/2;
     private static int missingNumber_mathApproach(int[] arr){
         int actualSumShouldBe = (arr.length*(arr.length+1))/2;
         int currentSum=0;

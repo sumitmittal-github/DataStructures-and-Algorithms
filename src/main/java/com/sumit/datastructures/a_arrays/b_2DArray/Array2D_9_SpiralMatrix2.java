@@ -4,7 +4,7 @@ import com.sumit.utils.DSAUtils;
 
 public class Array2D_9_SpiralMatrix2 {
 
-    //LeetCode-59 : https://leetcode.com/problems/spiral-matrix-ii/description/
+    // LeetCode-59 : https://leetcode.com/problems/spiral-matrix-ii/description/
 
     public int[][] generateMatrix(int n) {
         int[][] output = new int[n][n];

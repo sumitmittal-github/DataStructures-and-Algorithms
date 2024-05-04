@@ -2,7 +2,7 @@ package com.sumit.datastructures.l_linkedlist.questions;
 
 public class LL_Q17_Reverse {
 
-    //LeetCode-206 : https://leetcode.com/problems/reverse-linked-list/description/
+    // LeetCode-206 : https://leetcode.com/problems/reverse-linked-list/description/
 
     public static void main(String[] args) {
         LL_Q17_Reverse obj = new LL_Q17_Reverse();

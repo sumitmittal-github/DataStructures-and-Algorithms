@@ -2,7 +2,7 @@ package com.sumit.datastructures.l_linkedlist.questions;
 
 public class LL_Q22_ReorderList {
 
-    //LeetCode-143 : https://leetcode.com/problems/reorder-list/description/
+    // LeetCode-143 : https://leetcode.com/problems/reorder-list/description/
 
     public void reorderList(ListNode head) {
 

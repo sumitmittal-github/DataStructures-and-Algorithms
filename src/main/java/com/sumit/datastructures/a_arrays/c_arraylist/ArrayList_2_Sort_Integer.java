@@ -4,7 +4,7 @@ import java.util.*;
 
 public class ArrayList_2_Sort_Integer {
 
-    //Program : Write a program to sort the given ArrayList of Integer
+    // Program : Write a program to sort the given ArrayList of Integer
 
     public void sort_1(List<Integer> list){
         if(list == null || list.size() <= 1)

@@ -7,7 +7,7 @@ import java.util.List;
 
 public class Array2D_7_PascalTriangle2 {
 
-    //LeetCode-119 : https://leetcode.com/problems/pascals-triangle-ii/description/
+    // LeetCode-119 : https://leetcode.com/problems/pascals-triangle-ii/description/
 
     public List<Integer> generate(int rowIndex) {
         // making row and column symmetric. now both will start from 0

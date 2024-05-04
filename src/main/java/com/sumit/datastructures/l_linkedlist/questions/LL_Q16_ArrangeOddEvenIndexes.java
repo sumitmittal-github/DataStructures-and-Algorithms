@@ -2,7 +2,7 @@ package com.sumit.datastructures.l_linkedlist.questions;
 
 public class LL_Q16_ArrangeOddEvenIndexes {
 
-    //LeetCode-328 : https://leetcode.com/problems/odd-even-linked-list/description/
+    // LeetCode-328 : https://leetcode.com/problems/odd-even-linked-list/description/
 
     public static void main(String[] args) {
         ListNode q1 = new ListNode(1,

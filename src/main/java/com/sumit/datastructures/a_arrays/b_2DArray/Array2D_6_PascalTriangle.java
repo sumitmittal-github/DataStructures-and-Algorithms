@@ -7,7 +7,7 @@ import java.util.List;
 
 public class Array2D_6_PascalTriangle {
 
-    //LeetCode-118 : https://leetcode.com/problems/pascals-triangle/description/
+    // LeetCode-118 : https://leetcode.com/problems/pascals-triangle/description/
 
     public List<List<Integer>> generate(int numRows) {
         List<List<Integer>> triangle = new ArrayList<>();

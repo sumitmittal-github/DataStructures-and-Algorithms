@@ -2,7 +2,7 @@ package com.sumit.datastructures.m_stack_queue.questions;
 
 public class SQ_Q3_Histogram {
 
-    //LeetCode-84 : https://leetcode.com/problems/largest-rectangle-in-histogram/description/
+    // LeetCode-84 : https://leetcode.com/problems/largest-rectangle-in-histogram/description/
 
     // TODO : failing on 93rd test case on leetcode.
     // Will complete when see the College Wallah video

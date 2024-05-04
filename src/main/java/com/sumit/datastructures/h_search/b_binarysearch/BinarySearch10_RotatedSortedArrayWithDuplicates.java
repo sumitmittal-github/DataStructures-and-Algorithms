@@ -2,7 +2,7 @@ package com.sumit.datastructures.h_search.b_binarysearch;
 
 public class BinarySearch10_RotatedSortedArrayWithDuplicates {
 
-    //LeetCode-33 : https://leetcode.com/problems/search-in-rotated-sorted-array/description/
+    // LeetCode-33 : https://leetcode.com/problems/search-in-rotated-sorted-array/description/
 
     // Note : It will work even if the array has the duplicate elements
     public static void main(String[] args) {

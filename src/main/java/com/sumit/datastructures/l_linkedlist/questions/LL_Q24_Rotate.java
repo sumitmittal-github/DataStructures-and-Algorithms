@@ -2,7 +2,7 @@ package com.sumit.datastructures.l_linkedlist.questions;
 
 public class LL_Q24_Rotate {
 
-    //LeetCode-61 : https://leetcode.com/problems/rotate-list/description/
+    // LeetCode-61 : https://leetcode.com/problems/rotate-list/description/
 
     public ListNode rotateRight(ListNode head, int k) {
         if(head == null || head.next == null)

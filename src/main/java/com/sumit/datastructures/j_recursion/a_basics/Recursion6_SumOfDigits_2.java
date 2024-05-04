@@ -2,7 +2,7 @@ package com.sumit.datastructures.j_recursion.a_basics;
 
 public class Recursion6_SumOfDigits_2 {
 
-    //LeetCode-258 : https://leetcode.com/problems/add-digits/description/
+    // LeetCode-258 : https://leetcode.com/problems/add-digits/description/
 
     public static void main(String[] args) {
         Recursion6_SumOfDigits_2 obj = new Recursion6_SumOfDigits_2();

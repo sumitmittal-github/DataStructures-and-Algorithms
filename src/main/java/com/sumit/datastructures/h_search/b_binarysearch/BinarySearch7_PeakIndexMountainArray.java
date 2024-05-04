@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class BinarySearch7_PeakIndexMountainArray {
 
-    //LeetCode-852 : https://leetcode.com/problems/peak-index-in-a-mountain-array/description/
+    // LeetCode-852 : https://leetcode.com/problems/peak-index-in-a-mountain-array/description/
 
     public static void main(String[] args) {
                      // Index : 0  1  2  3  4  5  6  7  8   9  10

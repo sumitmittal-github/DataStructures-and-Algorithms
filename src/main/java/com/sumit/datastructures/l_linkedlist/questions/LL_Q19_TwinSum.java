@@ -2,7 +2,7 @@ package com.sumit.datastructures.l_linkedlist.questions;
 
 public class LL_Q19_TwinSum {
 
-    //LeetCode-2130 : https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list/description/
+    // LeetCode-2130 : https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list/description/
 
     /** Program :
      find the maximum twin sum of a linked list of even length

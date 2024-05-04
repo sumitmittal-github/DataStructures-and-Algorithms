@@ -6,7 +6,7 @@ import java.util.List;
 
 public class ArrayList_3_Sort_String {
 
-    //Program : Write a program to sort the given ArrayList of String
+    // Program : Write a program to sort the given ArrayList of String
 
     public void sort_1(List<String> list){
         if(list == null || list.size() <= 1)
