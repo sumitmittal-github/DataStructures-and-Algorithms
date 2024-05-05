@@ -6,7 +6,6 @@ public class Array2_ReturnMax {
 
 
     // Approach-1
-
     public int returnMax_1(int[] arr){
         return returnMaxHelper_1(arr, 0, Integer.MIN_VALUE);
     }
