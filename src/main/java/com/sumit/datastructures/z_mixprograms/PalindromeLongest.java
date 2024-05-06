@@ -1,6 +1,6 @@
-package com.sumit.datastructures.j_recursion.b_strings;
+package com.sumit.datastructures.z_mixprograms;
 
-public class String6_LongestPalindrome {
+public class PalindromeLongest {
 
     // LeetCode-409 : https://leetcode.com/problems/longest-palindrome/description/
 
@@ -19,7 +19,7 @@ public class String6_LongestPalindrome {
     }
 
     public static void main(String[] args) {
-        String6_LongestPalindrome obj = new String6_LongestPalindrome();
+        PalindromeLongest obj = new PalindromeLongest();
         System.out.println(obj.longestPalindrome("abccccdd"));
         System.out.println(obj.longestPalindrome("a"));
     }
