@@ -2,6 +2,8 @@ package com.sumit.datastructures.a_arrays.a_1DArray;
 
 public class Array1D_17_LongestCommonPrefix {
 
+    // LeetCode-14 : https://leetcode.com/problems/longest-common-prefix/description/
+
     public static String longestCommonPrefix(String[] arr) {
         String prefix = arr[0];
         for(int index=1;index<arr.length;index++) {
