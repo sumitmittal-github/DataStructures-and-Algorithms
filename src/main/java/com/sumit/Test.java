@@ -1,28 +1,24 @@
 package com.sumit;
 
-import java.util.*;
-
 public class Test {
 
     public static void main(String[] args) {
         Test t = new Test();
-        System.out.println(t.getSSQHelper("abc", ""));
+
+    }
+
+
+    public int maxJump(int[] a) {
+        int res = a[1] - a[0], n = a.length;
+
+        for (int i = 2; i < n; i++)
+            res = Math.max(res, a[i] - a[i-2]);
+
+        return res;
     }
 
 
 
 
 
-    public ArrayList<String> getSSQHelper(String str, String ans){
-        ArrayList<String> list = new ArrayList<>();
-        if(str == null || str.length() == 0){
-            list.add(ans);
-            return list;
-        }
-
-        list.addAll(getSSQHelper(str.substring(1), ans+str.charAt(0)));
-        list.addAll(getSSQHelper(str.substring(1), ans));
-
-        return list;
-    }
 }

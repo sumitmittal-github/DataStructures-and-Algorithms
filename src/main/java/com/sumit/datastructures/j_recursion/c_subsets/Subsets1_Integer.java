@@ -7,8 +7,8 @@ import java.util.List;
 public class Subsets1_Integer {
 
     // Question : Given an array of Integers, return sum of all the subsets in it.
-    //      Ex  :  Input = arr-= = {2,3}
-    //      O/p :  Output = [0, 2, 3, 5]
+    //      Ex  :  Input arr = {2,3}
+    //      O/p :  Output    = [0, 2, 3, 5]
 
     public static void main(String[] args) {
         Subsets1_Integer obj = new Subsets1_Integer();
