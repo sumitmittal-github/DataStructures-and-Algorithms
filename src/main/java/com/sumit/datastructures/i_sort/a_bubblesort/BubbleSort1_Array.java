@@ -38,14 +38,14 @@ public class BubbleSort1_Array {
     public static void bubbleSort(int[] arr) {
 
         // iterate the entire array n-1 times
-        for(int i = 0; i < arr.length; i++) {
+        for(int i = 0; i < arr.length-1; i++) {
             boolean isSwapped = false;
             // after each iteration the max element will come at the last respective index
-            for (int j = 1; j < arr.length-i; j++) {
-                if(arr[j] < arr[j-1]){
-                    int temp = arr[j-1];
-                    arr[j-1] = arr[j];
-                    arr[j] = temp;
+            for (int j = 0; j < arr.length-1-i; j++) {
+                if(arr[j] > arr[j+1]){
+                    int temp = arr[j];
+                    arr[j] = arr[j+1];
+                    arr[j+1] = temp;
                     isSwapped = true;
                 }
             }
