@@ -9,7 +9,7 @@ public class Sort_Q1_MoveZeros {
 
     // Approach-1 : iterate array once and copy all non-zeros on the front
     //              iterate remaining array and put zeros on remaining indexes
-    // but beats only 5% users because O(n^2) complexity
+    //              beats 100% users because O(n) complexity
     public void moveZeroes_1(int[] nums) {
         // STEP-1 : copy all non-zeros on the front
         int nonZeroIndex = 0;
