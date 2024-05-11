@@ -8,7 +8,7 @@ public class Test {
         Test t = new Test();
         int[] arr = {5,4,3,2,1};
         System.out.println(Arrays.toString(arr));
-        t.selectionSort(arr);
+        t.insertionSort(arr);
         System.out.println(Arrays.toString(arr));
     }
 
@@ -36,6 +36,25 @@ public class Test {
         }
     }
 
+
+    public void insertionSort(int[] arr){
+        for(int i=1; i<arr.length; i++){
+            for(int j=i; j>0; j--){
+                if(arr[j]<arr[j-1]) swap(arr, j, j-1);
+                else break;
+            }
+        }
+    }
+
+
+    public void moveZerosAtTheEnd(int[] arr){
+        for(int i=1; i<arr.length; i++){
+            for(int j=i; j>0; j--){
+                if(arr[j]<arr[j-1]) swap(arr, j, j-1);
+                else break;
+            }
+        }
+    }
 
     private static void swap(int[] arr, int i, int j) {
         int temp = arr[i];
