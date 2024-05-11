@@ -6,34 +6,52 @@ public class SelectionSort1_Array {
 
     public static void main(String[] args) {
         int[] arr1 = {10, 30, 20, 50, 40};
-        selectionSortWithRecursion(arr1);
+        selectionSort_1(arr1);
         System.out.println(Arrays.toString(arr1));
 
         int[] arr2 = {10, 20, 30, 40, 50};
-        selectionSortWithRecursion(arr2);
+        selectionSort_1(arr2);
         System.out.println(Arrays.toString(arr2));
 
         int[] arr3 = {50, 40, 30, 20, 10};
-        selectionSortWithRecursion(arr3);
+        selectionSort_1(arr3);
         System.out.println(Arrays.toString(arr3));
 
         int[] arr4 = {};
-        selectionSortWithRecursion(arr4);
+        selectionSort_1(arr4);
         System.out.println(Arrays.toString(arr4));
 
         int[] arr5 = {10};
-        selectionSortWithRecursion(arr5);
+        selectionSort_1(arr5);
         System.out.println(Arrays.toString(arr5));
 
         int[] arr6 = {-50, -440, 332, -990, 0};
-        selectionSortWithRecursion(arr6);
+        selectionSort_1(arr6);
         System.out.println(Arrays.toString(arr6));
 
     }
 
 
     // Way-1 : using for loop
-    private static void selectionSort(int[] arr){
+    private static void selectionSort_1(int[] arr){
+
+        for (int i = 0; i < arr.length-1; i++) {
+
+            //position of min element in the remaining array
+            int minIndex = i;
+            for (int j = i+1; j < arr.length; j++) {
+                if(arr[minIndex] > arr[j])
+                    minIndex = j;
+            }
+
+            // swap
+            swap(arr, minIndex, i);
+        }
+    }
+
+
+    // Way-2 : using for loop (but difficult approach)
+    private static void selectionSort_2(int[] arr){
 
         for (int i = 0; i <= arr.length-1; i++) {
 
@@ -55,7 +73,7 @@ public class SelectionSort1_Array {
     }
 
 
-    // Way-2 : using recursion
+    // Way-3 : using recursion
     private static void selectionSortWithRecursion(int[] arr){
         if(arr == null || arr.length <= 1)
             return;
