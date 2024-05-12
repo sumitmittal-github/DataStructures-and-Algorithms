@@ -1,4 +1,4 @@
-package com.sumit.datastructures.i_sort.e_mergesort;
+package com.sumit.datastructures.i_sort.d_mergesort;
 
 import java.util.Arrays;
 

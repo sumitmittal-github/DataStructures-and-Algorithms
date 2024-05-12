@@ -1,4 +1,4 @@
-package com.sumit.datastructures.i_sort.f_quicksort;
+package com.sumit.datastructures.i_sort.e_quicksort;
 
 import java.util.Arrays;
 

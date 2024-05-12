@@ -1,4 +1,4 @@
-package com.sumit.datastructures.i_sort.d_cyclicsort;
+package com.sumit.datastructures.i_sort.z_cyclicsort;
 
 public class CyclicSort7_FirstMissingPositive {
 
