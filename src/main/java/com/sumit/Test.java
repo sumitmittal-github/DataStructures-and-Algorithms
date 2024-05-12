@@ -85,6 +85,46 @@ public class Test {
 
 
 
+    public void quickSort(int[] arr){
+        quickSort(arr, 0, arr.length-1);
+    }
+    public void quickSort(int[] arr, int start, int end){
+        if(start >= end)
+            return;
+
+        int pivotIndex = partition(arr, start, end);
+        quickSort(arr, start, pivotIndex-1);
+        quickSort(arr, pivotIndex+1, end);
+    }
+    private int partition(int[] arr, int start, int end) {
+        // Step-1 : take 1st element as pivot element and
+        // count elements less than or equal to pivot element (keep all matching duplicate elements at the left)
+        int pivotElement = arr[start];
+        int count = 0;
+        for(int i=start+1; i<arr.length; i++){
+            if(arr[i] <= pivotElement)    count++;
+        }
+
+        // Step-2 : Calculate pivotIndex and put pivotElement at its correct position
+        int pivotIndex = start + count;
+        swap(arr, start, pivotIndex);
+
+        // Step-3 : all the elements before pivotIndex should be less than or equal to pivot element
+        //          all the elements after pivotIndex should be greater than pivot element
+        while(start <= pivotIndex && end > pivotIndex){
+            while(arr[start] <= pivotElement) start++;
+            while(arr[end] > pivotElement) end--;
+
+            if(start <= pivotIndex && end > pivotIndex) {
+                swap(arr, start, end);
+                start++;
+                end--;
+            }
+        }
+        return pivotIndex;
+    }
+
+
     private static void swap(int[] arr, int i, int j) {
         int temp = arr[i];
         arr[i] = arr[j];
@@ -94,10 +134,23 @@ public class Test {
 
     public static void main(String[] args) {
         Test t = new Test();
-        int[] arr = {5,4,3,2,1};
-        System.out.println(Arrays.toString(arr));
-        t.mergeSort(arr);
-        System.out.println(Arrays.toString(arr));
+
+        int[] arr1 = {5,3,4,2,1};
+        System.out.println(Arrays.toString(arr1));
+        t.quickSort(arr1);
+        System.out.println(Arrays.toString(arr1));
+        System.out.println();
+
+        int[] arr2 = {1,2,3,4,5};
+        System.out.println(Arrays.toString(arr2));
+        t.quickSort(arr2);
+        System.out.println(Arrays.toString(arr2));
+        System.out.println();
+
+        int[] arr3 = {5,4,3,2,1};
+        System.out.println(Arrays.toString(arr3));
+        t.quickSort(arr3);
+        System.out.println(Arrays.toString(arr3));
     }
 
 }
