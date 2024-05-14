@@ -132,10 +132,18 @@ public class Test {
     }
 
 
+    public int reverseBits(int n) {
+        String binaryNum = String.valueOf(n);
+        binaryNum = new StringBuffer(binaryNum).reverse().toString();
+        return Integer.parseInt(binaryNum, 2);
+    }
+
+
     public static void main(String[] args) {
         Test t = new Test();
+        System.out.println(t.reverseBits(11));
 
-        int[] arr1 = {5,3,4,2,1};
+        /*int[] arr1 = {5,3,4,2,1};
         System.out.println(Arrays.toString(arr1));
         t.quickSort(arr1);
         System.out.println(Arrays.toString(arr1));
@@ -150,7 +158,7 @@ public class Test {
         int[] arr3 = {5,4,3,2,1};
         System.out.println(Arrays.toString(arr3));
         t.quickSort(arr3);
-        System.out.println(Arrays.toString(arr3));
+        System.out.println(Arrays.toString(arr3));*/
     }
 
 }
