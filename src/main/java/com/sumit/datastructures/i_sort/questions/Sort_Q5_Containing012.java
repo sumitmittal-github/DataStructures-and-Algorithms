@@ -13,7 +13,7 @@ public class Sort_Q5_Containing012 {
     // Input: {0, 1, 1, 0, 1, 2, 1, 2, 0, 0, 0, 1}
     // Output: {0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 2, 2}
 
-    public void dutchNationalFlagProblem(int[] arr) {
+    public void dutchNationalFlagProblem_1(int[] arr) {
         int[] prefixSumArr = new int[3];
 
         // prepare frequency array
@@ -40,7 +40,26 @@ public class Sort_Q5_Containing012 {
             arr[i] = output[i];
     }
 
+    public void dutchNationalFlagProblem_2(int[] arr) {
+        int next0Index = 0;
+        int next2Index = arr.length-1;
 
+        int i=0;
+        while(i <= next2Index) {
+            if(arr[i] == 0){
+                swap(arr, next0Index, i);
+                next0Index++;
+                i++;
+            }
+            else if(arr[i] == 1) {
+                i++;
+            }
+            else {
+                swap(arr, next2Index, i);
+                next2Index--;
+            }
+        }
+    }
 
 
 
@@ -55,10 +74,12 @@ public class Sort_Q5_Containing012 {
         Sort_Q5_Containing012 obj = new Sort_Q5_Containing012();
 
         int[] arr1 = {0, 1, 1, 0, 1, 2, 1, 2, 0, 0, 0, 1};
-        obj.dutchNationalFlagProblem(arr1);
+        obj.dutchNationalFlagProblem_1(arr1);
         System.out.println(Arrays.toString(arr1));
 
-
+        int[] arr2 = {0, 1, 1, 0, 1, 2, 1, 2, 0, 0, 0, 1};
+        obj.dutchNationalFlagProblem_2(arr2);
+        System.out.println(Arrays.toString(arr2));
     }
 
 }
