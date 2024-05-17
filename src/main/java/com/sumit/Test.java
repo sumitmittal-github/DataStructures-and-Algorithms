@@ -139,26 +139,37 @@ public class Test {
     }
 
 
-    public static void main(String[] args) {
-        Test t = new Test();
-        System.out.println(t.reverseBits(11));
 
-        /*int[] arr1 = {5,3,4,2,1};
-        System.out.println(Arrays.toString(arr1));
-        t.quickSort(arr1);
-        System.out.println(Arrays.toString(arr1));
-        System.out.println();
+    // first occurrence
+    public int firstOccurrence(int[] arr, int target){
+        int start=0, end = arr.length-1;
 
-        int[] arr2 = {1,2,3,4,5};
-        System.out.println(Arrays.toString(arr2));
-        t.quickSort(arr2);
-        System.out.println(Arrays.toString(arr2));
-        System.out.println();
+        while(start <= end){
+            int mid = start + (end-start)/2;
 
-        int[] arr3 = {5,4,3,2,1};
-        System.out.println(Arrays.toString(arr3));
-        t.quickSort(arr3);
-        System.out.println(Arrays.toString(arr3));*/
+            if(arr[mid] == target){
+                if(mid == 0 || arr[mid-1] != target)
+                    return mid;
+                else
+                    end = mid-1;
+            } else if(arr[mid] < target){
+                start = mid+1;
+            } else
+                end = mid-1;
+        }
+        return -1;
     }
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
