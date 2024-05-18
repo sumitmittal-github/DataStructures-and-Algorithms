@@ -157,17 +157,38 @@ public class Test {
     }
 
 
-    public static void main(String[] args) {
-        double start2 = 4;
-        double end2 = start2 + 1 - Math.pow(.1, 3);
+    public int rotatedSortedArray_pivotIndex(int[] arr){
+        int start=0, end = arr.length-1;
+        int possibleAns = -1;   //pivotIndex
 
-        System.out.println(start2);
-        System.out.println(end2);
+        while(start <= end){
+            int mid = start + (end-start)/2;
+
+            if(arr[mid] <= arr[arr.length-1]){
+                possibleAns = arr[mid];
+                end = mid-1;
+            }
+            else
+                start = mid+1;
+        }
+        return possibleAns;
     }
 
 
 
 
+
+    public static void main(String[] args) {
+        Test t = new Test();
+
+        /*System.out.println(t.rotatedSortedArray_min_value(new int[]{11,12,13,14,15,16,17,18,19,0,1}));
+        System.out.println(t.rotatedSortedArray_min_value(new int[]{4,5,6,7,0,1,2}));
+        System.out.println(t.rotatedSortedArray_min_value(new int[]{4,5,6,7,0,1}));
+        System.out.println(t.rotatedSortedArray_min_value(new int[]{4,5,6,7}));
+        System.out.println(t.rotatedSortedArray_min_value(new int[]{4,5,6,7,1}));
+        System.out.println(t.rotatedSortedArray_min_value(new int[]{4,5,6,7,1,2}));
+        System.out.println(t.rotatedSortedArray_min_value(new int[]{4,5,6,7,1,2,3}));*/
+    }
 
 
 }
