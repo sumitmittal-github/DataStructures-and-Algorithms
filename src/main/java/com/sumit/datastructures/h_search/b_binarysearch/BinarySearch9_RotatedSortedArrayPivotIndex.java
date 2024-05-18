@@ -12,10 +12,9 @@ public class BinarySearch9_RotatedSortedArrayPivotIndex {
             int mid = start + (end-start)/2;
 
             if(arr[mid] <= arr[arr.length-1]){
-                possibleAns = arr[mid];
+                possibleAns = mid;
                 end = mid-1;
-            }
-            else
+            } else
                 start = mid+1;
         }
         return possibleAns;
