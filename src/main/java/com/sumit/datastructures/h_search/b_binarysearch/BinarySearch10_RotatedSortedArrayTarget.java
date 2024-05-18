@@ -1,6 +1,6 @@
 package com.sumit.datastructures.h_search.b_binarysearch;
 
-public class BinarySearch9_RotatedSortedArray {
+public class BinarySearch10_RotatedSortedArrayTarget {
 
     // LeetCode-33 : https://leetcode.com/problems/search-in-rotated-sorted-array/description/
 

@@ -157,22 +157,7 @@ public class Test {
     }
 
 
-    public int rotatedSortedArray_pivotIndex(int[] arr){
-        int start=0, end = arr.length-1;
-        int possibleAns = -1;   //pivotIndex
 
-        while(start <= end){
-            int mid = start + (end-start)/2;
-
-            if(arr[mid] <= arr[arr.length-1]){
-                possibleAns = arr[mid];
-                end = mid-1;
-            }
-            else
-                start = mid+1;
-        }
-        return possibleAns;
-    }
 
 
 

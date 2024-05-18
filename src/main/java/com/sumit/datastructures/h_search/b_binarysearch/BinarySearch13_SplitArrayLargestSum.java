@@ -2,7 +2,7 @@ package com.sumit.datastructures.h_search.b_binarysearch;
 
 import java.util.Arrays;
 
-public class BinarySearch12_SplitArrayLargestSum {
+public class BinarySearch13_SplitArrayLargestSum {
 
     // LeetCode-410 : https://leetcode.com/problems/split-array-largest-sum/description/
 
@@ -10,7 +10,7 @@ public class BinarySearch12_SplitArrayLargestSum {
         int[] arr1 = {7, 2, 5, 10, 8};
         int noOfPartitions1 = 2;
         System.out.println("Partitions : " + noOfPartitions1 + ", Arr : "+ Arrays.toString(arr1)+" => Largest sum : ");
-        System.out.println(new BinarySearch12_SplitArrayLargestSum().splitArray(arr1, noOfPartitions1));
+        System.out.println(new BinarySearch13_SplitArrayLargestSum().splitArray(arr1, noOfPartitions1));
     }
 
     public int splitArray(int[] arr, int noOfPartitions){
