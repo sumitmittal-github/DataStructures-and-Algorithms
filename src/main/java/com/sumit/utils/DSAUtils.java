@@ -4,7 +4,7 @@ import java.util.List;
 
 public class DSAUtils {
 
-    public static int[][] getUniqueElementsMatrix(int row, int column){
+    public static int[][] getSortedMatrix(int row, int column){
         int element = 1;
 
         int[][] matrix = new int[row][column];
@@ -13,6 +13,16 @@ public class DSAUtils {
                 matrix[i][j] = element++;
             }
         }
+        return matrix;
+    }
+
+    public static int[][] getRowColSortedMatrix(){
+        int[][] matrix = {
+                {10, 20, 30, 40},
+                {15, 25, 35, 45},
+                {28, 29, 37, 49},
+                {33, 34, 55, 60}
+        };
         return matrix;
     }
 

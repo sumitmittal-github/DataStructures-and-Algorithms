@@ -28,7 +28,7 @@ public class SortedMatrix1_Search {
     public static void main(String[] args) {
         SortedMatrix1_Search obj = new SortedMatrix1_Search();
 
-        int[][] matrix = DSAUtils.getUniqueElementsMatrix(3, 4);
+        int[][] matrix = DSAUtils.getSortedMatrix(3, 4);
         for(int i=-2; i<15; i++){
             System.out.println(i + " " + obj.searchMatrix(matrix, i));
         }
