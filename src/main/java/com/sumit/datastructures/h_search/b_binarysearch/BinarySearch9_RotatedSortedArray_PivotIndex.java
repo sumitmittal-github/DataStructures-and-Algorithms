@@ -29,8 +29,8 @@ public class BinarySearch9_RotatedSortedArray_PivotIndex {
 
         while(start <= end){
             int mid = start + (end-start)/2;
-            if(arr[mid] <= arr[end] && arr[mid] < possibleAns){
-                possibleAns = arr[mid];
+            if(arr[mid] <= arr[end]){
+                if(arr[mid] < possibleAns)   possibleAns = arr[mid];
                 end = mid-1;
             } else
                 start = mid+1;
