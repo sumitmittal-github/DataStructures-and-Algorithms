@@ -1,6 +1,6 @@
-package com.sumit.datastructures.h_search.b_binarysearch;
+package com.sumit.datastructures.h_search.b_binarysearch.a_1d_array;
 
-public class BinarySearch2_CeilingNumber {
+public class BS_1D_4_CeilingNumber {
 
     /*Program :- find the ceiling number of a target from an array
     *       Ex- [1, 4, 7, 12, 45, 55, 90]

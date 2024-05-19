@@ -1,8 +1,8 @@
-package com.sumit.datastructures.h_search.b_binarysearch;
+package com.sumit.datastructures.h_search.b_binarysearch.a_1d_array;
 
 import java.util.Arrays;
 
-public class BinarySearch5_FirstAndLastPosition {
+public class BS_1D_7_FirstAndLastPosition {
 
     // LeetCode-34 : https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/description/
 

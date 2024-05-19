@@ -1,7 +1,7 @@
-package com.sumit.datastructures.h_search.b_binarysearch;
+package com.sumit.datastructures.h_search.b_binarysearch.a_1d_array;
 
 
-public class BinarySearch6_InfiniteSortedArray {
+public class BS_1D_8_InfiniteSortedArray {
 
     /*
     * Program : Suppose you have a sorted array of infinite numbers, how would you search an element in the array?

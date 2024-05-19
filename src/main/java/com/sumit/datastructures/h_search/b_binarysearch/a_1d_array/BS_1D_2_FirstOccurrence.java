@@ -1,6 +1,6 @@
-package com.sumit.datastructures.h_search.b_binarysearch;
+package com.sumit.datastructures.h_search.b_binarysearch.a_1d_array;
 
-public class BinarySearch1_FirstOccurrence {
+public class BS_1D_2_FirstOccurrence {
 
     // Question : find the first occurrence of a given target in a sorted array.
 
@@ -27,7 +27,7 @@ public class BinarySearch1_FirstOccurrence {
 
 
     public static void main(String[] args) {
-        BinarySearch1_FirstOccurrence obj = new BinarySearch1_FirstOccurrence();
+        BS_1D_2_FirstOccurrence obj = new BS_1D_2_FirstOccurrence();
 
         // indexes   0  1  2  3  4  5  6  7  8  9
         int[] arr = {2, 5, 5, 5, 6, 6, 8, 9, 9, 9};

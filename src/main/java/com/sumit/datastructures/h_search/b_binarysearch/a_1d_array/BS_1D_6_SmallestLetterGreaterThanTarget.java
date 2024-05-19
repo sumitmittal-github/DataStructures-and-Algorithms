@@ -1,8 +1,8 @@
-package com.sumit.datastructures.h_search.b_binarysearch;
+package com.sumit.datastructures.h_search.b_binarysearch.a_1d_array;
 
 import java.util.Arrays;
 
-public class BinarySearch4_SmallestLetterGreaterThanTarget {
+public class BS_1D_6_SmallestLetterGreaterThanTarget {
 
     // LeetCode-744 : https://leetcode.com/problems/find-smallest-letter-greater-than-target/description/
 

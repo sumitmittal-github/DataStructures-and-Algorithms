@@ -1,8 +1,8 @@
-package com.sumit.datastructures.h_search.b_binarysearch;
+package com.sumit.datastructures.h_search.b_binarysearch.a_1d_array;
 
 import java.util.Arrays;
 
-public class BinarySearch12_RotatedSortedArray_TargetWithDuplicates {
+public class BS_1D_14_RotatedSortedArray_TargetWithDuplicates {
 
     // LeetCode-81 : https://leetcode.com/problems/search-in-rotated-sorted-array-ii/description/
 
@@ -128,7 +128,7 @@ public class BinarySearch12_RotatedSortedArray_TargetWithDuplicates {
 
 
     public static void main(String[] args) {
-        BinarySearch12_RotatedSortedArray_TargetWithDuplicates obj = new BinarySearch12_RotatedSortedArray_TargetWithDuplicates();
+        BS_1D_14_RotatedSortedArray_TargetWithDuplicates obj = new BS_1D_14_RotatedSortedArray_TargetWithDuplicates();
 
         int[] arr1 = {0,0,0,1,1,1,2,0,0,0};
         int target1 = 2;

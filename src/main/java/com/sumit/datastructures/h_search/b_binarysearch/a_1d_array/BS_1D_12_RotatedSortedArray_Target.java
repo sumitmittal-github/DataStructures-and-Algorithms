@@ -1,6 +1,6 @@
-package com.sumit.datastructures.h_search.b_binarysearch;
+package com.sumit.datastructures.h_search.b_binarysearch.a_1d_array;
 
-public class BinarySearch10_RotatedSortedArray_Target {
+public class BS_1D_12_RotatedSortedArray_Target {
 
     // LeetCode-33 : https://leetcode.com/problems/search-in-rotated-sorted-array/description/
 
@@ -148,7 +148,7 @@ public class BinarySearch10_RotatedSortedArray_Target {
 
 
     public static void main(String[] args) {
-        BinarySearch10_RotatedSortedArray_Target obj = new BinarySearch10_RotatedSortedArray_Target();
+        BS_1D_12_RotatedSortedArray_Target obj = new BS_1D_12_RotatedSortedArray_Target();
 
         // Index :    0  1  2  3  4  5  6   7  8   9
         int[] arr0 = {4, 5, 6, 7, 8, 9, 10, 1, 2, 3};

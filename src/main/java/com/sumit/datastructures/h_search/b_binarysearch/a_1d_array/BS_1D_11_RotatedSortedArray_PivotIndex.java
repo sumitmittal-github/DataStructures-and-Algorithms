@@ -1,6 +1,6 @@
-package com.sumit.datastructures.h_search.b_binarysearch;
+package com.sumit.datastructures.h_search.b_binarysearch.a_1d_array;
 
-public class BinarySearch9_RotatedSortedArray_PivotIndex {
+public class BS_1D_11_RotatedSortedArray_PivotIndex {
 
 
     // LeetCode-153 : https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description/
@@ -41,7 +41,7 @@ public class BinarySearch9_RotatedSortedArray_PivotIndex {
 
 
     public static void main(String[] args) {
-        BinarySearch9_RotatedSortedArray_PivotIndex obj = new BinarySearch9_RotatedSortedArray_PivotIndex();
+        BS_1D_11_RotatedSortedArray_PivotIndex obj = new BS_1D_11_RotatedSortedArray_PivotIndex();
 
         System.out.println(obj.rotatedSortedArray_pivotIndex(new int[]{4, 5, 6, 7, 0, 1, 2}));
         System.out.println(obj.rotatedSortedArray_pivotIndex(new int[]{4, 5, 6, 7, 0, 1}));

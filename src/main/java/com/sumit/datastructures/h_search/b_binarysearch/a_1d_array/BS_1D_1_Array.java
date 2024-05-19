@@ -1,6 +1,6 @@
-package com.sumit.datastructures.h_search.b_binarysearch;
+package com.sumit.datastructures.h_search.b_binarysearch.a_1d_array;
 
-public class BinarySearch1_Array {
+public class BS_1D_1_Array {
 
     public static void main(String[] args) {
         // indexes             0    1   2  3  4   5  6   7   8   9

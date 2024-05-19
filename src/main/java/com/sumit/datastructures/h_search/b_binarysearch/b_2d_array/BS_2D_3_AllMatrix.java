@@ -1,8 +1,8 @@
-package com.sumit.datastructures.h_search.c_2darray;
+package com.sumit.datastructures.h_search.b_binarysearch.b_2d_array;
 
 import java.util.Arrays;
 
-public class SortedMatrix2_AllMatrix {
+public class BS_2D_3_AllMatrix {
 
     public static void main(String[] args) {
         int[][] matrix = {

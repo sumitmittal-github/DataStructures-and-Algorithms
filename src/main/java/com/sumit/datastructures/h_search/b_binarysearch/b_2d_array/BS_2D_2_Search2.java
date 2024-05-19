@@ -1,10 +1,10 @@
-package com.sumit.datastructures.h_search.c_2darray;
+package com.sumit.datastructures.h_search.b_binarysearch.b_2d_array;
 
 import com.sumit.utils.DSAUtils;
 
 import java.util.Arrays;
 
-public class SortedMatrix2_Search2 {
+public class BS_2D_2_Search2 {
 
     // LeetCode-240 : https://leetcode.com/problems/search-a-2d-matrix-ii/
 
@@ -34,7 +34,7 @@ public class SortedMatrix2_Search2 {
 
 
     public static void main(String[] args) {
-        SortedMatrix2_Search2 obj = new SortedMatrix2_Search2();
+        BS_2D_2_Search2 obj = new BS_2D_2_Search2();
         int[][] matrix = DSAUtils.getRowColSortedMatrix();
 
         int target1 = 37;

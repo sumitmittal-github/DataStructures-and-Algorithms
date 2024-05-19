@@ -1,8 +1,8 @@
-package com.sumit.datastructures.h_search.b_binarysearch;
+package com.sumit.datastructures.h_search.b_binarysearch.a_1d_array;
 
 import java.util.Arrays;
 
-public class BinarySearch8_FindInMountainArray {
+public class BS_1D_10_FindInMountainArray {
 
     // LeetCode-1095 : https://leetcode.com/problems/find-in-mountain-array/
 

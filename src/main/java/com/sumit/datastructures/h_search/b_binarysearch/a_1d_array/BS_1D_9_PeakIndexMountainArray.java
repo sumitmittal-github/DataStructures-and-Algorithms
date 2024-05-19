@@ -1,8 +1,8 @@
-package com.sumit.datastructures.h_search.b_binarysearch;
+package com.sumit.datastructures.h_search.b_binarysearch.a_1d_array;
 
 import java.util.Arrays;
 
-public class BinarySearch7_PeakIndexMountainArray {
+public class BS_1D_9_PeakIndexMountainArray {
 
     // LeetCode-852 : https://leetcode.com/problems/peak-index-in-a-mountain-array/description/
 

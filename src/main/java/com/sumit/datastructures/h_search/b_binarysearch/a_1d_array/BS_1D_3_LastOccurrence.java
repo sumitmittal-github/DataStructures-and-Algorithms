@@ -1,6 +1,6 @@
-package com.sumit.datastructures.h_search.b_binarysearch;
+package com.sumit.datastructures.h_search.b_binarysearch.a_1d_array;
 
-public class BinarySearch1_LastOccurrence {
+public class BS_1D_3_LastOccurrence {
 
     // Question : find the last occurrence of a given target in a sorted array.
 
@@ -27,7 +27,7 @@ public class BinarySearch1_LastOccurrence {
 
 
     public static void main(String[] args) {
-        BinarySearch1_LastOccurrence obj = new BinarySearch1_LastOccurrence();
+        BS_1D_3_LastOccurrence obj = new BS_1D_3_LastOccurrence();
 
         // indexes   0  1  2  3  4  5  6  7  8  9
         int[] arr = {2, 5, 5, 5, 6, 6, 8, 9, 9, 9};

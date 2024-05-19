@@ -1,8 +1,8 @@
-package com.sumit.datastructures.h_search.b_binarysearch;
+package com.sumit.datastructures.h_search.b_binarysearch.a_1d_array;
 
 import java.util.Arrays;
 
-public class BinarySearch12_RotatedSortedArrayRotationCount {
+public class BS_1D_15_RotatedSortedArrayRotationCount {
 
     // Logic : Rotation count = pivot index +1
     // Ex :     Index    :   0   1   2   3  4  5   6
