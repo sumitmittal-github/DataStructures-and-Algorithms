@@ -25,7 +25,7 @@ public class LinearSearch2_ArrayWithDuplicates {
     }
 
 
-    // Way-1 : linear search
+    // Approach-1 : linear search
     private static List<Integer> linearSearch(int[] arr, int target){
         List<Integer> indexes = new ArrayList<>();
         if(arr == null && arr.length == 0)
@@ -39,7 +39,7 @@ public class LinearSearch2_ArrayWithDuplicates {
     }
 
 
-    // Way-2 : linear search with Recursion
+    // Approach-2 : linear search with Recursion
     private static List<Integer> linearSearchWithRecursion(int[] arr, int target){
         List<Integer> indexes = new ArrayList<>();
 
@@ -60,7 +60,7 @@ public class LinearSearch2_ArrayWithDuplicates {
     }
 
 
-    // Way-2 : linear search with Recursion : without passing list as an argument of helper method
+    // Approach-2 : linear search with Recursion : without passing list as an argument of helper method
     // NOTE : This is not a good approach because we are creating new list in every recursion call
     //        Just keep this concept in your mind where we are adding result in previous method calls response
     private static List<Integer> linearSearchWithRecursion2(int[] arr, int target) {

@@ -15,7 +15,7 @@ public class Subsets4_UsingIterationWithDuplicateElements {
 
 
 
-    // Way-1 : before adding the new subset in allSubsetsList,
+    // Approach-1 : before adding the new subset in allSubsetsList,
     //         check if similar kind of subset is already present in the allSubsetsList
     //         if not, only then add this subset in allSubsetsList
     public static List<List<Integer>> subsets(int[] inputArr) {
@@ -56,7 +56,7 @@ public class Subsets4_UsingIterationWithDuplicateElements {
     }
 
 
-    // Way-2 : better approach -
+    // Approach-2 : better approach -
     //         when created new subsets with duplicate element,
     //         then only add it in above steps accepted subsets
     public static List<List<Integer>> subsets2(int[] inputArr) {

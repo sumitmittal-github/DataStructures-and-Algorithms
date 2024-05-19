@@ -9,14 +9,14 @@ public class Permutations1_StringPermutations {
 
     public static void main(String[] args) {
 
-        // Way-1 : return all permutations
+        // Approach-1 : return all permutations
         System.out.println(allPermutations("abc", ""));
 
-        // Way-2 : print all permutations
+        // Approach-2 : print all permutations
         allPermutations2("abc", "");
     }
 
-    // Way-1 : return all permutations
+    // Approach-1 : return all permutations
     public static List<String> allPermutations(String inputStr, String answer){
         List<String> list = new ArrayList<>();
 
@@ -43,7 +43,7 @@ public class Permutations1_StringPermutations {
     }
 
 
-    // Way-2 : print all permutations
+    // Approach-2 : print all permutations
     public static void allPermutations2(String inputStr, String answer){
 
         // base condition

@@ -19,7 +19,7 @@ public class Recursion10_NumberOfSteps {
     }
 
 
-    // Way-1 : Basic approach
+    // Approach-1 : Basic approach
     public static int numberOfSteps(int num) {
         int count = 0;
         while(num > 0){
@@ -34,7 +34,7 @@ public class Recursion10_NumberOfSteps {
     }
 
 
-    // Way-2 : with recursion
+    // Approach-2 : with recursion
     public static int numberOfStepsWithRecursion(int num) {
         if(num == 0)
             return 0;
@@ -43,12 +43,12 @@ public class Recursion10_NumberOfSteps {
     }
 
 
-    // Way-3 : with recursion & helper method
+    // Approach-3 : with recursion & helper method
     public static int numberOfStepsWithRecursion2(int num) {
         return helper(num, 0);
     }
 
-    // Way-3 : with recursion & helper method
+    // Approach-3 : with recursion & helper method
     public static int helper(int num, int steps) {
         if(num == 0)
             return steps;

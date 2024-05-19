@@ -17,7 +17,7 @@ public class Pattern_2 {
     }
 
 
-    // Way-1 : basic approach
+    // Approach-1 : basic approach
     public static void pattern(int n){
         for (int row = 1; row <= n ; row++) {
             for (int col = n; col >= row ; col--) {
@@ -29,7 +29,7 @@ public class Pattern_2 {
 
 
 
-    // Way-2 : not a good approach because we are using for loop, instead use recursion
+    // Approach-2 : not a good approach because we are using for loop, instead use recursion
     public static void patternWithRecursion(int n){
         if(n == 0)
             return;
@@ -43,7 +43,7 @@ public class Pattern_2 {
 
 
 
-    // Way-3 : without for loop
+    // Approach-3 : without for loop
     public static void patternWithRecursionWithoutForLoop(int n){
         int row = 0;
         int col = 0;

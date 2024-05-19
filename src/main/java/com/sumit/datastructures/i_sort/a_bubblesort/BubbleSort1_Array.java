@@ -32,7 +32,7 @@ public class BubbleSort1_Array {
     }
 
 
-    // Way-1 : using for loop
+    // Approach-1 : using for loop
     // we are not returning the existing array because we will sort the existing array
     // because bubble sort comes under inplace sorting technique.
     public static void bubbleSort(int[] arr) {
@@ -58,7 +58,7 @@ public class BubbleSort1_Array {
     }
 
 
-    // Way-2 : using recursion
+    // Approach-2 : using recursion
     public static void bubbleSortWithRecursion(int[] arr) {
         if(arr == null || arr.length == 0)
             return;

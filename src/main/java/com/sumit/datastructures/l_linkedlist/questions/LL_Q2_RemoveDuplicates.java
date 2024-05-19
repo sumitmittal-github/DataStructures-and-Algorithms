@@ -27,7 +27,7 @@ public class LL_Q2_RemoveDuplicates {
         display(obj.deleteDuplicates_1(ll2_way2));
     }
 
-    // Way-1 : using iteration
+    // Approach-1 : using iteration
     public ListNode deleteDuplicates_1(ListNode head) {
         if(head == null)
             return null;
@@ -46,7 +46,7 @@ public class LL_Q2_RemoveDuplicates {
 
 
 
-    // Way-2 : using recursion
+    // Approach-2 : using recursion
     public ListNode deleteDuplicates_2(ListNode head) {
         helper(head);
         return head;

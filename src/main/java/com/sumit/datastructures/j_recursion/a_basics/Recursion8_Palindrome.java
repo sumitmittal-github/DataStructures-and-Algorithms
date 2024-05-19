@@ -20,7 +20,7 @@ public class Recursion8_Palindrome {
     }
 
 
-    // Way-1 : by using helper function and checking =>   num == rev(num)
+    // Approach-1 : by using helper function and checking =>   num == rev(num)
     private static boolean isPalindromeByRecursion(int num) {
         int revNum = reverseNumByRecursion(num);
         return revNum == num;
@@ -35,7 +35,7 @@ public class Recursion8_Palindrome {
     }
 
 
-    // Way-2 : by using helper function and checking =>   indexes from start and end of the number in string
+    // Approach-2 : by using helper function and checking =>   indexes from start and end of the number in string
     private static boolean isPalindromeByRecursion2(int num) {
         String numStr = String.valueOf(num);
         int startIndex = 0;

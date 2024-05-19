@@ -18,7 +18,7 @@ public class Recursion9_CountZeros {
     }
 
 
-    // Way-1 : Zeros in last digit + Zeros in rest of the number
+    // Approach-1 : Zeros in last digit + Zeros in rest of the number
     private static int countZeros(int num){
         if(num < 10) {
             if(num == 0)
@@ -32,7 +32,7 @@ public class Recursion9_CountZeros {
     }
 
 
-    // Way-2 : Taking helper function and count as an argument
+    // Approach-2 : Taking helper function and count as an argument
     private static int countZeros2(int num) {
         int count = 0;
         return countZeros2Helper(num, count);

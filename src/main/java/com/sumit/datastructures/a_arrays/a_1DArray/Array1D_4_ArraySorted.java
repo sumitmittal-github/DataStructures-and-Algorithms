@@ -26,7 +26,7 @@ public class Array1D_4_ArraySorted {
     }
 
 
-    // Way-1 : General approach
+    // Approach-1 : General approach
     private static boolean isArraySorted(int[] arr){
         if(arr == null || arr.length == 0)
             return false;
@@ -41,7 +41,7 @@ public class Array1D_4_ArraySorted {
         return true;
     }
 
-    // Way-2 : with recursion
+    // Approach-2 : with recursion
     private static boolean isArraySortedWithRecursion(int[] arr) {
         if(arr == null || arr.length == 0)
             return false;
@@ -61,7 +61,7 @@ public class Array1D_4_ArraySorted {
     }
 
 
-    // Way-3 : with recursion and AND operator
+    // Approach-3 : with recursion and AND operator
     private static boolean isArraySortedWithRecursion2(int[] arr) {
         if(arr == null || arr.length == 0)
             return false;

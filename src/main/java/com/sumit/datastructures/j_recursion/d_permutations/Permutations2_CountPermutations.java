@@ -13,7 +13,7 @@ public class Permutations2_CountPermutations {
 
     }
 
-    // Way-1 : return all permutations
+    // Approach-1 : return all permutations
     public static Integer countAllPermutations(String inputStr, String answer){
         Integer count = 0;
 

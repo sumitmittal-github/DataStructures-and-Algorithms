@@ -4,7 +4,7 @@ public class Palindrome {
 
     public static void main(String[] args) {
 
-        // Way-1
+        // Approach-1
         System.out.println("null : " + isPalindrome(null));
         System.out.println(" : " + isPalindrome(""));
         System.out.println("a : " + isPalindrome("a"));
@@ -18,7 +18,7 @@ public class Palindrome {
         System.out.println("abcab : " + isPalindrome("abcab"));
 
 
-        // Way-2
+        // Approach-2
         System.out.println(isPalindromeByRecursion(121));
         System.out.println(isPalindromeByRecursion(1221));
         System.out.println(isPalindromeByRecursion(123421));
@@ -26,7 +26,7 @@ public class Palindrome {
         System.out.println(isPalindromeByRecursion(1));
 
 
-        // Way-3
+        // Approach-3
         System.out.println(isPalindromeByRecursion2(121));
         System.out.println(isPalindromeByRecursion2(1221));
         System.out.println(isPalindromeByRecursion2(123421));
@@ -35,7 +35,7 @@ public class Palindrome {
     }
 
 
-    // Way-1 : general indexes approach
+    // Approach-1 : general indexes approach
     private static boolean isPalindrome(String str) {
         if(str == null || str.length() == 0)
             return false;
@@ -60,7 +60,7 @@ public class Palindrome {
     }
 
 
-    // Way-2 : by using helper function and checking =>   num == rev(num)
+    // Approach-2 : by using helper function and checking =>   num == rev(num)
     private static boolean isPalindromeByRecursion(int num) {
         int revNum = reverseNumByRecursion(num);
         return revNum == num;
@@ -75,7 +75,7 @@ public class Palindrome {
     }
 
 
-    // Way-3 : by using helper function and checking =>   indexes from start and end of the number in string
+    // Approach-3 : by using helper function and checking =>   indexes from start and end of the number in string
     private static boolean isPalindromeByRecursion2(int num) {
         String numStr = String.valueOf(num);
         int startIndex = 0;

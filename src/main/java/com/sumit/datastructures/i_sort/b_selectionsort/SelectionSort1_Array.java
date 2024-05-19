@@ -32,7 +32,7 @@ public class SelectionSort1_Array {
     }
 
 
-    // Way-1 : using for loop
+    // Approach-1 : using for loop
     private static void selectionSort_1(int[] arr){
 
         for (int i = 0; i < arr.length-1; i++) {
@@ -50,7 +50,7 @@ public class SelectionSort1_Array {
     }
 
 
-    // Way-2 : using for loop (but difficult approach)
+    // Approach-2 : using for loop (but difficult approach)
     private static void selectionSort_2(int[] arr){
 
         for (int i = 0; i <= arr.length-1; i++) {
@@ -73,7 +73,7 @@ public class SelectionSort1_Array {
     }
 
 
-    // Way-3 : using recursion
+    // Approach-3 : using recursion
     private static void selectionSortWithRecursion(int[] arr){
         if(arr == null || arr.length <= 1)
             return;

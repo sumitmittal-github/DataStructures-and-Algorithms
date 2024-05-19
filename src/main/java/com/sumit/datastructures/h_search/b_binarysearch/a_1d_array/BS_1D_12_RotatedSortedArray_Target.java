@@ -8,7 +8,7 @@ public class BS_1D_12_RotatedSortedArray_Target {
 
 
 
-    // Way-1 : binary search : College Wallah approach
+    // Approach-1 : binary search : College Wallah approach
     // BEST and easiest approach
     public int rotatedBinarySearch_1(int[] arr, int target){
         int start=0;
@@ -39,7 +39,7 @@ public class BS_1D_12_RotatedSortedArray_Target {
 
 
 
-    // Way-2 : binary search : Kunal kushwaha approach
+    // Approach-2 : binary search : Kunal kushwaha approach
     public int rotatedBinarySearch_2(int[] arr, int target){
         int index = -1;
 
@@ -111,7 +111,7 @@ public class BS_1D_12_RotatedSortedArray_Target {
 
 
 
-    // Way-3 : binary search with recursion
+    // Approach-3 : binary search with recursion
     private int rotatedBinarySearchWithRecursion(int[] arr, int target, int start, int end) {
         if(start > end)
             return -1;

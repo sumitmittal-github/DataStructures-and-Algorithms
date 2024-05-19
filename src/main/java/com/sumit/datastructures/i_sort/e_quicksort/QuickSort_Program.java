@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class QuickSort_Program {
 
 
-    // approach-1 : taught by College Wallah : easy to understand
+    // Approach-1 : taught by College Wallah : easy to understand
     public void quickSort_1(int[] arr, int start, int end){
         if(start >= end)
             return;
@@ -44,7 +44,7 @@ public class QuickSort_Program {
 
 
 
-    // approach-2 : taught by Kunal Kushwaha : a bit hard to understand
+    // Approach-2 : taught by Kunal Kushwaha : a bit hard to understand
     public void quickSort_2(int[] arr, int arrFirstIndex, int arrLastIndex) {
         if(arrFirstIndex >= arrLastIndex)
             return;

@@ -9,21 +9,21 @@ public class Subsets2_StringWithAsciiValues {
         // Input           = "ab"
         // subsets will be = [ab, a, a98, b, 98, 97b, 97, 9798]
 
-        // Way-1 : print all subsets
+        // Approach-1 : print all subsets
         subsets("ab", "");
 
-        // Way-2 : return all subsets
+        // Approach-2 : return all subsets
         List<String> subsetList = new LinkedList<>();
         subsets2("ab", "", subsetList);
         System.out.println(subsetList);
 
-        // Way-3 : return all subsets, but do not take the array list in the argument
+        // Approach-3 : return all subsets, but do not take the array list in the argument
         List<String> subsetList2 = subsets3("ab", "");
         System.out.println(subsetList2);
     }
 
 
-    // Way-1 : print all subsets
+    // Approach-1 : print all subsets
     public static void subsets(String input, String answer){
         if(input == null || input.length()==0){
             if(answer.length() > 0)
@@ -43,7 +43,7 @@ public class Subsets2_StringWithAsciiValues {
 
 
 
-    // Way-2 : return all subsets
+    // Approach-2 : return all subsets
     public static void subsets2(String input, String answer, List<String> list) {
         if(input == null || input.length()==0) {
             if(answer.length() > 0)
@@ -63,7 +63,7 @@ public class Subsets2_StringWithAsciiValues {
 
 
 
-    // Way-3 : return all subsets, but do not take the array list in the argument
+    // Approach-3 : return all subsets, but do not take the array list in the argument
     public static List<String> subsets3(String input, String answer) {
         List<String> list = new LinkedList<>();
         if(input == null || input.length()==0) {

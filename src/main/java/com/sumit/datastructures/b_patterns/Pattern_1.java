@@ -15,7 +15,7 @@ public class Pattern_1 {
     }
 
 
-    // Way-1 : basic approach
+    // Approach-1 : basic approach
     public static void pattern(int n){
         for (int row = 1; row <= n ; row++) {
             for (int col = 1; col <=row ; col++) {
@@ -26,7 +26,7 @@ public class Pattern_1 {
     }
 
 
-    // Way-2 : with recursion
+    // Approach-2 : with recursion
     public static void patternWithRecursion(int n){
         int row=0;
         int col=0;

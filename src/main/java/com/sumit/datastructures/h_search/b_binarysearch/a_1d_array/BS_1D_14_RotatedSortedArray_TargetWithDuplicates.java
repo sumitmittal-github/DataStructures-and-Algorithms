@@ -7,7 +7,7 @@ public class BS_1D_14_RotatedSortedArray_TargetWithDuplicates {
     // LeetCode-81 : https://leetcode.com/problems/search-in-rotated-sorted-array-ii/description/
 
 
-    // Way-1 : binary search : College Wallah approach
+    // Approach-1 : binary search : College Wallah approach
     // BEST and easiest approach
     public int rotatedBinarySearch_1(int[] arr, int target){
         int start=0;
@@ -45,7 +45,7 @@ public class BS_1D_14_RotatedSortedArray_TargetWithDuplicates {
 
 
 
-    // Way-2 : binary search : Kunal kushwaha approach
+    // Approach-2 : binary search : Kunal kushwaha approach
     public int rotatedBinarySearch_2(int[] arr, int target){
         int index = -1;
         int pivot = findPivotIndexWithDuplicates(arr);

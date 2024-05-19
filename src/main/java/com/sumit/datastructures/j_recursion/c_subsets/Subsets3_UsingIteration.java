@@ -15,7 +15,7 @@ public class Subsets3_UsingIteration {
 
 
 
-    // Way-1 : use CopyOnWriteArrayList, to prevent CME (Concurrent Modification Exception)
+    // Approach-1 : use CopyOnWriteArrayList, to prevent CME (Concurrent Modification Exception)
     public static List<List<Integer>> subsets(int[] inputArr) {
         List<List<Integer>> allSubsetsList = new CopyOnWriteArrayList<>();
 
@@ -38,7 +38,7 @@ public class Subsets3_UsingIteration {
     }
 
 
-    // Way-2 : use ArrayList, instead of CopyOnWriteArrayList
+    // Approach-2 : use ArrayList, instead of CopyOnWriteArrayList
     //         clone the list to prevent the CME
     public static List<List<Integer>> subsets2(int[] inputArr) {
         List<List<Integer>> allSubsetsList = new ArrayList<>();

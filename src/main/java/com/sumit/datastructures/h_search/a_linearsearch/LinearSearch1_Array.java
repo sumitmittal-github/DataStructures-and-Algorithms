@@ -28,7 +28,7 @@ public class LinearSearch1_Array {
     }
 
 
-    // Way-1 : basic approach
+    // Approach-1 : basic approach
     /*
     * Linear Search : search element in the array,
     * - if element found then return its index,
@@ -46,7 +46,7 @@ public class LinearSearch1_Array {
     }
 
 
-    // Way-2 : linear search with recursion
+    // Approach-2 : linear search with recursion
     public static int linearSearchWithRecursion(int[] arr, int target) {
         if(arr == null || arr.length==0)
             return -1;
@@ -66,7 +66,7 @@ public class LinearSearch1_Array {
 
 
 
-    // Way-3 : linear search with recursion and OR operator
+    // Approach-3 : linear search with recursion and OR operator
     public static boolean linearSearchWithRecursion2(int[] arr, int target) {
         if(arr == null || arr.length==0)
             return false;
