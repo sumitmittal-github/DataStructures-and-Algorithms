@@ -1,7 +1,9 @@
 package com.sumit.datastructures.h_search.b_binarysearch;
 
-public class BinarySearch9_RotatedSortedArrayPivotIndex {
+public class BinarySearch9_RotatedSortedArray_PivotIndex {
 
+
+    // LeetCode-153 : https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description/
 
     // Question : in a rotated sorted array find the pivot index (index of smallest element).
     public int rotatedSortedArray_pivotIndex(int[] arr){
@@ -20,12 +22,26 @@ public class BinarySearch9_RotatedSortedArrayPivotIndex {
         return possibleAns;
     }
 
+    // Question : in a rotated sorted array find the smallest element.
+    public int rotatedSortedArray_minElement(int[] arr){
+        int start = 0, end = arr.length - 1;
+        int possibleAns = Integer.MAX_VALUE;
 
+        while(start <= end){
+            int mid = start + (end-start)/2;
+            if(arr[mid] <= arr[end] && arr[mid] < possibleAns){
+                possibleAns = arr[mid];
+                end = mid-1;
+            } else
+                start = mid+1;
+        }
+        return possibleAns;
+    }
 
 
 
     public static void main(String[] args) {
-        BinarySearch9_RotatedSortedArrayPivotIndex obj = new BinarySearch9_RotatedSortedArrayPivotIndex();
+        BinarySearch9_RotatedSortedArray_PivotIndex obj = new BinarySearch9_RotatedSortedArray_PivotIndex();
 
         System.out.println(obj.rotatedSortedArray_pivotIndex(new int[]{4, 5, 6, 7, 0, 1, 2}));
         System.out.println(obj.rotatedSortedArray_pivotIndex(new int[]{4, 5, 6, 7, 0, 1}));

@@ -1,6 +1,6 @@
 package com.sumit.datastructures.h_search.b_binarysearch;
 
-public class BinarySearch10_RotatedSortedArrayTarget {
+public class BinarySearch10_RotatedSortedArray_Target {
 
     // LeetCode-33 : https://leetcode.com/problems/search-in-rotated-sorted-array/description/
 
@@ -10,7 +10,7 @@ public class BinarySearch10_RotatedSortedArrayTarget {
 
     // Way-1 : binary search : College Wallah approach
     // BEST and easiest approach
-    public static int rotatedBinarySearch_1(int[] arr, int target){
+    public int rotatedBinarySearch_1(int[] arr, int target){
         int start=0;
         int end = arr.length-1;
 
@@ -25,6 +25,7 @@ public class BinarySearch10_RotatedSortedArrayTarget {
                 if(arr[mid] < target && target <= arr[end])     start = mid+1;
                 else                                            end = mid-1;
             }
+
             // array from start to mid is sorted
             else{
                 if(arr[start] <= target && target < arr[mid])   end = mid-1;
@@ -39,7 +40,7 @@ public class BinarySearch10_RotatedSortedArrayTarget {
 
 
     // Way-2 : binary search : Kunal kushwaha approach
-    public static int rotatedBinarySearch_2(int[] arr, int target){
+    public int rotatedBinarySearch_2(int[] arr, int target){
         int index = -1;
 
         // STEP-1 : find pivot element
@@ -69,7 +70,7 @@ public class BinarySearch10_RotatedSortedArrayTarget {
     // pivot we are referring the location where we rotated the array
     // Ex -    int[] arr = {4, 5, 6, 7, 8, 9, 10, 1, 2, 3};
     // here 10 is the pivot element, and it's index will be pivot index
-    private static int findPivotIndex(int[] arr){
+    private int findPivotIndex(int[] arr){
         int start=0;
         int end = arr.length-1;
 
@@ -92,7 +93,7 @@ public class BinarySearch10_RotatedSortedArrayTarget {
         return -1;
     }
 
-    private static int binarySearch(int[] arr, int target, int start, int end) {
+    private int binarySearch(int[] arr, int target, int start, int end) {
         while(start <= end){
             int mid = start + (end-start)/2;
 
@@ -111,7 +112,7 @@ public class BinarySearch10_RotatedSortedArrayTarget {
 
 
     // Way-3 : binary search with recursion
-    private static int rotatedBinarySearchWithRecursion(int[] arr, int target, int start, int end) {
+    private int rotatedBinarySearchWithRecursion(int[] arr, int target, int start, int end) {
         if(start > end)
             return -1;
 
@@ -147,52 +148,54 @@ public class BinarySearch10_RotatedSortedArrayTarget {
 
 
     public static void main(String[] args) {
+        BinarySearch10_RotatedSortedArray_Target obj = new BinarySearch10_RotatedSortedArray_Target();
+
         // Index :    0  1  2  3  4  5  6   7  8   9
         int[] arr0 = {4, 5, 6, 7, 8, 9, 10, 1, 2, 3};
         int target0 = 1;
-        System.out.println("Target : "+target0+" => Index : "+rotatedBinarySearch_1(arr0, target0));
-        System.out.println("Target : "+target0+" => Index : "+rotatedBinarySearch_2(arr0, target0));
-        System.out.println("Target : "+target0+" => Index : "+rotatedBinarySearchWithRecursion(arr0, target0, 0, arr0.length-1));
+        System.out.println("Target : "+target0+" => Index : "+obj.rotatedBinarySearch_1(arr0, target0));
+        System.out.println("Target : "+target0+" => Index : "+obj.rotatedBinarySearch_2(arr0, target0));
+        System.out.println("Target : "+target0+" => Index : "+obj.rotatedBinarySearchWithRecursion(arr0, target0, 0, arr0.length-1));
         System.out.println();
 
         // Index :    0  1  2  3  4  5  6   7  8   9
         int[] arr1 = {4, 5, 6, 7, 8, 9, 10, 1, 2, 3};
         int target1 = 4;
-        System.out.println("Target : "+target1+" => Index : "+rotatedBinarySearch_1(arr1, target1));
-        System.out.println("Target : "+target1+" => Index : "+rotatedBinarySearch_2(arr1, target1));
-        System.out.println("Target : "+target1+" => Index : "+rotatedBinarySearchWithRecursion(arr1, target1, 0, arr1.length-1));
+        System.out.println("Target : "+target1+" => Index : "+obj.rotatedBinarySearch_1(arr1, target1));
+        System.out.println("Target : "+target1+" => Index : "+obj.rotatedBinarySearch_2(arr1, target1));
+        System.out.println("Target : "+target1+" => Index : "+obj.rotatedBinarySearchWithRecursion(arr1, target1, 0, arr1.length-1));
         System.out.println();
 
         // Index :    0  1  2  3  4  5  6   7  8   9
         int[] arr2 = {4, 5, 6, 7, 8, 9, 10, 1, 2, 3};
         int target2 = 9;
-        System.out.println("Target : "+target2+" => Index : "+rotatedBinarySearch_1(arr2, target2));
-        System.out.println("Target : "+target2+" => Index : "+rotatedBinarySearch_2(arr2, target2));
-        System.out.println("Target : "+target2+" => Index : "+rotatedBinarySearchWithRecursion(arr2, target2, 0, arr2.length-1));
+        System.out.println("Target : "+target2+" => Index : "+obj.rotatedBinarySearch_1(arr2, target2));
+        System.out.println("Target : "+target2+" => Index : "+obj.rotatedBinarySearch_2(arr2, target2));
+        System.out.println("Target : "+target2+" => Index : "+obj.rotatedBinarySearchWithRecursion(arr2, target2, 0, arr2.length-1));
         System.out.println();
 
         // Index :    0  1  2  3  4  5  6   7   8   9
         int[] arr3 = {4, 5, 6, 7, 8, 9, 10, 11, 12, 13};
         int target3 = 18;
-        System.out.println("Target : "+target3+" => Index : "+rotatedBinarySearch_1(arr3, target3));
-        System.out.println("Target : "+target3+" => Index : "+rotatedBinarySearch_2(arr3, target3));
-        System.out.println("Target : "+target3+" => Index : "+rotatedBinarySearchWithRecursion(arr3, target3, 0, arr3.length-1));
+        System.out.println("Target : "+target3+" => Index : "+obj.rotatedBinarySearch_1(arr3, target3));
+        System.out.println("Target : "+target3+" => Index : "+obj.rotatedBinarySearch_2(arr3, target3));
+        System.out.println("Target : "+target3+" => Index : "+obj.rotatedBinarySearchWithRecursion(arr3, target3, 0, arr3.length-1));
         System.out.println();
 
         // Index :    0   1  2  3  4  5  6   7   8   9
         int[] arr4 = {14, 5, 6, 7, 8, 9, 10, 11, 12, 13};
         int target4 = 18;
-        System.out.println("Target : "+target4+" => Index : "+rotatedBinarySearch_1(arr4, target4));
-        System.out.println("Target : "+target4+" => Index : "+rotatedBinarySearch_2(arr4, target4));
-        System.out.println("Target : "+target4+" => Index : "+rotatedBinarySearchWithRecursion(arr4, target4, 0, arr4.length-1));
+        System.out.println("Target : "+target4+" => Index : "+obj.rotatedBinarySearch_1(arr4, target4));
+        System.out.println("Target : "+target4+" => Index : "+obj.rotatedBinarySearch_2(arr4, target4));
+        System.out.println("Target : "+target4+" => Index : "+obj.rotatedBinarySearchWithRecursion(arr4, target4, 0, arr4.length-1));
         System.out.println();
 
         // Index :    0  1  2  3  4  5  6   7   8   9
         int[] arr5 = {4, 5, 6, 7, 8, 9, 10, 11, 12, 3};
         int target5 = 18;
-        System.out.println("Target : "+target5+" => Index : "+rotatedBinarySearch_1(arr5, target5));
-        System.out.println("Target : "+target5+" => Index : "+rotatedBinarySearch_2(arr5, target5));
-        System.out.println("Target : "+target5+" => Index : "+rotatedBinarySearchWithRecursion(arr5, target5, 0, arr5.length-1));
+        System.out.println("Target : "+target5+" => Index : "+obj.rotatedBinarySearch_1(arr5, target5));
+        System.out.println("Target : "+target5+" => Index : "+obj.rotatedBinarySearch_2(arr5, target5));
+        System.out.println("Target : "+target5+" => Index : "+obj.rotatedBinarySearchWithRecursion(arr5, target5, 0, arr5.length-1));
         System.out.println();
     }
 
