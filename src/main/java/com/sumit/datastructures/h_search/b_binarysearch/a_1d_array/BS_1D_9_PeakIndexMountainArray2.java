@@ -18,7 +18,7 @@ public class BS_1D_9_PeakIndexMountainArray2 {
             if(arr[mid] < arr[mid+1])   start = mid+1;
             else                        end = mid-1;
         }
-        return 0;
+        return -1;
     }
 
 
