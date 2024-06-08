@@ -10,17 +10,17 @@ Implementations of all the Data Structures and Algorithms Topics -
   6. Square Roots <br/>
   7. Prime Number <br/>
   8. Searching - <br/>
-        - Linear Search
-        - Binary Search
+        - Linear Search <br/>
+        - Binary Search <br/>
   9. Sorting - <br/>
-        - Bubble Sort
-        - Selection Sort
-        - Insertion Sort
-        - Merge Sort
-        - Quick Sort
-        - Count Sort
-        - Radix Sort
-        - Cyclic Sort
+        - Bubble Sort <br/>
+        - Selection Sort <br/>
+        - Insertion Sort <br/>
+        - Merge Sort <br/>
+        - Quick Sort <br/>
+        - Count Sort <br/>
+        - Radix Sort <br/>
+        - Cyclic Sort <br/>
   10. Recursion <br/>
   11. Back Tracking <br/>
   12. Linked List <br/>
