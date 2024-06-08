@@ -1,6 +1,6 @@
 package com.sumit.datastructures.z_mixprograms;
 
-public class PalindromeLongest {
+public class Q6_PalindromeLongest {
 
     // LeetCode-409 : https://leetcode.com/problems/longest-palindrome/description/
 
@@ -19,7 +19,7 @@ public class PalindromeLongest {
     }
 
     public static void main(String[] args) {
-        PalindromeLongest obj = new PalindromeLongest();
+        Q6_PalindromeLongest obj = new Q6_PalindromeLongest();
         System.out.println(obj.longestPalindrome("abccccdd"));
         System.out.println(obj.longestPalindrome("a"));
     }

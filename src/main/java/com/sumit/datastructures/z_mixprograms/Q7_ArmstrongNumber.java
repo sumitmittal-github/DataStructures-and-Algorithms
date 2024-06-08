@@ -3,7 +3,7 @@ package com.sumit.datastructures.z_mixprograms;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ArmstrongNumber {
+public class Q7_ArmstrongNumber {
 
     public static void main(String[] args) {
         List<Integer> list = getAll3DigitArmstrongNumbers();

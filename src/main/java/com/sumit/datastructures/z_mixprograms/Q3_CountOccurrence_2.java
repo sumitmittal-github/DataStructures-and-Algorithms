@@ -2,7 +2,7 @@ package com.sumit.datastructures.z_mixprograms;
 
 import java.util.Scanner;
 
-public class CountOccurrence_2 {
+public class Q3_CountOccurrence_2 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

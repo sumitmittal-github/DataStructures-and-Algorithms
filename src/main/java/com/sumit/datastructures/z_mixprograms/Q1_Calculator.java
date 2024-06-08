@@ -2,7 +2,7 @@ package com.sumit.datastructures.z_mixprograms;
 
 import java.util.Scanner;
 
-public class Calculator {
+public class Q1_Calculator {
 
     public static void main(String[] args) {
 

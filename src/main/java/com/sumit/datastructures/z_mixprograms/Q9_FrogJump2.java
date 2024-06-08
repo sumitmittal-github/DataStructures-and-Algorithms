@@ -1,6 +1,6 @@
 package com.sumit.datastructures.z_mixprograms;
 
-public class FrogJump2 {
+public class Q9_FrogJump2 {
 
     // LeetCode-2498 : https://leetcode.com/problems/frog-jump-ii/description/
 
@@ -46,7 +46,7 @@ public class FrogJump2 {
     }
 
     public static void main(String[] args) {
-        FrogJump2 obj = new FrogJump2();
+        Q9_FrogJump2 obj = new Q9_FrogJump2();
         System.out.println(obj.maxJump(new int[]{0,2,5,6,7}));
     }
 

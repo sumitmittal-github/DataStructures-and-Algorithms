@@ -1,6 +1,6 @@
 package com.sumit.datastructures.z_mixprograms;
 
-public class Palindrome {
+public class Q4_Palindrome {
 
     public static void main(String[] args) {
 

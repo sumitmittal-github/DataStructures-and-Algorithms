@@ -1,6 +1,6 @@
 package com.sumit.datastructures.z_mixprograms;
 
-public class PalindromeValid {
+public class Q5_PalindromeValid {
 
     // LeetCode-680 : https://leetcode.com/problems/valid-palindrome-ii/description/
 
@@ -31,7 +31,7 @@ public class PalindromeValid {
     }
 
     public static void main(String[] args) {
-        PalindromeValid obj = new PalindromeValid();
+        Q5_PalindromeValid obj = new Q5_PalindromeValid();
         System.out.println(obj.validPalindrome("aba"));     // true
         System.out.println(obj.validPalindrome("abc"));     // false
         System.out.println(obj.validPalindrome("abca"));    // true

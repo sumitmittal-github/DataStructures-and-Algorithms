@@ -3,7 +3,7 @@ package com.sumit.datastructures.z_mixprograms;
 import java.util.HashMap;
 import java.util.Map;
 
-public class RomanToInt {
+public class Q8_RomanToInt {
 
     static Map<Character, Integer> map = new HashMap<>();
     static {
