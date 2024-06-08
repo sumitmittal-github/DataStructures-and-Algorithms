@@ -10,23 +10,23 @@ Implementations of all the Data Structures and Algorithms Topics -
     <li> Square Roots </li>
     <li> Prime Number </li>
     <li> Searching - </li>
-             &emsp;&emsp;   - Linear Search <br/>
-             &emsp;&emsp;   - Binary Search <br/>
+             &emsp;   - Linear Search <br/>
+             &emsp;   - Binary Search <br/>
     <li> Sorting - </li>
-             &emsp;&emsp;   - Bubble Sort <br/>
-             &emsp;&emsp;   - Selection Sort <br/>
-             &emsp;&emsp;   - Insertion Sort <br/>
-             &emsp;&emsp;   - Merge Sort <br/>
-             &emsp;&emsp;   - Quick Sort <br/>
-             &emsp;&emsp;   - Count Sort <br/>
-             &emsp;&emsp;   - Radix Sort <br/>
-             &emsp;&emsp;   - Cyclic Sort <br/>
+             &emsp;   - Bubble Sort <br/>
+             &emsp;   - Selection Sort <br/>
+             &emsp;   - Insertion Sort <br/>
+             &emsp;   - Merge Sort <br/>
+             &emsp;   - Quick Sort <br/>
+             &emsp;   - Count Sort <br/>
+             &emsp;   - Radix Sort <br/>
+             &emsp;   - Cyclic Sort <br/>
     <li> Recursion </li>
     <li> Back Tracking </li>
     <li> Linked List </li>
     <li> Stack </li>
     <li> Queue </li>
     <li> Other Practice Questions </li>
+
+
 </ul>
-
-
