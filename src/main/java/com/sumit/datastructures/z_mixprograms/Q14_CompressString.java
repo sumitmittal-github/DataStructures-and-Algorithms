@@ -3,7 +3,7 @@ package com.sumit.datastructures.z_mixprograms;
 public class Q14_CompressString {
 
     // LeetCode-443 : https://leetcode.com/problems/string-compression/description/
-    
+
     public int compress(char[] chars) {
         char previousChar = chars[0];
         int count=1;
