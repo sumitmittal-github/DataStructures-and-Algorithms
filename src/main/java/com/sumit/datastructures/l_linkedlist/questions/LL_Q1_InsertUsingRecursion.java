@@ -1,5 +1,7 @@
 package com.sumit.datastructures.l_linkedlist.questions;
 
+import com.sumit.datastructures.l_linkedlist.NodeRandom;
+
 public class LL_Q1_InsertUsingRecursion {
 
     public static void main(String[] args) {
@@ -15,7 +17,7 @@ public class LL_Q1_InsertUsingRecursion {
 
 
 
-    private Node head;
+    private NodeRandom head;
 
     // insert in LL using recursion
     public void insertUsingRecursion(int inputValue, int inputIndex){
@@ -23,9 +25,9 @@ public class LL_Q1_InsertUsingRecursion {
         head = helper(inputValue, inputIndex, head);
     }
 
-    private Node helper(int inputValue, int inputIndex, Node node){
+    private NodeRandom helper(int inputValue, int inputIndex, NodeRandom node){
         if(inputIndex == 0) {
-            Node newNode = new Node(inputValue);
+            NodeRandom newNode = new NodeRandom(inputValue);
             newNode.next = node;
             return newNode;
         }
@@ -36,29 +38,12 @@ public class LL_Q1_InsertUsingRecursion {
 
 
     public void display(){
-        Node node = head;
+        NodeRandom node = head;
         while(node != null){
-            System.out.print(node.value + " -> ");
+            System.out.print(node.val + " -> ");
             node = node.next;
         }
         System.out.println("null");
-    }
-
-
-
-    private class Node {
-
-        private int value;
-        private Node next = null;
-
-        public Node(int value) {
-            this.value = value;
-        }
-
-        public Node(int value, Node next) {
-            this.value = value;
-            this.next = next;
-        }
     }
 
 }

@@ -25,7 +25,7 @@ public class LL3_Circular {
         if(head == null)
             return;
 
-        if(head.value == value){
+        if(head.val == value){
             tail.next = head.next;
             head = head.next;
             return;
@@ -34,7 +34,7 @@ public class LL3_Circular {
         Node node = head;
         do{
             Node nextNode = node.next;
-            if(nextNode.value == value){
+            if(nextNode.val == value){
                 node.next = nextNode.next;
                 if(nextNode == tail)
                     tail = node;
@@ -52,26 +52,11 @@ public class LL3_Circular {
             return;
 
         do{
-            System.out.print(node.value + " -> ");
+            System.out.print(node.val + " -> ");
             node = node.next;
         } while(node != head);
         System.out.println();
     }
 
-
-
-    private class Node {
-        private int value;
-        private Node next;
-
-        public Node(int value) {
-            this.value = value;
-        }
-
-        public Node(int value, Node next) {
-            this.value = value;
-            this.next = next;
-        }
-    }
 
 }

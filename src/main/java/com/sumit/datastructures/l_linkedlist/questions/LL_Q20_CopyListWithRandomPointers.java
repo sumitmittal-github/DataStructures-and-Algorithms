@@ -1,15 +1,17 @@
 package com.sumit.datastructures.l_linkedlist.questions;
 
+import com.sumit.datastructures.l_linkedlist.NodeRandom;
+
 public class LL_Q20_CopyListWithRandomPointers {
 
     // LeetCode-138 : https://leetcode.com/problems/copy-list-with-random-pointer/description/
 
     public static void main(String[] args) {
-        Node n1 = new Node(7);
-        Node n2 = new Node(13);
-        Node n3 = new Node(11);
-        Node n4 = new Node(10);
-        Node n5 = new Node(1);
+        NodeRandom n1 = new NodeRandom(7);
+        NodeRandom n2 = new NodeRandom(13);
+        NodeRandom n3 = new NodeRandom(11);
+        NodeRandom n4 = new NodeRandom(10);
+        NodeRandom n5 = new NodeRandom(1);
         n1.next = n2;     n1.random = null;
         n2.next = n3;     n2.random = n1;
         n3.next = n4;     n3.random = n5;
@@ -23,23 +25,23 @@ public class LL_Q20_CopyListWithRandomPointers {
         display(obj.copyRandomList(n1));
     }
 
-    public Node copyRandomList(Node head) {
+    public NodeRandom copyRandomList(NodeRandom head) {
         if(head == null)
             return null;
         if(head.next == null){
-            Node temp = new Node(head.val);
+            NodeRandom temp = new NodeRandom(head.val);
             if(head.random != null)
                 temp.random = temp;
             return temp;
         }
 
         // STEP-1 : Create deep copy with just val and next pointers
-        Node list1 = head;
-        Node list2 = new Node(-1);
-        Node list2Head = list2;
+        NodeRandom list1 = head;
+        NodeRandom list2 = new NodeRandom(-1);
+        NodeRandom list2Head = list2;
 
         while(list1 != null){
-            list2.next = new Node(list1.val);
+            list2.next = new NodeRandom(list1.val);
 
             list1 = list1.next;
             list2 = list2.next;
@@ -52,8 +54,8 @@ public class LL_Q20_CopyListWithRandomPointers {
         list1 = head;               // reset pointers so that we can reuse them
         list2 = list2Head;          // reset pointers so that we can reuse them
         while(list1 != null && list2 != null){
-            Node list1Next = list1.next;
-            Node list2Next = list2.next;
+            NodeRandom list1Next = list1.next;
+            NodeRandom list2Next = list2.next;
 
             list1.next = list2;
             list2.next = list1Next;
@@ -83,8 +85,8 @@ public class LL_Q20_CopyListWithRandomPointers {
         // STEP-4 : separate both lists nodes from our joint list
         list1 = head;               // reset pointers so that we can reuse them
         list2 = head.next;          // reset pointers so that we can reuse them
-        Node l1Head = list1;
-        Node l2Head = list2;
+        NodeRandom l1Head = list1;
+        NodeRandom l2Head = list2;
         while(list2 != null && list2.next != null) {
             list1.next = list1.next.next;
             list1 = list1.next;
@@ -101,8 +103,8 @@ public class LL_Q20_CopyListWithRandomPointers {
 
 
 
-    public static void display(Node head){
-        Node temp = head;
+    public static void display(NodeRandom head){
+        NodeRandom temp = head;
         while(temp != null){
             //if(temp.random == null)
                 System.out.print(temp + " - " + temp.random + " -> ");

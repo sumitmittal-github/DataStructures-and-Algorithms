@@ -71,7 +71,7 @@ public class LL1_Singly {
         }
 
         size--;
-        return node.value;
+        return node.val;
     }
 
     public int deleteLast(){
@@ -79,7 +79,7 @@ public class LL1_Singly {
             return deleteFirst();
 
         Node previousNode = get(size-2);
-        int value = previousNode.next.value;
+        int value = previousNode.next.val;
         tail = previousNode;
         previousNode.next = null;
         size--;
@@ -94,7 +94,7 @@ public class LL1_Singly {
             return deleteLast();
 
         Node previousNode = get(index-1);
-        int value = previousNode.next.value;
+        int value = previousNode.next.val;
 
         previousNode.next = previousNode.next.next;
         size--;
@@ -113,7 +113,7 @@ public class LL1_Singly {
     public Node find(int value){
         Node node = head;
         while(node != null){
-            if(node.value == value)
+            if(node.val == value)
                 return node;
             node = node.next;
         }
@@ -124,27 +124,11 @@ public class LL1_Singly {
     public void display(){
         Node temp = head;
         while(temp != null){
-            System.out.print(temp.value + " -> ");
+            System.out.print(temp.val + " -> ");
             temp = temp.next;
         }
         System.out.println("null");
     }
 
-
-
-
-    private class Node{
-        private int value;
-        private Node next;
-
-        public Node(int value) {
-            this.value = value;
-        }
-
-        public Node(int value, Node next) {
-            this.value = value;
-            this.next = next;
-        }
-    }
 
 }

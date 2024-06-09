@@ -2,11 +2,11 @@ package com.sumit.datastructures.l_linkedlist;
 
 public class LL2_Doubly {
 
-    private Node head;
+    private NodeDoubly head;
 
 
-    public Node insertFirst(int value) {
-        Node node = new Node(value);
+    public NodeDoubly insertFirst(int value) {
+        NodeDoubly node = new NodeDoubly(value);
         node.next = head;
         node.previous = null;
 
@@ -18,14 +18,14 @@ public class LL2_Doubly {
         return node;
     }
 
-    public Node insertLast(int value) {
+    public NodeDoubly insertLast(int value) {
         if(head == null){
             return insertFirst(value);
         }
 
-        Node node = new Node(value);
+        NodeDoubly node = new NodeDoubly(value);
 
-        Node lastNode = getLastNode();
+        NodeDoubly lastNode = getLastNode();
         lastNode.next = node;
 
         node.previous = lastNode;
@@ -34,14 +34,14 @@ public class LL2_Doubly {
         return node;
     }
 
-    public Node insert(int value, int index){
+    public NodeDoubly insert(int value, int index){
         if(index == 0 || head == null){
             return insertFirst(value);
         }
 
-        Node node = new Node(value);
-        Node previousNode = get(index-1);
-        Node nextNode = get(index);
+        NodeDoubly node = new NodeDoubly(value);
+        NodeDoubly previousNode = get(index-1);
+        NodeDoubly nextNode = get(index);
 
         previousNode.next = node;
         nextNode.previous = node;
@@ -52,9 +52,9 @@ public class LL2_Doubly {
     }
 
 
-    public Node deleteFirst(){
-        Node deleteNode = head;
-        Node nextNode = head.next;
+    public NodeDoubly deleteFirst(){
+        NodeDoubly deleteNode = head;
+        NodeDoubly nextNode = head.next;
 
         deleteNode.next = null;
         nextNode.previous = null;
@@ -63,41 +63,41 @@ public class LL2_Doubly {
         return deleteNode;
     }
 
-    public Node deleteLast() {
-        Node deleteNode = getLastNode();
-        Node previousNode = deleteNode.previous;
+    public NodeDoubly deleteLast() {
+        NodeDoubly deleteNode = getLastNode();
+        NodeDoubly previousNode = deleteNode.previous;
 
         previousNode.next=null;
         deleteNode.previous=null;
         return deleteNode;
     }
 
-    public Node delete(int index) {
+    public NodeDoubly delete(int index) {
         if(index == 0)
             return deleteFirst();
 
-        Node deleteNode = get(index);
-        Node previousNode = deleteNode.previous;
-        Node nextNode = deleteNode.next;
+        NodeDoubly deleteNode = get(index);
+        NodeDoubly previousNode = deleteNode.previous;
+        NodeDoubly nextNode = deleteNode.next;
 
         deleteNode.next=nextNode;
         nextNode.previous=previousNode;
         return deleteNode;
     }
 
-        public Node getLastNode(){
+        public NodeDoubly getLastNode(){
         if(head == null)
             return null;
 
-        Node node = head;
+            NodeDoubly node = head;
         while(node.next != null){
             node = node.next;
         }
         return node;
     }
 
-    public Node get(int index){
-        Node node = head;
+    public NodeDoubly get(int index){
+        NodeDoubly node = head;
         for(int i = 0; i < index; i++){
             if(node == null)
                 return null;
@@ -107,10 +107,10 @@ public class LL2_Doubly {
     }
 
 
-    public Node find(int value){
-        Node node = head;
+    public NodeDoubly find(int value){
+        NodeDoubly node = head;
         while(node != null){
-            if(node.value == value)
+            if(node.val == value)
                 return node;
             node = node.next;
         }
@@ -118,29 +118,12 @@ public class LL2_Doubly {
     }
 
     public void display(){
-        Node node = head;
+        NodeDoubly node = head;
         while(node != null) {
-            System.out.print(node.value + " -> ");
+            System.out.print(node.val + " -> ");
             node = node.next;
         }
         System.out.println("null");
-    }
-
-
-    private class Node {
-        int value;
-        Node next;
-        Node previous;
-
-        public Node(int value) {
-            this.value = value;
-        }
-
-        public Node(int value, Node next, Node previous) {
-            this.value = value;
-            this.next = next;
-            this.previous = previous;
-        }
     }
 
 }
