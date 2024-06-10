@@ -2,11 +2,11 @@ package com.sumit.datastructures.l_linkedlist;
 
 public class LL2_Doubly {
 
-    private NodeDoubly head;
+    private ListNodeDoubly head;
 
 
-    public NodeDoubly insertFirst(int value) {
-        NodeDoubly node = new NodeDoubly(value);
+    public ListNodeDoubly insertFirst(int value) {
+        ListNodeDoubly node = new ListNodeDoubly(value);
         node.next = head;
         node.previous = null;
 
@@ -18,14 +18,14 @@ public class LL2_Doubly {
         return node;
     }
 
-    public NodeDoubly insertLast(int value) {
+    public ListNodeDoubly insertLast(int value) {
         if(head == null){
             return insertFirst(value);
         }
 
-        NodeDoubly node = new NodeDoubly(value);
+        ListNodeDoubly node = new ListNodeDoubly(value);
 
-        NodeDoubly lastNode = getLastNode();
+        ListNodeDoubly lastNode = getLastNode();
         lastNode.next = node;
 
         node.previous = lastNode;
@@ -34,14 +34,14 @@ public class LL2_Doubly {
         return node;
     }
 
-    public NodeDoubly insert(int value, int index){
+    public ListNodeDoubly insert(int value, int index){
         if(index == 0 || head == null){
             return insertFirst(value);
         }
 
-        NodeDoubly node = new NodeDoubly(value);
-        NodeDoubly previousNode = get(index-1);
-        NodeDoubly nextNode = get(index);
+        ListNodeDoubly node = new ListNodeDoubly(value);
+        ListNodeDoubly previousNode = get(index-1);
+        ListNodeDoubly nextNode = get(index);
 
         previousNode.next = node;
         nextNode.previous = node;
@@ -52,9 +52,9 @@ public class LL2_Doubly {
     }
 
 
-    public NodeDoubly deleteFirst(){
-        NodeDoubly deleteNode = head;
-        NodeDoubly nextNode = head.next;
+    public ListNodeDoubly deleteFirst(){
+        ListNodeDoubly deleteNode = head;
+        ListNodeDoubly nextNode = head.next;
 
         deleteNode.next = null;
         nextNode.previous = null;
@@ -63,41 +63,41 @@ public class LL2_Doubly {
         return deleteNode;
     }
 
-    public NodeDoubly deleteLast() {
-        NodeDoubly deleteNode = getLastNode();
-        NodeDoubly previousNode = deleteNode.previous;
+    public ListNodeDoubly deleteLast() {
+        ListNodeDoubly deleteNode = getLastNode();
+        ListNodeDoubly previousNode = deleteNode.previous;
 
         previousNode.next=null;
         deleteNode.previous=null;
         return deleteNode;
     }
 
-    public NodeDoubly delete(int index) {
+    public ListNodeDoubly delete(int index) {
         if(index == 0)
             return deleteFirst();
 
-        NodeDoubly deleteNode = get(index);
-        NodeDoubly previousNode = deleteNode.previous;
-        NodeDoubly nextNode = deleteNode.next;
+        ListNodeDoubly deleteNode = get(index);
+        ListNodeDoubly previousNode = deleteNode.previous;
+        ListNodeDoubly nextNode = deleteNode.next;
 
         deleteNode.next=nextNode;
         nextNode.previous=previousNode;
         return deleteNode;
     }
 
-        public NodeDoubly getLastNode(){
+        public ListNodeDoubly getLastNode(){
         if(head == null)
             return null;
 
-            NodeDoubly node = head;
+            ListNodeDoubly node = head;
         while(node.next != null){
             node = node.next;
         }
         return node;
     }
 
-    public NodeDoubly get(int index){
-        NodeDoubly node = head;
+    public ListNodeDoubly get(int index){
+        ListNodeDoubly node = head;
         for(int i = 0; i < index; i++){
             if(node == null)
                 return null;
@@ -107,8 +107,8 @@ public class LL2_Doubly {
     }
 
 
-    public NodeDoubly find(int value){
-        NodeDoubly node = head;
+    public ListNodeDoubly find(int value){
+        ListNodeDoubly node = head;
         while(node != null){
             if(node.val == value)
                 return node;
@@ -118,7 +118,7 @@ public class LL2_Doubly {
     }
 
     public void display(){
-        NodeDoubly node = head;
+        ListNodeDoubly node = head;
         while(node != null) {
             System.out.print(node.val + " -> ");
             node = node.next;

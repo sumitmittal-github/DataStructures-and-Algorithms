@@ -1,15 +1,15 @@
 package com.sumit.datastructures.l_linkedlist;
 
-public class Node {
+public class ListNode {
     int val;
-    Node next;
+    ListNode next;
 
-    public Node(int val) {
+    public ListNode(int val) {
         this.val = val;
         this.next = null;
     }
 
-    public Node(int val, Node next) {
+    public ListNode(int val, ListNode next) {
         this.val = val;
         this.next = next;
     }

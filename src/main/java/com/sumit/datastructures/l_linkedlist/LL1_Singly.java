@@ -2,8 +2,8 @@ package com.sumit.datastructures.l_linkedlist;
 
 public class LL1_Singly {
 
-    private Node head;
-    private Node tail;
+    private ListNode head;
+    private ListNode tail;
     private int size;
 
     public LL1_Singly(){
@@ -11,7 +11,7 @@ public class LL1_Singly {
     }
 
     public void insertFirst(int val){
-        Node node = new Node(val);
+        ListNode node = new ListNode(val);
         node.next = head;
         head = node;
 
@@ -27,7 +27,7 @@ public class LL1_Singly {
             return;
         }
 
-        Node node = new Node(val);
+        ListNode node = new ListNode(val);
         tail.next = node;
         tail = node;
         size++;
@@ -46,12 +46,12 @@ public class LL1_Singly {
             throw new RuntimeException("Not possible to add " + val + " at index :" + index);
         }
 
-        Node previousNode = head;
+        ListNode previousNode = head;
         for(int i = 1; i < index; i++){
             previousNode = previousNode.next;
         }
 
-        Node newNode = new Node(val);
+        ListNode newNode = new ListNode(val);
         newNode.next = previousNode.next;
         previousNode.next = newNode;
 
@@ -62,7 +62,7 @@ public class LL1_Singly {
         if(tail == null)        // means if(size == 0)
             throw new RuntimeException("Not possible to delete element from empty list");
 
-        Node node = head;
+        ListNode node = head;
         if(head == tail) {      // means if(size == 1)
             head = node.next;   // means head = null
             tail = node.next;   // means tail = null
@@ -78,7 +78,7 @@ public class LL1_Singly {
         if(size <= 1)
             return deleteFirst();
 
-        Node previousNode = get(size-2);
+        ListNode previousNode = get(size-2);
         int value = previousNode.next.val;
         tail = previousNode;
         previousNode.next = null;
@@ -93,7 +93,7 @@ public class LL1_Singly {
         if(index == size-1)
             return deleteLast();
 
-        Node previousNode = get(index-1);
+        ListNode previousNode = get(index-1);
         int value = previousNode.next.val;
 
         previousNode.next = previousNode.next.next;
@@ -102,16 +102,16 @@ public class LL1_Singly {
         return value;
     }
 
-    public Node get(int index){
-        Node node = head;
+    public ListNode get(int index){
+        ListNode node = head;
         for(int i=0; i < index; i++)
             node = node.next;
         return node;
     }
 
 
-    public Node find(int value){
-        Node node = head;
+    public ListNode find(int value){
+        ListNode node = head;
         while(node != null){
             if(node.val == value)
                 return node;
@@ -122,7 +122,7 @@ public class LL1_Singly {
 
 
     public void display(){
-        Node temp = head;
+        ListNode temp = head;
         while(temp != null){
             System.out.print(temp.val + " -> ");
             temp = temp.next;

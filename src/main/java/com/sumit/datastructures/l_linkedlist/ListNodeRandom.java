@@ -1,11 +1,11 @@
 package com.sumit.datastructures.l_linkedlist;
 
-public class NodeRandom {
+public class ListNodeRandom {
     public int val;
-    public NodeRandom next;
-    public NodeRandom random;
+    public ListNodeRandom next;
+    public ListNodeRandom random;
 
-    public NodeRandom(int val) {
+    public ListNodeRandom(int val) {
         this.val = val;
         this.next = null;
         this.random = null;

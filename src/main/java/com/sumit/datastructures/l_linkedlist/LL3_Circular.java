@@ -2,12 +2,12 @@ package com.sumit.datastructures.l_linkedlist;
 
 public class LL3_Circular {
 
-    private Node head;
-    private Node tail;
+    private ListNode head;
+    private ListNode tail;
 
 
     public void insert(int value){
-        Node node = new Node(value);
+        ListNode node = new ListNode(value);
 
         if(head == null){
             node.next = node;
@@ -31,9 +31,9 @@ public class LL3_Circular {
             return;
         }
 
-        Node node = head;
+        ListNode node = head;
         do{
-            Node nextNode = node.next;
+            ListNode nextNode = node.next;
             if(nextNode.val == value){
                 node.next = nextNode.next;
                 if(nextNode == tail)
@@ -47,7 +47,7 @@ public class LL3_Circular {
 
 
     public void display(){
-        Node node = head;
+        ListNode node = head;
         if(head == null)
             return;
 
