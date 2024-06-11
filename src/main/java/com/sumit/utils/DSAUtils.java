@@ -1,5 +1,7 @@
 package com.sumit.utils;
 
+import com.sumit.datastructures.l_linkedlist.a_singly.ListNode;
+
 import java.util.List;
 
 public class DSAUtils {
@@ -52,4 +54,14 @@ public class DSAUtils {
         }
     }
 
+
+
+    public static void displayLinkedList(ListNode head){
+        ListNode temp = head;
+        while(temp != null){
+            System.out.print(temp.val + " -> ");
+            temp = temp.next;
+        }
+        System.out.println("null");
+    }
 }

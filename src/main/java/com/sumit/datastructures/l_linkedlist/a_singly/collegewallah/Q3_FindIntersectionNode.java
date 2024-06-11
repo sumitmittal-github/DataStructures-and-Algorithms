@@ -1,6 +1,8 @@
-package com.sumit.datastructures.l_linkedlist.questions.kunal;
+package com.sumit.datastructures.l_linkedlist.a_singly.collegewallah;
 
-public class LL_Q13_FindIntersectionNode {
+import com.sumit.datastructures.l_linkedlist.a_singly.ListNode;
+
+public class Q3_FindIntersectionNode {
 
     // LeetCode-160 : https://leetcode.com/problems/intersection-of-two-linked-lists/description/
 
@@ -21,7 +23,7 @@ public class LL_Q13_FindIntersectionNode {
 
         ListNode node21 = new ListNode(90, new ListNode(9, node15));
 
-        LL_Q13_FindIntersectionNode obj = new LL_Q13_FindIntersectionNode();
+        Q3_FindIntersectionNode obj = new Q3_FindIntersectionNode();
         System.out.println(obj.findIntersectionNode(node11, node21).val);
     }
 
@@ -37,11 +39,9 @@ public class LL_Q13_FindIntersectionNode {
         ListNode temp1 = head1;
         ListNode temp2 = head2;
 
-
         // STEP-1 : get length of both the lists
         int length1 = length(temp1);
         int length2 = length(temp2);
-
 
         // STEP-2 : forward the bigger list head diff times
         if(length1 > length2) {
@@ -55,7 +55,6 @@ public class LL_Q13_FindIntersectionNode {
                 temp2 = temp2.next;
             }
         }
-
 
         // STEP-3 : forward both head till they meet
         while(temp1 != temp2) {
