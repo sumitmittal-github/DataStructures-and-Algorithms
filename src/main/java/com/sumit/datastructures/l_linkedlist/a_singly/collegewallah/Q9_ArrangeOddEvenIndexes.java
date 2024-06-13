@@ -6,7 +6,7 @@ import com.sumit.utils.DSAUtils;
 public class Q9_ArrangeOddEvenIndexes {
 
     // LeetCode-328 : https://leetcode.com/problems/odd-even-linked-list/description/
-    
+
 
     // Approach-1 : Best and short approach
     public ListNode oddEvenIndexesList(ListNode head) {
