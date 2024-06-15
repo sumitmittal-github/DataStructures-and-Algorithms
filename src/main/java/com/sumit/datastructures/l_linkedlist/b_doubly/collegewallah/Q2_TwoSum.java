@@ -27,8 +27,8 @@ public class Q2_TwoSum {
                 System.out.println(h.val + " & " + t.val);
                 return;
             }
-            if(h.val + t.val > sum)     t = t.previous;
             if(h.val + t.val < sum)     h = h.next;
+            if(h.val + t.val > sum)     t = t.previous;
         }
         System.out.println("No combinations exists !!");
     }

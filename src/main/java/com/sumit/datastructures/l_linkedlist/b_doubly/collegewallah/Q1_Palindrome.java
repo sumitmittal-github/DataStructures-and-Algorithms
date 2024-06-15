@@ -18,9 +18,7 @@ public class Q1_Palindrome {
         // Step-2 : iterate till head and tail meets
         ListNodeD h = head;
         ListNodeD t = tail;
-        while(h != t){
-            if(t == h.previous)     break;
-
+        while(h != t && t != h.previous){
             if(h.val != t.val)      return false;
             h = h.next;
             t = t.previous;
