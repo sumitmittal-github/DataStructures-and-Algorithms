@@ -2,6 +2,7 @@ package com.sumit.utils;
 
 import com.sumit.datastructures.l_linkedlist.a_singly.ListNode;
 import com.sumit.datastructures.l_linkedlist.a_singly.ListNodeRandom;
+import com.sumit.datastructures.l_linkedlist.b_doubly.ListNodeD;
 
 import java.util.List;
 
@@ -72,6 +73,14 @@ public class DSAUtils {
             if(temp.random != null)   System.out.print(temp.val + " -- " + temp.random.val + " -> ");
             else                      System.out.print(temp.val + " -- " + null            + " -> ");
             temp = temp.next;
+        }
+        System.out.println("null");
+    }
+
+    public void displayDoublyLinkedList(ListNodeD head){
+        while(head != null) {
+            System.out.print(head.val + " <--> ");
+            head = head.next;
         }
         System.out.println("null");
     }
