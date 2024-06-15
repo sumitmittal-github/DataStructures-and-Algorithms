@@ -17,8 +17,10 @@ public class DoublyLinkedList {
     }
 
     public void insertAtTail(int val) {
-        if(head == null)
+        if(head == null){
+            insertAtHead(val);
             return;
+        }
 
         // create new node
         ListNodeD newNode = new ListNodeD(val);
@@ -102,7 +104,7 @@ public class DoublyLinkedList {
     public void display(){
         ListNodeD node = head;
         while(node != null) {
-            System.out.print(node.val + " -> ");
+            System.out.print(node.val + " <--> ");
             node = node.next;
         }
         System.out.println("null");
