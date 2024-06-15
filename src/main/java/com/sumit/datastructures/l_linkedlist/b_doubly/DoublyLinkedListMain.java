@@ -1,33 +1,33 @@
 package com.sumit.datastructures.l_linkedlist.b_doubly;
 
-public class LL2_DoublyMain {
+public class DoublyLinkedListMain {
 
     public static void main(String[] args) {
 
-        LL2_Doubly ll = new LL2_Doubly();
-        ll.insertFirst(1);
-        ll.insertLast(2);
-        ll.insertFirst(3);
+        DoublyLinkedList ll = new DoublyLinkedList();
+        ll.insertAtHead(1);
+        ll.insertAtTail(2);
+        ll.insertAtHead(3);
 
         ll.display();
-        ll.deleteFirst();
+        ll.deleteHead();
         ll.display();
 
-        ll.insertFirst(4);
-        ll.insertFirst(5);
+        ll.insertAtHead(4);
+        ll.insertAtHead(5);
         ll.display();
 
-        ll.deleteFirst();
+        ll.deleteHead();
         ll.display();
 
-        ll.insertLast(6);
+        ll.insertAtTail(6);
         ll.insert(7,0);
         ll.display();
 
-        ll.deleteFirst();
+        ll.deleteHead();
         ll.display();
 
-        ll.deleteLast();
+        ll.deleteTail();
         ll.display();
 
         ll.delete(0);
