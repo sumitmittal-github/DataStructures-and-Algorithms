@@ -3,7 +3,7 @@ package com.sumit.datastructures.l_linkedlist.a_singly.collegewallah;
 import com.sumit.datastructures.l_linkedlist.a_singly.ListNode;
 import com.sumit.utils.DSAUtils;
 
-public class Q14_ReverseKGroups {
+public class Q15_ReverseKGroups {
 
     // LeetCode-25 : https://leetcode.com/problems/reverse-nodes-in-k-group/description/
 
@@ -74,7 +74,7 @@ public class Q14_ReverseKGroups {
 
 
     public static void main(String[] args) {
-        Q14_ReverseKGroups obj = new Q14_ReverseKGroups();
+        Q15_ReverseKGroups obj = new Q15_ReverseKGroups();
 
         ListNode head1 = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5, null)))));
         DSAUtils.displayLinkedList(head1);

@@ -1,4 +1,6 @@
-package com.sumit.datastructures.l_linkedlist.questions.kunal;
+package com.sumit.datastructures.l_linkedlist.a_singly.kunal;
+
+import com.sumit.datastructures.l_linkedlist.a_singly.ListNode;
 
 public class LL_Q5_CycleLength {
 

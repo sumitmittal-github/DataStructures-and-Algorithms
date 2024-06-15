@@ -1,4 +1,4 @@
-package com.sumit.datastructures.l_linkedlist.questions.kunal;
+package com.sumit.datastructures.l_linkedlist.a_singly;
 
 public class ListNodeRandom {
     public int val;

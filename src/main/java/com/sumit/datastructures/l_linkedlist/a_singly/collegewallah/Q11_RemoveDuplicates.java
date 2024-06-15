@@ -3,7 +3,7 @@ package com.sumit.datastructures.l_linkedlist.a_singly.collegewallah;
 import com.sumit.datastructures.l_linkedlist.a_singly.ListNode;
 import com.sumit.utils.DSAUtils;
 
-public class Q10_RemoveDuplicates {
+public class Q11_RemoveDuplicates {
 
     // LeetCode-83 : https://leetcode.com/problems/remove-duplicates-from-sorted-list/description/
 
@@ -38,7 +38,7 @@ public class Q10_RemoveDuplicates {
 
 
     public static void main(String[] args) {
-        Q10_RemoveDuplicates obj = new Q10_RemoveDuplicates();
+        Q11_RemoveDuplicates obj = new Q11_RemoveDuplicates();
 
         ListNode ll1_way1 = new ListNode(1, new ListNode(1, new ListNode(2, null)));
         DSAUtils.displayLinkedList(ll1_way1);

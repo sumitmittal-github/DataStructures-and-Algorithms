@@ -1,6 +1,7 @@
 package com.sumit.utils;
 
 import com.sumit.datastructures.l_linkedlist.a_singly.ListNode;
+import com.sumit.datastructures.l_linkedlist.a_singly.ListNodeRandom;
 
 import java.util.List;
 
@@ -61,6 +62,15 @@ public class DSAUtils {
         while(temp != null){
             System.out.print(temp.val + " -> ");
             temp = temp.next;
+        }
+        System.out.println("null");
+    }
+
+    public static void displayRandomLinkedList(ListNodeRandom head){
+        ListNodeRandom node = head;
+        while(node != null){
+            System.out.print(node.val + " -> ");
+            node = node.next;
         }
         System.out.println("null");
     }

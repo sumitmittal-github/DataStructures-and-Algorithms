@@ -3,7 +3,7 @@ package com.sumit.datastructures.l_linkedlist.a_singly.collegewallah;
 import com.sumit.datastructures.l_linkedlist.a_singly.ListNode;
 import com.sumit.utils.DSAUtils;
 
-public class Q12_Reverse {
+public class Q13_Reverse {
 
     // LeetCode-206 : https://leetcode.com/problems/reverse-linked-list/description/
 
@@ -44,7 +44,7 @@ public class Q12_Reverse {
 
 
     public static void main(String[] args) {
-        Q12_Reverse obj = new Q12_Reverse();
+        Q13_Reverse obj = new Q13_Reverse();
 
         ListNode q1 = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5, null)))));
         DSAUtils.displayLinkedList(q1);

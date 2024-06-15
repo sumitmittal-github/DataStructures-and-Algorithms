@@ -3,7 +3,7 @@ package com.sumit.datastructures.l_linkedlist.a_singly.collegewallah;
 import com.sumit.datastructures.l_linkedlist.a_singly.ListNode;
 import com.sumit.utils.DSAUtils;
 
-public class Q13_ReverseBetween {
+public class Q14_ReverseBetween {
 
     // LeetCode-92 : https://leetcode.com/problems/reverse-linked-list-ii/description/
 
@@ -59,7 +59,7 @@ public class Q13_ReverseBetween {
                                 new ListNode(4,
                                         new ListNode(5, null)))));
 
-        Q13_ReverseBetween obj = new Q13_ReverseBetween();
+        Q14_ReverseBetween obj = new Q14_ReverseBetween();
         DSAUtils.displayLinkedList(obj.reverseBetween(head, 2, 4));
     }
 }

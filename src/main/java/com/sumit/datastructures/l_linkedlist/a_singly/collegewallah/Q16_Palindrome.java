@@ -2,7 +2,7 @@ package com.sumit.datastructures.l_linkedlist.a_singly.collegewallah;
 
 import com.sumit.datastructures.l_linkedlist.a_singly.ListNode;
 
-public class Q15_Palindrome {
+public class Q16_Palindrome {
 
     // LeetCode-234 : https://leetcode.com/problems/palindrome-linked-list/description/
 

@@ -2,9 +2,21 @@ package com.sumit.datastructures.l_linkedlist.a_singly.collegewallah;
 
 import com.sumit.datastructures.l_linkedlist.a_singly.ListNode;
 
-public class Q16_TwinSum {
+public class Q17_TwinSum {
 
     // LeetCode-2130 : https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list/description/
+
+    /** Program :
+     find the maximum twin sum of a linked list of even length
+     Twin numbers are :
+     -number at 0th index and number and length-0 index
+     -number at 1st index and number and length-1 index
+     -number at 2nd index and number and length-2 index and so on
+
+     Input: head = [1,5,3,2,13,9]
+     Ans     = max(   10(1+9),    18(5+13),    5(3+2)   )
+     = 18
+     */
 
 
     public int pairSum(ListNode head) {

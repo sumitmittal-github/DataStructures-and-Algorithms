@@ -1,4 +1,4 @@
-package com.sumit.datastructures.l_linkedlist.questions.kunal;
+package com.sumit.datastructures.l_linkedlist.a_singly.kunal;
 
 public class LL_Q7_HappyNumber {
 
