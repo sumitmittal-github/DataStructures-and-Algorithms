@@ -1,10 +1,10 @@
 package com.sumit.datastructures.l_linkedlist.c_circular;
 
-public class LL3_CircularMain {
+public class CircularLinkedListMain {
 
     public static void main(String[] args) {
 
-        LL3_Circular ll = new LL3_Circular();
+        CircularLinkedList ll = new CircularLinkedList();
         ll.insert(23);
         ll.insert(3);
         ll.insert(19);
