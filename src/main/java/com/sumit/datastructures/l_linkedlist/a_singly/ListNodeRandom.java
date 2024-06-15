@@ -7,8 +7,11 @@ public class ListNodeRandom {
 
     public ListNodeRandom(int val) {
         this.val = val;
-        this.next = null;
-        this.random = null;
+    }
+
+    public ListNodeRandom(int val, ListNodeRandom next) {
+        this.val = val;
+        this.next = next;
     }
 
 }

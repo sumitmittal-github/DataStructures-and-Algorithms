@@ -67,10 +67,11 @@ public class DSAUtils {
     }
 
     public static void displayRandomLinkedList(ListNodeRandom head){
-        ListNodeRandom node = head;
-        while(node != null){
-            System.out.print(node.val + " -> ");
-            node = node.next;
+        ListNodeRandom temp = head;
+        while(temp != null){
+            if(temp.random != null)   System.out.print(temp.val + " -- " + temp.random.val + " -> ");
+            else                      System.out.print(temp.val + " -- " + null            + " -> ");
+            temp = temp.next;
         }
         System.out.println("null");
     }
