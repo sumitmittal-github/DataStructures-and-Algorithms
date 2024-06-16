@@ -14,7 +14,7 @@ public class Q4_Reverse {
     */
 
 
-    // Approach-1 : Best approach
+    // Approach-1 : with iterator
     public void reverse(Stack<Integer> inputStack){
 
         // move all elements in temp stack 1 in reverse order
@@ -37,13 +37,12 @@ public class Q4_Reverse {
 
 
 
-    // Approach-2 : Best approach with recursion
-    // better than reverse_with_recursion_2
-    public void reverse_with_recursion_1(Stack<Integer> inputStack){
-        if(inputStack.size() == 0) return;
+    // Approach-2 : with recursion
+    public void reverse_with_recursion(Stack<Integer> inputStack){
+        if(inputStack.size() == 1) return;
 
         int temp = inputStack.pop();
-        reverse_with_recursion_1(inputStack);
+        reverse_with_recursion(inputStack);
         insertAtBottom(inputStack, temp);
     }
     private void insertAtBottom(Stack<Integer> inputStack, int element){
@@ -57,24 +56,6 @@ public class Q4_Reverse {
         inputStack.push(temp);
     }
 
-
-
-    // Approach-3 : Not a good approach, because it is not completely recursion
-    //              also we need to paas 1 temp stack as a argument
-    public void reverse_with_recursion_2(Stack<Integer> inputStack, Stack<Integer> tempStack1){
-        if(inputStack.size() == 0) {
-            Stack<Integer> tempStack2 = new Stack<>();
-            while(tempStack1.size() > 0){
-                tempStack2.push(tempStack1.pop());
-            }
-            while(tempStack2.size() > 0){
-                inputStack.push(tempStack2.pop());
-            }
-            return;
-        }
-        tempStack1.push(inputStack.pop());
-        reverse_with_recursion_2(inputStack, tempStack1);
-    }
 
 
 
@@ -94,12 +75,8 @@ public class Q4_Reverse {
         System.out.println("After-1  : " + st);
 
         System.out.println("Before-2 : " + st);
-        obj.reverse_with_recursion_1(st);
+        obj.reverse_with_recursion(st);
         System.out.println("After-2  : " + st);
-
-        System.out.println("Before-3 : " + st);
-        obj.reverse_with_recursion_2(st, new Stack<>());
-        System.out.println("After-3  : " + st);
     }
 
 }
