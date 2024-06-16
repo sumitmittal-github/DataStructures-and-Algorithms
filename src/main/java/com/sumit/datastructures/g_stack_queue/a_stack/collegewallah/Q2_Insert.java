@@ -26,6 +26,17 @@ public class Q2_Insert {
         }
     }
 
+    public void insertAtBottom_with_recursion(Stack<Integer> inputStack, int element){
+        if(inputStack.size() == 0){
+            inputStack.push(element);
+            return;
+        }
+
+        int temp = inputStack.pop();
+        insertAtBottom_with_recursion(inputStack, element);
+        inputStack.push(temp);
+    }
+
     public void insertAtIndex(Stack<Integer> inputStack, int index, int element){
         Stack<Integer> tempStack = new Stack<>();
         while(inputStack.size() > index){
@@ -52,7 +63,7 @@ public class Q2_Insert {
         obj.insertAtBottom(st, 44);
         obj.insertAtIndex(st, 2, 55);
         obj.insertAtIndex(st, 0, 66);
-        obj.insertAtBottom(st, 77);
+        obj.insertAtBottom_with_recursion(st, 77);
         obj.insertAtIndex(st, 7, 88);
         obj.insertAtIndex(st, st.size(), 99);
         System.out.println("After : "+ st);
