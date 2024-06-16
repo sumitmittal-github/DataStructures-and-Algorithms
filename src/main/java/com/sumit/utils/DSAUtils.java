@@ -1,8 +1,8 @@
 package com.sumit.utils;
 
-import com.sumit.datastructures.l_linkedlist.a_singly.ListNode;
-import com.sumit.datastructures.l_linkedlist.a_singly.ListNodeRandom;
-import com.sumit.datastructures.l_linkedlist.b_doubly.ListNodeD;
+import com.sumit.datastructures.f_linkedlist.a_singly.ListNode;
+import com.sumit.datastructures.f_linkedlist.a_singly.ListNodeRandom;
+import com.sumit.datastructures.f_linkedlist.b_doubly.ListNodeD;
 
 import java.util.List;
 
