@@ -1,9 +1,9 @@
-package com.sumit.datastructures.f_linkedlist.b_doubly.collegewallah.Q4;
+package com.sumit.datastructures.f_linkedlist.b_doubly.collegewallah.Q4_Flatten;
 
 class Node {
 
     public int val;
-    public Node previous;
+    public Node prev;
     public Node next;
     public Node child;
 
