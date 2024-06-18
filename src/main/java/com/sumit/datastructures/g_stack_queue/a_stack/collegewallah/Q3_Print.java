@@ -60,7 +60,10 @@ public class Q3_Print {
         st.push(5);
         st.push(6);
 
-        Q3_Print obj = new Q3_Print();
+        for(int i : st)
+            System.out.println(i);
+
+        /*Q3_Print obj = new Q3_Print();
         obj.display_with_temp_stack(st);
         System.out.println();
 
@@ -68,7 +71,7 @@ public class Q3_Print {
         System.out.println();
 
         obj.display_with_recursion(st);
-        System.out.println();
+        System.out.println();*/
     }
 
 }
