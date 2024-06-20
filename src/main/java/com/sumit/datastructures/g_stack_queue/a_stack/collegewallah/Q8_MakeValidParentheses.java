@@ -1,8 +1,6 @@
 package com.sumit.datastructures.g_stack_queue.a_stack.collegewallah;
 
-import java.util.Stack;
-
-public class Q7_MakeValidParentheses {
+public class Q8_MakeValidParentheses {
 
     // LeetCode-1249 : https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/description/
 

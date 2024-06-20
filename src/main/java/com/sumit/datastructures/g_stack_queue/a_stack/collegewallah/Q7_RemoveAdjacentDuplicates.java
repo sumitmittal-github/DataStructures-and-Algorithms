@@ -2,9 +2,9 @@ package com.sumit.datastructures.g_stack_queue.a_stack.collegewallah;
 
 import java.util.Stack;
 
-public class Q8_RemoveAdjacentDuplicates {
+public class Q7_RemoveAdjacentDuplicates {
 
-    // LeetCode-1047 : https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/description/.
+    // LeetCode-1047 : https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/description
 
 
     // Approach-1 : with stack, but performance wise it beats only 60% users
